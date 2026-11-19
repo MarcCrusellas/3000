@@ -8,6 +8,7 @@ const AUTH = (() => {
   let token = null, resolveReady;
   try { token = localStorage.getItem(KEY); } catch (e) {}
   const ready = new Promise(r => { resolveReady = r; });
+  try { history.scrollRestoration = 'manual'; } catch (e) {}
 
   function keep(t) { token = t; try { t ? localStorage.setItem(KEY, t) : localStorage.removeItem(KEY); } catch (e) {} }
 
@@ -104,6 +105,7 @@ const AUTH = (() => {
     if (!g) return;
     g.dataset.view = view || '';
     document.documentElement.classList.toggle('locked', !!view);
+    if (view) window.scrollTo(0, 0);
     requestAnimationFrame(placeLens);
   }
   function gateMsg(t) { const m = document.getElementById('gateMsg'); if (m) { m.textContent = t; m.classList.add('on'); clearTimeout(gateMsg.t); gateMsg.t = setTimeout(() => m.classList.remove('on'), 3000); } }
@@ -156,9 +158,18 @@ const AUTH = (() => {
     ready.then(count);
   }
 
+  // Log out: push any unsaved progress first, then remove this device's copy so nothing is left to see.
   async function logout() {
+    try {
+      if (typeof store !== 'undefined' && store.mode === 'db') {
+        clearTimeout(store.timer); flush();
+        await Promise.race([store.writing || Promise.resolve(), new Promise(r => setTimeout(r, 4000))]);
+      }
+    } catch (e) {}
     try { await api('/api/logout', { method: 'POST', body: {} }); } catch (e) {}
-    keep(null); location.reload();
+    keep(null);
+    try { localStorage.removeItem('g3000.state.v1'); } catch (e) {}
+    window.scrollTo(0, 0); location.replace(location.pathname);
   }
   async function addPasskey() { await register(true); }
   async function passkeys() { return (await api('/api/me')).passkeys.length; }
