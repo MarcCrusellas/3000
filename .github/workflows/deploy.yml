@@ -58,5 +58,12 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
+      # GitHub sometimes takes a moment to list a fresh upload: wait, and try once more if it still isn't there
+      - run: sleep 15
       - id: pages
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.pages.outcome == 'failure'
+        run: sleep 45
+      - if: steps.pages.outcome == 'failure'
         uses: actions/deploy-pages@v4
