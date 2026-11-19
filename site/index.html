@@ -1,56 +1,194 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="locked">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0A0C11">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>3000</title>
+<meta name="theme-color" content="#121716">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="3000">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@500&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4.5"/><path d="M11.2 11.2 20 20M16 16l2.2-2.2M18.5 18.5l2-2"/></symbol>
-  <symbol id="i-face" viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2M9 9.5v1M15 9.5v1M12 9.5v3.5h-1M9.5 16a3.5 3.5 0 0 0 5 0"/></symbol>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M6.5 4.5h4v15h-4zM13.5 4.5h4v15h-4z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="M6 5v14M19 5.5v13L9 12z" fill="currentColor"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M18 5v14M5 5.5v13L15 12z" fill="currentColor"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-cycle" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v5h-5"/></symbol>
   <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-player" viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0v4a2 2 0 0 1-2 2h-1v-6h3M4 13v4a2 2 0 0 0 2 2h1v-6H4"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></symbol>
+  <symbol id="i-cards" viewBox="0 0 24 24"><rect x="4" y="6" width="14" height="14" rx="2.5"/><path d="M8 3.5h10.5A2.5 2.5 0 0 1 21 6v10.5"/><path d="M8 13l2.5 2.5L15 11"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-4M12 16V8M16 16v-6"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4L6 18M18 6l1.4-1.4"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V9M7 13.5l5-5 5 5M5 4h14"/></symbol>
+  <symbol id="i-grip" viewBox="0 0 24 24"><g style="fill:currentColor;stroke:none"><circle cx="9" cy="6" r="1.6"/><circle cx="15" cy="6" r="1.6"/><circle cx="9" cy="12" r="1.6"/><circle cx="15" cy="12" r="1.6"/><circle cx="9" cy="18" r="1.6"/><circle cx="15" cy="18" r="1.6"/></g></symbol>
+  <symbol id="i-rep" viewBox="0 0 24 24"><path d="M4 11V9a3 3 0 0 1 3-3h12M16 3l3 3-3 3M20 13v2a3 3 0 0 1-3 3H5M8 21l-3-3 3-3"/></symbol>
+  <symbol id="i-shuf" viewBox="0 0 24 24"><path d="M3 7h3.5c2 0 3.3 1 4.3 2.6l2.4 4.8c1 1.6 2.3 2.6 4.3 2.6H21M18 14l3 3-3 3M3 17h3.5c1.3 0 2.3-.4 3.1-1.1M13.4 8.1C14.2 7.4 15.2 7 16.5 7H21M18 4l3 3-3 3"/></symbol>
+  <symbol id="i-off" viewBox="0 0 24 24"><path d="M11 5 6.5 9H3v6h3.5L11 19zM22 9l-6 6M16 9l6 6"/></symbol>
+  <symbol id="i-stop" viewBox="0 0 24 24"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 3c.6 3.4 4.8 5.6 4.8 10.2a4.8 4.8 0 0 1-9.6 0c0-2.1 1-3.6 2.1-4.7.1 1.6.9 2.7 2.1 3.1 0-3.1-1-5.6.6-8.6z"/></symbol>
+  <symbol id="i-face" viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2M9 9.5v1M15 9.5v1M12 9.5v3.5h-1M9.5 16a3.5 3.5 0 0 0 5 0"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4.5"/><path d="M11.2 11.2 20 20M16 16l2.2-2.2M18.5 18.5l2-2"/></symbol>
   <symbol id="i-out" viewBox="0 0 24 24"><path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3M10 8l-4 4 4 4M6 12h10"/></symbol>
+  <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.7" style="fill:currentColor;stroke:none"/><circle cx="12" cy="12" r="1.7" style="fill:currentColor;stroke:none"/><circle cx="19" cy="12" r="1.7" style="fill:currentColor;stroke:none"/></symbol>
 </defs></svg>
-
-<main id="app" data-view="loading">
-  <header class="brand">3000</header>
-
-  <section class="view" data-for="loading"><div class="spin" aria-label="Cargando"></div></section>
-
-  <section class="view" data-for="new">
-    <button class="pill primary" id="createBtn"><svg class="i"><use href="#i-face"/></svg>Crear passkey</button>
-  </section>
-
-  <section class="view" data-for="signin">
-    <button class="pill primary" id="loginBtn"><svg class="i"><use href="#i-face"/></svg>Entrar</button>
-  </section>
-
-  <section class="view" data-for="home">
-    <div class="card hero">
-      <div class="big" id="count">0</div>
-      <button class="pill primary" id="incBtn" aria-label="Sumar uno"><svg class="i"><use href="#i-plus"/></svg></button>
+<div id="gate" data-view="loading">
+  <div class="g-brand">3000</div>
+  <div class="g-mid">
+    <div class="g-spin" aria-label="Cargando"></div>
+    <button class="g-pill" id="gateCreate"><svg class="i"><use href="#i-face"/></svg>Crear passkey</button>
+    <button class="g-pill" id="gateLogin"><svg class="i"><use href="#i-face"/></svg>Entrar</button>
+  </div>
+  <div class="g-msg" id="gateMsg" role="status"></div>
+</div>
+<main>
+  <section class="view" id="v-player">
+    <div class="now" id="now"></div>
+    <div class="ctrls">
+      <button class="sk" id="prevBtn" aria-label="Anterior"><svg class="i"><use href="#i-prev"/></svg></button>
+      <button class="play" id="playBtn" aria-label="Play">
+        <svg class="ring" viewBox="0 0 94 94" id="ring" style="display:none"><circle class="bg" cx="47" cy="47" r="44"/><circle id="ringFg" cx="47" cy="47" r="44" stroke-dasharray="276.5" stroke-dashoffset="276.5"/></svg>
+        <svg class="i" id="playIco"><use href="#i-play"/></svg>
+      </button>
+      <button class="sk" id="nextBtn" aria-label="Siguiente"><svg class="i"><use href="#i-next"/></svg></button>
     </div>
-    <div class="card row">
-      <span class="chip"><svg class="i"><use href="#i-key"/></svg><b id="nKeys">1</b></span>
-      <span class="mono dim" id="since"></span>
-      <span class="grow"></span>
-      <button class="ib" id="addKeyBtn" aria-label="Añadir passkey"><svg class="i"><use href="#i-plus"/></svg></button>
-      <button class="ib" id="logoutBtn" aria-label="Salir"><svg class="i"><use href="#i-out"/></svg></button>
-    </div>
+    <div class="cntrow"><label class="gpick"><select id="gpick" aria-label="Qué escuchar"></select><svg class="i"><use href="#i-chev"/></svg></label><span class="cnt" id="tItem"></span></div>
+    <div class="hist" id="hist"></div>
   </section>
 
-  <div class="toast" id="toast" role="status"></div>
+  <section class="view" id="v-words">
+    <div class="srch"><input class="search" id="q" type="search" placeholder="Buscar" autocomplete="off" autocapitalize="off" spellcheck="false"><button class="btn primary" id="next10" aria-label="Añadir 10 palabras"><svg class="i"><use href="#i-plus"/></svg>10</button></div>
+    <div class="seg fill" id="fSeg"><button data-f="all">Todas</button><button data-f="sel">Aprendiendo <b id="cSel">0</b></button><button data-f="known">Sé <b id="cKnown">0</b></button><button data-f="x">Otras <b id="cX">0</b></button></div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <section class="view" id="v-check">
+    <div id="checkBox"></div>
+  </section>
+
+  <section class="view" id="v-stats">
+    <div class="hero">
+      <div class="big" id="sKnown">0<small>sé</small></div>
+      <p class="delta" id="sDelta"></p>
+      <svg class="spark" id="spark" preserveAspectRatio="none" aria-hidden="true"></svg>
+    </div>
+    <div class="grid2" id="tiles"></div>
+    <div class="sec">
+      <h2>Día a día</h2>
+      <div class="seg" id="metricSeg"><button data-x="h">Escuchas</button><button data-x="m">Minutos</button><button data-x="k">Aprendidas</button></div>
+      <div class="chart"><canvas id="dayChart" role="img" aria-label="Actividad por día, últimos 30 días"></canvas></div>
+      <dl id="dayStats"></dl>
+    </div>
+    <div class="sec">
+      <h2 id="cumH">Aprendidas</h2><p class="chint" id="cumHint"></p>
+      <div class="chart"><canvas id="cumChart" role="img" aria-label="Palabras aprendidas acumuladas"></canvas></div>
+    </div>
+    <div class="sec">
+      <h2>Bolsas</h2>
+      <div id="bagChart"></div>
+      <dl id="bagStats"></dl>
+    </div>
+    <div class="sec">
+      <h2>Por bloques</h2>
+      <div id="bandsChart"></div>
+      <div class="key"><span><i style="background:var(--good)"></i>Sé</span><span><i style="background:var(--acc)"></i>En curso</span></div>
+    </div>
+  </section>
 </main>
 
+<nav class="tabs"><div class="in">
+  <a href="#player" data-v="player"><svg class="i"><use href="#i-player"/></svg><span class="nl">Escuchar<svg class="i gi"><use href="#i-gear"/></svg></span></a>
+  <a href="#check" data-v="check"><svg class="i"><use href="#i-cards"/></svg><span class="nl">Repasar<svg class="i gi"><use href="#i-gear"/></svg></span><span class="badge" id="checkBadge" style="display:none"></span></a>
+  <a href="#words" data-v="words"><svg class="i"><use href="#i-list"/></svg><span class="nl">Palabras<svg class="i gi"><use href="#i-gear"/></svg></span></a>
+  <a href="#stats" data-v="stats"><svg class="i"><use href="#i-chart"/></svg><span class="nl">Datos<svg class="i gi"><use href="#i-gear"/></svg></span></a>
+</div></nav>
+
+<div class="scrim" id="scrim"></div>
+<div class="sheet" id="sheet" role="dialog" aria-label="Ajustes">
+  <div class="grabz"><div class="grab"></div></div>
+  <h2 class="sh" id="setTitle">Ajustes</h2>
+  <div class="sg" data-sec="player">
+    <div id="ed"><div id="edBody"></div><div class="e-pal" id="edPal"><div class="hint" id="edHint">Mantén pulsado un bloque y arrástralo a una pista</div><div class="row" id="edPalRow"></div></div></div>
+    <div class="srow"><span>Veces al día por palabra</span><div class="seg" id="capSeg"><button data-c="4">4</button><button data-c="6">6</button><button data-c="8">8</button></div></div>
+    <div class="srow"><span>Nueva durante</span><div class="seg" id="ndSeg"><button data-d="1">1</button><button data-d="2">2</button><button data-d="3">3 días</button></div></div>
+    <div class="srow"><span>Frases</span><button class="btn" id="shiftBtn"><svg class="i"><use href="#i-cycle"/></svg>Cambiar todas</button></div>
+    <div class="srow"><span>Historial</span><button class="toggle" id="histTog" aria-label="Historial"></button></div>
+    <div class="srow" style="border:0"><span>Descargar MP3</span><button class="ib dl" id="exportBtn" aria-label="Descargar MP3"><svg class="i"><use href="#i-down"/></svg><small id="exportPct"></small></button></div>
+  </div>
+  <div class="sg" data-sec="check" hidden>
+    <div class="srow"><span>Test de oído</span><button class="toggle" id="ltTog" aria-label="Test de oído"></button></div>
+    <div class="srow"><span>Máximo de repasos al día</span><div class="seg" id="rmSeg"><button data-m="30">30</button><button data-m="50">50</button><button data-m="0">Sin límite</button></div></div>
+    <div class="srow"><span>Tarjetas por sesión</span><div class="seg" id="rsSeg"><button data-r="10">10</button><button data-r="20">20</button></div></div>
+    <div class="srow" style="border:0"><span>Pasar sola al acertar</span><button class="toggle" id="cdTog" aria-label="Pasar sola al acertar"></button></div>
+  </div>
+  <div class="sg" data-sec="words" hidden>
+    <div class="srow"><span>Nuevas al día</span><div class="seg" id="dailySeg"><button data-n="0">0</button><button data-n="5">5</button><button data-n="10">10</button><button data-n="20">20</button></div></div>
+    <div class="srow" style="border:0"><span>Marcar palabras nuevas</span><button class="toggle" id="markTog" aria-label="Marcar palabras nuevas"></button></div>
+  </div>
+  <div class="sg" data-sec="stats" hidden>
+    <div class="srow"><span>Tema</span><div class="seg" id="themeSeg"><button data-t="dark" aria-label="Oscuro"><svg class="i"><use href="#i-moon"/></svg></button><button data-t="light" aria-label="Claro"><svg class="i"><use href="#i-sun"/></svg></button></div></div>
+    <div class="srow"><span>Sincronización</span><span class="sync"><span class="dot" id="dot"></span><span id="syncTxt">Solo en este dispositivo</span></span></div>
+    <div class="srow"><span>Passkeys</span><div class="seg"><button id="acctAdd" aria-label="Añadir passkey"><svg class="i"><use href="#i-key"/></svg><b id="acctN"></b><svg class="i"><use href="#i-plus"/></svg></button><button id="acctOut" aria-label="Cerrar sesión"><svg class="i"><use href="#i-out"/></svg></button></div></div>
+    <div class="srow"><span>Progreso</span><div class="seg" id="progSeg"><button id="expBtn" aria-label="Exportar progreso"><svg class="i"><use href="#i-down"/></svg></button><button id="impBtn" aria-label="Importar progreso"><svg class="i"><use href="#i-up"/></svg></button></div></div>
+    <input type="file" id="impFile" accept=".json,application/json" hidden>
+    <div class="srow"><span>Abrir en otro dispositivo</span><div class="seg"><button id="cpBtn">Copiar</button><button id="psBtn">Pegar</button></div></div>
+    <div class="srow"><span>Borrar progreso</span><button class="btn" id="resetBtn">Borrar</button></div>
+    <div class="srow"><span>Restablecer todo</span><button class="btn" id="resetAllBtn">Restablecer</button></div>
+    <p class="snote">Borrar progreso conserva tus ajustes y pistas. Restablecer todo deja la app como recién abierta. Si quieres una copia, expórtala antes.</p>
+    <div class="srow" style="border:0"><button class="lnk" id="credBtn" aria-expanded="false" aria-controls="credits">Créditos<svg class="i"><use href="#i-chev"/></svg></button></div>
+    <div class="credits" id="credits" hidden>
+      Frases y traducciones: <a href="https://tatoeba.org" target="_blank" rel="noopener">Tatoeba</a> (CC BY 2.0 FR). Grabaciones: <span id="speakers"></span>.
+      Voces sintéticas de las frases: Microsoft (Seraphina, Florian, Katja, Conrad, Elvira, Álvaro). Palabras sueltas: Microsoft (Katja, Conrad, Elvira, Álvaro).
+      Frecuencias: <a href="https://github.com/rspeer/wordfreq" target="_blank" rel="noopener">wordfreq</a>. Género y plural: <a href="https://github.com/gambolputty/german-nouns" target="_blank" rel="noopener">german-nouns</a>.
+      Formas verbales y comparativos: <a href="https://en.wiktionary.org" target="_blank" rel="noopener">Wiktionary</a> (CC BY-SA 4.0) vía <a href="https://kaikki.org" target="_blank" rel="noopener">kaikki.org</a>.
+      <span id="buildInfo"></span>
+    </div>
+  </div>
+</div>
+<div class="sheet" id="tl" role="dialog" aria-label="Test nuevo"><div class="grabz"><div class="grab"></div></div><div id="tlBody"></div></div>
+<div class="sheet" id="lk" role="dialog" aria-label="Palabra">
+  <div class="grabz" id="lkGrab"><div class="grab"></div></div>
+  <div id="lkBody"></div>
+  <div id="lkMore"></div>
+</div>
+<div class="menu" id="menu" hidden></div>
+
+<div id="edLayer"></div>
+<div class="e-ind" id="edInd"></div>
+<div class="e-tip" id="edTip"></div>
+<audio id="track" preload="auto" playsinline></audio>
+<audio id="preview" preload="auto" playsinline></audio>
+<div class="toast" id="toast"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="config.js"></script>
 <script src="vendor/simplewebauthn-browser.js"></script>
-<script src="app.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/00-core.js"></script>
+<script src="js/01-state.js"></script>
+<script src="js/02-words.js"></script>
+<script src="js/03-plan.js"></script>
+<script src="js/04-audio.js"></script>
+<script src="js/05-player.js"></script>
+<script src="js/06-export.js"></script>
+<script src="js/07-stats.js"></script>
+<script src="js/08-render.js"></script>
+<script src="js/09-review.js"></script>
+<script src="js/10-session.js"></script>
+<script src="js/11-lookup.js"></script>
+<script src="js/12-events.js"></script>
+<script src="js/13-editor.js"></script>
+<script src="js/14-boot.js"></script>
 </body>
 </html>
