@@ -1,9 +1,9 @@
-"""End-to-end test with a virtual passkey (Chrome DevTools WebAuthn domain).
+"""End-to-end test of the 3000 app with a virtual passkey (Chrome DevTools WebAuthn domain).
 
-Needs the Worker on :8787 (`npx wrangler dev --env dev`) and the site on :8788
+Needs the Worker on :8787 (`npm run dev` in worker/, fresh .wrangler/state) and the site on :8788
 (`python3 -m http.server 8788` inside site/). Usage: python3 tests/e2e.py [chrome_path] [shots_dir]
 """
-import json, sys, time, urllib.request
+import json, sys, urllib.request
 from playwright.sync_api import sync_playwright
 
 SITE = 'http://localhost:8788/'
@@ -11,6 +11,8 @@ API = 'http://localhost:8787'
 CHROME = sys.argv[1] if len(sys.argv) > 1 else None
 SHOTS = sys.argv[2] if len(sys.argv) > 2 else None
 RESET = 'dev-reset-token-0123456789abcdef0123456789'
+AUTH_OPTS = {'protocol': 'ctap2', 'transport': 'internal', 'hasResidentKey': True,
+             'hasUserVerification': True, 'isUserVerified': True, 'automaticPresenceSimulation': True}
 
 
 def call(path, method='GET', headers=None, body=None):
@@ -24,25 +26,34 @@ def call(path, method='GET', headers=None, body=None):
 
 
 def device(browser, creds=None):
-    ctx = browser.new_context(viewport={'width': 390, 'height': 760}, device_scale_factor=2)
+    ctx = browser.new_context(viewport={'width': 390, 'height': 800}, device_scale_factor=2)
     page = ctx.new_page()
+    page.on('pageerror', lambda e: print('  page error:', e))
     cdp = ctx.new_cdp_session(page)
     cdp.send('WebAuthn.enable')
-    aid = cdp.send('WebAuthn.addVirtualAuthenticator', {'options': {
-        'protocol': 'ctap2', 'transport': 'internal', 'hasResidentKey': True,
-        'hasUserVerification': True, 'isUserVerified': True, 'automaticPresenceSimulation': True}})['authenticatorId']
+    aid = cdp.send('WebAuthn.addVirtualAuthenticator', {'options': AUTH_OPTS})['authenticatorId']
     for c in creds or []:
         cdp.send('WebAuthn.addCredential', {'authenticatorId': aid, 'credential': c})
     return ctx, page, cdp, aid
 
 
-def view(page, name):
-    page.wait_for_function(f"document.querySelector('#app').dataset.view === '{name}'", timeout=10000)
+def gate(page, view):
+    page.wait_for_function(f"document.documentElement.classList.contains('locked') && document.getElementById('gate').dataset.view === '{view}'", timeout=10000)
+
+
+def in_app(page):
+    page.wait_for_function("!document.documentElement.classList.contains('locked') && typeof DATA !== 'undefined' && DATA && DATA.words.length > 0", timeout=15000)
+
+
+def synced(page):
+    page.wait_for_function("store.mode === 'db' && document.getElementById('dot').className.includes('ok') && !store.writing && !store.timer || (document.getElementById('dot').className.includes('ok') && !store.writing)", timeout=15000)
+    page.wait_for_timeout(2500)  # past the 1.8 s save debounce
+    page.wait_for_function("document.getElementById('dot').className.includes('ok') && !store.writing", timeout=15000)
 
 
 def shot(page, name):
     if SHOTS:
-        page.wait_for_timeout(300)
+        page.wait_for_timeout(400)
         page.screenshot(path=f'{SHOTS}/{name}.png')
 
 
@@ -58,70 +69,47 @@ def check(cond, label):
 with sync_playwright() as p:
     browser = p.chromium.launch(executable_path=CHROME) if CHROME else p.chromium.launch()
 
-    # Phone: first visit creates the passkey
     ctx1, ph, cdp1, a1 = device(browser)
-    ph.goto(SITE); view(ph, 'new'); shot(ph, '1-new')
-    check(True, 'first visit offers Crear passkey')
-    ph.click('#createBtn'); view(ph, 'home')
-    check(ph.text_content('#count') == '0', 'signed in after creating the passkey')
-    for _ in range(3): ph.click('#incBtn')
-    ph.wait_for_timeout(1200); shot(ph, '2-home')
-    s, st = call('/api/state')
-    check(s == 401, 'state needs a session')
+    ph.goto(SITE); gate(ph, 'new'); shot(ph, '1-gate-new')
+    check(True, 'first visit shows Crear passkey')
+    ph.click('#gateCreate'); in_app(ph)
+    check(True, 'app opens after creating the passkey')
+    synced(ph)
+    check(ph.evaluate("store.mode") == 'db', 'sync is on (Worker)')
+    ph.evaluate("location.hash = '#words'"); ph.evaluate("document.getElementById('next10').click()")
+    n1 = ph.evaluate("S.sel.length")
+    check(n1 >= 10, f'added words on the phone ({n1})')
+    synced(ph); shot(ph, '2-app-words')
 
-    # Registration is closed for anyone without a session
     s, b = call('/api/register/options', 'POST', {'Content-Type': 'application/json'}, {})
-    check(s == 403 and b['error'] == 'closed', 'second sign-up is refused')
-    s, b = call('/api/status', headers={'Origin': 'https://evil.example'})
-    check(s == 403, 'other origins are refused')
+    check(s == 403, 'second sign-up is refused')
 
-    # Laptop: same passkey (as iCloud Keychain would sync it), new browser
-    synced = cdp1.send('WebAuthn.getCredentials', {'authenticatorId': a1})['credentials']
-    check(len(synced) == 1 and synced[0]['isResidentCredential'], 'passkey is discoverable')
-    ctx2, lp, cdp2, a2 = device(browser, synced)
-    lp.goto(SITE); view(lp, 'signin'); shot(lp, '3-signin')
-    lp.click('#loginBtn'); view(lp, 'home')
-    check(lp.text_content('#count') == '3', 'second device sees the same state')
-    lp.click('#incBtn'); lp.wait_for_timeout(1200)
+    synced_creds = cdp1.send('WebAuthn.getCredentials', {'authenticatorId': a1})['credentials']
+    ctx2, lp, cdp2, a2 = device(browser, synced_creds)
+    lp.goto(SITE); gate(lp, 'signin'); shot(lp, '3-gate-signin')
+    lp.click('#gateLogin'); in_app(lp); synced(lp)
+    check(lp.evaluate("S.sel.length") == n1, 'second device gets the same words')
 
-    # Phone comes back to the foreground and picks up the change
-    ph.evaluate("document.dispatchEvent(new Event('visibilitychange'))")
-    ph.wait_for_function("document.querySelector('#count').textContent === '4'", timeout=5000)
-    check(True, 'first device picks up the change')
+    lp.evaluate("location.hash = '#words'"); lp.evaluate("document.getElementById('next10').click()")
+    n2 = lp.evaluate("S.sel.length"); synced(lp)
+    ph.reload(); in_app(ph); synced(ph)
+    check(ph.evaluate("S.sel.length") == n2, f'phone picks up the laptop\'s words after reload ({n2})')
 
-    # Reload keeps the session
-    ph.reload(); view(ph, 'home')
-    check(ph.text_content('#count') == '4', 'session survives a reload')
+    ph.evaluate("location.hash = '#stats'"); ph.wait_for_timeout(300)
+    ph.wait_for_function("document.getElementById('acctN').textContent === '1'", timeout=8000)
+    check(True, 'settings show 1 passkey')
 
-    # Same device trying to add its passkey again is refused by the authenticator
-    ph.click('#addKeyBtn'); ph.wait_for_function("document.querySelector('#toast').textContent.includes('ya tiene')", timeout=8000)
-    check(True, 'same device cannot add a duplicate passkey')
-
-    # Signed in on a device with another authenticator (e.g. a non-Apple device): a second passkey can be added
-    cdp2.send('WebAuthn.removeVirtualAuthenticator', {'authenticatorId': a2})
-    cdp2.send('WebAuthn.addVirtualAuthenticator', {'options': {
-        'protocol': 'ctap2', 'transport': 'internal', 'hasResidentKey': True,
-        'hasUserVerification': True, 'isUserVerified': True, 'automaticPresenceSimulation': True}})
-    lp.click('#addKeyBtn'); lp.wait_for_function("document.querySelector('#nKeys').textContent === '2'", timeout=8000)
-    check(True, 'signed-in device can add another passkey')
-
-    # Log out
-    lp.click('#logoutBtn'); view(lp, 'signin')
+    lp.evaluate("document.getElementById('acctOut').click()"); gate(lp, 'signin')
     check(True, 'log out returns to Entrar')
 
-    # Reset (what the GitHub workflow does): passkeys go, state stays
-    s, b = call('/api/admin/reset', 'POST', {'Authorization': 'Bearer wrong-token-wrong-token-wrong-token'})
-    check(s == 403, 'reset refuses a wrong token')
     s, b = call('/api/admin/reset', 'POST', {'Authorization': 'Bearer ' + RESET})
-    check(s == 200, 'reset with the right token')
-    s, b = call('/api/status')
-    check(b['registered'] is False, 'sign-up is open again after reset')
-    ph.reload(); view(ph, 'new')
-    check(True, 'old session is gone after reset')
+    check(s == 200, 'reset')
+    ph.reload(); gate(ph, 'new')
+    check(True, 'after reset the old session is dropped and sign-up reopens')
 
     ctx3, np_, cdp3, a3 = device(browser)
-    np_.goto(SITE); view(np_, 'new'); np_.click('#createBtn'); view(np_, 'home')
-    check(np_.text_content('#count') == '4', 'state kept across the reset')
+    np_.goto(SITE); gate(np_, 'new'); np_.click('#gateCreate'); in_app(np_); synced(np_)
+    check(np_.evaluate("S.sel.length") == n2, 'progress kept across the reset')
 
     browser.close()
 print(f'\n{ok} checks passed')

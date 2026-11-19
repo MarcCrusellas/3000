@@ -1,6 +1,6 @@
 # 3000
 
-Personal language-learning site. For now it's a small test: sign in with a passkey and a counter that syncs between devices.
+Personal language-learning site: the German 3000 app (listening loop, Repasar, word list, stats) behind a passkey sign-in, with progress synced between devices.
 
 - Site: https://marccrusellas.github.io/3000/ (GitHub Pages, from `site/`)
 - API: Cloudflare Worker `api-3000` (from `worker/`), one SQLite Durable Object that holds the passkeys, sessions and synced state
@@ -27,7 +27,7 @@ Personal language-learning site. For now it's a small test: sign in with a passk
 ```
 cd worker && npm ci && npm run dev            # API on :8787 (RP ID localhost)
 cd site && python3 -m http.server 8788        # site on :8788
-python3 tests/e2e.py [chrome_path] [shots_dir]  # virtual passkey test, 17 checks
+python3 tests/e2e.py [chrome_path] [shots_dir]  # virtual passkey test: sign-in, sync between two devices, reset
 ```
 
 `npm run dev` keeps data in `worker/.wrangler/state`; delete it to start from zero.
@@ -36,7 +36,7 @@ python3 tests/e2e.py [chrome_path] [shots_dir]  # virtual passkey test, 17 check
 
 | path | what |
 |---|---|
-| `site/` | static site: `index.html`, `app.js`, `style.css`, `config.js` (API URL), `vendor/` (SimpleWebAuthn browser) |
+| `site/` | the app: `index.html`, `css/`, `js/` (00 to 14 from German 3000 v2, plus `auth.js`), `data/` (words, forms), `audio/` (MP3 packs), `config.js` (API URL), `vendor/` (SimpleWebAuthn browser) |
 | `worker/src/index.js` | routes, CORS, the `Vault` Durable Object |
 | `worker/wrangler.toml` | RP ID, allowed origins, Durable Object binding |
 | `.github/workflows/` | `deploy.yml`, `reset-passkeys.yml` |
