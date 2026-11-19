@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0C11">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>3000</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4.5"/><path d="M11.2 11.2 20 20M16 16l2.2-2.2M18.5 18.5l2-2"/></symbol>
+  <symbol id="i-face" viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2M9 9.5v1M15 9.5v1M12 9.5v3.5h-1M9.5 16a3.5 3.5 0 0 0 5 0"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3M10 8l-4 4 4 4M6 12h10"/></symbol>
+</defs></svg>
+
+<main id="app" data-view="loading">
+  <header class="brand">3000</header>
+
+  <section class="view" data-for="loading"><div class="spin" aria-label="Cargando"></div></section>
+
+  <section class="view" data-for="new">
+    <button class="pill primary" id="createBtn"><svg class="i"><use href="#i-face"/></svg>Crear passkey</button>
+  </section>
+
+  <section class="view" data-for="signin">
+    <button class="pill primary" id="loginBtn"><svg class="i"><use href="#i-face"/></svg>Entrar</button>
+  </section>
+
+  <section class="view" data-for="home">
+    <div class="card hero">
+      <div class="big" id="count">0</div>
+      <button class="pill primary" id="incBtn" aria-label="Sumar uno"><svg class="i"><use href="#i-plus"/></svg></button>
+    </div>
+    <div class="card row">
+      <span class="chip"><svg class="i"><use href="#i-key"/></svg><b id="nKeys">1</b></span>
+      <span class="mono dim" id="since"></span>
+      <span class="grow"></span>
+      <button class="ib" id="addKeyBtn" aria-label="Añadir passkey"><svg class="i"><use href="#i-plus"/></svg></button>
+      <button class="ib" id="logoutBtn" aria-label="Salir"><svg class="i"><use href="#i-out"/></svg></button>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status"></div>
+</main>
+
+<script src="config.js"></script>
+<script src="vendor/simplewebauthn-browser.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

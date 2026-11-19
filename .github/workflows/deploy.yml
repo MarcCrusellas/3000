@@ -1,0 +1,59 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check secrets
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::error::Add CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID in Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: worker/package-lock.json
+
+      - name: Deploy Worker
+        working-directory: worker
+        run: |
+          npm ci
+          npx wrangler deploy
+
+      - name: Point the site at the Worker
+        run: |
+          url=$(scripts/worker-url.sh)
+          echo "window.API_BASE = '$url';" > site/config.js
+          echo "Worker: $url" >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: pages
+        uses: actions/deploy-pages@v4

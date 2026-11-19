@@ -1,0 +1,34 @@
+name = "api-3000"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+[vars]
+RP_ID = "marccrusellas.github.io"
+RP_NAME = "3000"
+ORIGINS = "https://marccrusellas.github.io"
+USER_NAME = "marc"
+USER_DISPLAY = "Marc"
+
+[[durable_objects.bindings]]
+name = "VAULT"
+class_name = "Vault"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Vault"]
+
+# Local testing only: `npx wrangler dev --env dev`
+[env.dev]
+[env.dev.vars]
+RP_ID = "localhost"
+RP_NAME = "3000"
+ORIGINS = "http://localhost:8788"
+USER_NAME = "marc"
+USER_DISPLAY = "Marc"
+RESET_TOKEN = "dev-reset-token-0123456789abcdef0123456789"
+
+[[env.dev.durable_objects.bindings]]
+name = "VAULT"
+class_name = "Vault"

@@ -1,0 +1,44 @@
+name: Reset passkeys
+
+# Use this if you lose every device with the passkey.
+# It removes all passkeys and sessions (your progress stays), so the next visit to the site
+# can create a new passkey. Open the site right after it finishes.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type BORRAR to remove all passkeys'
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  reset:
+    if: ${{ inputs.confirm == 'BORRAR' }}
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: worker/package-lock.json
+      - working-directory: worker
+        run: npm ci
+
+      - name: Reset
+        run: |
+          url=$(scripts/worker-url.sh)
+          token=$(openssl rand -hex 32)
+          echo "::add-mask::$token"
+          (cd worker && echo "$token" | npx wrangler secret put RESET_TOKEN)
+          sleep 10
+          curl -fsS -X POST -H "Authorization: Bearer $token" "$url/api/admin/reset"
+          # Replace the one-time token so it can't be used again
+          (cd worker && openssl rand -hex 32 | npx wrangler secret put RESET_TOKEN)
+          echo "Passkeys removed. Open the site and create a new one." >> "$GITHUB_STEP_SUMMARY"
