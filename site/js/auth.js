@@ -41,6 +41,13 @@ const AUTH = (() => {
     gateMsg(MSG[e && e.message] || 'Sin conexión');
   }
 
+  // Portrait screens crop the painting to fill; wider ones show it whole, with the landscape extended sideways.
+  function fitArt() {
+    const a = document.getElementById('gArt');
+    if (a) a.setAttribute('preserveAspectRatio', innerWidth / innerHeight > 0.6 ? 'xMidYMid meet' : 'xMidYMid slice');
+  }
+  addEventListener('resize', fitArt); fitArt();
+
   function gate(view) {
     const g = document.getElementById('gate');
     if (!g) return;

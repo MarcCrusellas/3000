@@ -45,7 +45,92 @@
   <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.7" style="fill:currentColor;stroke:none"/><circle cx="12" cy="12" r="1.7" style="fill:currentColor;stroke:none"/><circle cx="19" cy="12" r="1.7" style="fill:currentColor;stroke:none"/></symbol>
 </defs></svg>
 <div id="gate" data-view="loading">
-  <div class="g-brand">3000</div>
+  <svg class="g-art" id="gArt" viewBox="0 0 600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="gSky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#14123a"/><stop offset=".32" stop-color="#3b2a6e"/>
+        <stop offset=".52" stop-color="#8a4f8f"/><stop offset=".64" stop-color="#e07a86"/><stop offset=".72" stop-color="#f7b98c"/>
+      </linearGradient>
+      <radialGradient id="gSun" cx=".5" cy=".5" r=".5">
+        <stop offset="0" stop-color="#fff4d6"/><stop offset=".25" stop-color="#ffd59a" stop-opacity=".9"/>
+        <stop offset=".6" stop-color="#f59a7a" stop-opacity=".35"/><stop offset="1" stop-color="#f59a7a" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="gLake" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#e9a08e"/><stop offset=".45" stop-color="#8a5a95"/><stop offset="1" stop-color="#2b2156"/>
+      </linearGradient>
+      <radialGradient id="gGlintG" cx=".5" cy=".35" r=".5"><stop offset="0" stop-color="#fff0cf" stop-opacity=".8"/><stop offset="1" stop-color="#ffd9a8" stop-opacity="0"/></radialGradient>
+      <linearGradient id="gShade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#0b0a1f" stop-opacity=".55"/><stop offset=".22" stop-color="#0b0a1f" stop-opacity="0"/>
+        <stop offset=".7" stop-color="#0b0a1f" stop-opacity="0"/><stop offset="1" stop-color="#0b0a1f" stop-opacity=".85"/>
+      </linearGradient>
+      <filter id="gBrush" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency=".022 .045" numOctaves="3" seed="7"/>
+        <feDisplacementMap in="SourceGraphic" scale="9"/>
+      </filter>
+      <filter id="gGrain" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3" stitchTiles="stitch"/>
+        <feColorMatrix values="0 0 0 0 1  0 0 0 0 .95  0 0 0 0 .9  0 0 0 .07 0"/>
+      </filter>
+    </defs>
+
+    <rect x="-700" width="2000" height="1000" fill="url(#gSky)"/>
+    <g class="g-stars" fill="#fff">
+      <circle cx="62" cy="70" r="1.3"/><circle cx="140" cy="140" r="1"/><circle cx="210" cy="52" r="1.6"/><circle cx="300" cy="118" r="1.1"/>
+      <circle cx="372" cy="40" r="1.4"/><circle cx="455" cy="96" r="1"/><circle cx="520" cy="160" r="1.5"/><circle cx="560" cy="58" r="1.1"/>
+      <circle cx="96" cy="220" r=".9"/><circle cx="410" cy="200" r=".9"/><circle cx="250" cy="230" r="1"/><circle cx="30" cy="160" r="1"/>
+    </g>
+
+    <g class="g-sun"><circle cx="330" cy="470" r="150" fill="url(#gSun)"/><circle cx="330" cy="470" r="34" fill="#fff1cf"/></g>
+
+    <g class="g-clouds far" fill="#f6c7b4" opacity=".35">
+      <path d="M40 330c18-14 46-14 62-2 12-10 34-10 46 2 14-2 26 4 30 12H30c-2-6 2-10 10-12z"/>
+      <path d="M380 290c16-12 40-12 54-2 10-8 30-8 40 2 12-2 22 4 26 10H372c-2-5 2-8 8-10z"/>
+    </g>
+
+    <g filter="url(#gBrush)"><g id="gRange">
+      <path fill="#a386c2" d="M0 560L40 518 82 540 130 468 172 502 222 430 262 472 300 446 344 494 392 420 432 462 482 440 522 482 562 452 600 474V720H0Z"/>
+      <path fill="#6a4f99" d="M0 604L58 538 102 566 150 498 202 560 252 520 302 584 362 508 422 572 472 530 532 588 600 544V740H0Z"/>
+      <path fill="#f3e6f2" opacity=".85" d="M150 498l-14 18 8-3 6 7 7-9 6 4zM362 508l-15 19 9-3 6 8 8-10 7 5zM58 538l-11 13 6-2 5 5 5-6 5 3z"/>
+      <path fill="#3a2c66" d="M0 668C80 632 140 642 212 656 292 672 362 640 442 648 512 656 562 640 600 646V1000H0Z"/>
+    </g><g class="g-wide"><use href="#gRange" transform="translate(1200 0) scale(-1 1)"/><use href="#gRange" transform="scale(-1 1)"/></g></g>
+
+    <rect x="-700" y="672" width="2000" height="92" fill="url(#gLake)"/>
+    <ellipse class="g-glint" cx="330" cy="712" rx="34" ry="58" fill="url(#gGlintG)"/>
+    <g class="g-ripples" stroke="#ffe9c9" stroke-linecap="round" opacity=".6">
+      <path d="M300 690h60M290 706h80M308 722h46M296 738h70M314 752h34" stroke-width="1.6"/>
+      <path d="M120 700h40M440 712h56M70 730h30M500 744h40" stroke-width="1" opacity=".5"/>
+    </g>
+
+    <g filter="url(#gBrush)"><g id="gShore" fill="#1a1436">
+      <path d="M0 770C90 744 190 758 300 752 400 746 500 762 600 748V1000H0Z"/>
+    </g><g class="g-wide"><use href="#gShore" transform="translate(1200 0) scale(-1 1)"/><use href="#gShore" transform="scale(-1 1)"/></g></g>
+    <g class="g-village" fill="#1a1436">
+      <path d="M70 764v-16l10-9 10 9v16zM92 764v-12l8-7 8 7v12zM112 764v-20l13-12 13 12v20zM142 764v-14l9-8 9 8v14z"/>
+      <path d="M168 764v-34h-3l9-36 9 36h-3v34z"/><circle cx="174" cy="688" r="1.6"/>
+      <path d="M190 764v-10l7-6 7 6v10z"/>
+      <g fill="#ffcf8a" opacity=".85"><rect x="78" y="752" width="3" height="4"/><rect x="121" y="748" width="3" height="4"/><rect x="129" y="754" width="3" height="4"/><rect x="149" y="754" width="3" height="4"/></g>
+    </g>
+    <g id="gPines" fill="#120e28">
+      <path d="M440 770l14-60 14 60zM470 772l18-82 18 82zM502 772l12-50 12 50zM524 774l20-96 20 96zM558 774l14-58 14 58zM584 776l14-70 14 70z"/>
+      <path d="M-6 778l12-56 12 56zM16 780l16-74 16 74z"/>
+    </g>
+
+    <g class="g-wide">
+      <use href="#gPines" transform="translate(1200 0) scale(-1 1)"/><use href="#gPines" transform="scale(-1 1)"/>
+    </g>
+    <g class="g-clouds near" fill="#ffd8c4" opacity=".55">
+      <path d="M120 390c20-16 52-16 70-2 14-12 40-12 54 2 16-2 30 4 34 14H108c-2-7 2-12 12-14z"/>
+      <path d="M430 360c14-10 34-10 46-2 10-8 26-8 36 2 10-2 20 3 24 10H422c-2-5 2-8 8-10z"/>
+    </g>
+    <g class="g-birds" fill="none" stroke="#1d1640" stroke-width="2" stroke-linecap="round">
+      <path d="M0 0q6-6 12 0q6-6 12 0"/><path d="M30 -14q5-5 10 0q5-5 10 0"/><path d="M16 18q4-4 8 0q4-4 8 0"/>
+    </g>
+
+    <rect x="-700" width="2000" height="1000" fill="url(#gShade)"/>
+    <rect x="-700" width="2000" height="1000" filter="url(#gGrain)"/>
+  </svg>
+
+  <div class="g-top"><div class="g-brand">3000</div><div class="g-rule"></div></div>
   <div class="g-mid">
     <div class="g-spin" aria-label="Cargando"></div>
     <button class="g-pill" id="gateCreate"><svg class="i"><use href="#i-face"/></svg>Crear passkey</button>
