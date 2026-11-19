@@ -85,9 +85,10 @@ const AUTH = (() => {
     const x = a.x, y = a.y, w = b.x - a.x, h = b.y - a.y, rx = h / 2, set = (id, o) => { const el = document.getElementById(id); for (const k in o) el.setAttribute(k, o[k]); };
     const box = {x, y, width: w, height: h, rx};
     set('gLensClipR', box); set('gLensVeil', box); set('gLensGlow', box); set('gLensRim', box);
-    set('gLensShadow', {x: x + w * .04, y: y + h * .18, width: w * .92, height: h, rx});
+    set('gLensShadow', {x: x - .5, y: y - .5, width: w + 1, height: h + 1, rx: rx + .5});
     set('gLensF', {x: x - 2, y: y - 2, width: w + 4, height: h + 4});
     const url = lensMap(Math.round(br.width * 2), Math.round(br.height * 2));
+    set('gLensRim', {x: x + .6, y: y + .6, width: w - 1.2, height: h - 1.2, rx: rx - .6});
     set('gLensMap', Object.assign({x, y, width: w, height: h}, url ? {href: url} : {}));
     const cx = x + w / 2, cy = y + h / 2;   // slight overall magnification, like looking through a thick pane
     set('gLensUse', {transform: `translate(${cx} ${cy}) scale(1.05) translate(${-cx} ${-cy})`});
