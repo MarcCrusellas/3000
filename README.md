@@ -16,7 +16,7 @@ Personal language-learning site. For now it's a small test: sign in with a passk
 
 1. **Cloudflare**: open *Workers & Pages* once so the account gets its `workers.dev` subdomain.
 2. **Cloudflare API token**: *My Profile → API Tokens → Create Token → "Edit Cloudflare Workers"* template.
-3. **GitHub secrets** in this repo (*Settings → Secrets and variables → Actions*):
+3. **GitHub secrets** in the `github-pages` environment (*Settings → Environments → github-pages*):
    - `CLOUDFLARE_API_TOKEN`: the token from step 2
    - `CLOUDFLARE_ACCOUNT_ID`: on the Workers & Pages overview page
 4. **GitHub Pages**: *Settings → Pages → Source: GitHub Actions*.
