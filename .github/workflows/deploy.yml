@@ -49,6 +49,9 @@ jobs:
         run: |
           url=$(scripts/worker-url.sh)
           echo "window.API_BASE = '$url';" > site/config.js
+          # Cache-busting: each deploy loads fresh JS/CSS instead of what the phone cached
+          v=${GITHUB_SHA::7}
+          sed -i -E "s#(src|href)=\"(js/[^\"]+\.js|css/[^\"]+\.css|config\.js)\"#\1=\"\2?v=$v\"#g" site/index.html
           echo "Worker: $url" >> "$GITHUB_STEP_SUMMARY"
 
       - uses: actions/configure-pages@v5
