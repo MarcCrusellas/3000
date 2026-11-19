@@ -46,13 +46,65 @@ const AUTH = (() => {
     const a = document.getElementById('gArt');
     if (a) a.setAttribute('preserveAspectRatio', innerWidth / innerHeight > 0.6 ? 'xMidYMid meet' : 'xMidYMid slice');
   }
-  addEventListener('resize', fitArt); fitArt();
+  addEventListener('resize', () => { fitArt(); placeLens(); }); fitArt();
+
+  /* Liquid glass: the lens is drawn inside the painting, right under the visible button.
+     A displacement map bends the landscape near the rim (stronger toward the edge, like a thick
+     glass lip) and the three colour channels bend by slightly different amounts, which gives the
+     thin rainbow fringe at the edge. */
+  let mapKey = '';
+  function lensMap(w, h) {
+    const k = w + 'x' + h; if (k === mapKey) return null; mapKey = k;
+    const c = document.createElement('canvas'); c.width = w; c.height = h;
+    const g = c.getContext('2d'), img = g.createImageData(w, h), d = img.data;
+    const r = h / 2, edge = h * 0.42;
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+      const cx = Math.min(Math.max(x + .5, r), w - r), vx = x + .5 - cx, vy = y + .5 - r, len = Math.hypot(vx, vy) || 1;
+      const inside = r - len;                                   // distance from the rim, px
+      const t = Math.max(0, Math.min(1, 1 - inside / edge));     // 1 at the rim, 0 in the flat middle
+      const m = t * t * (3 - 2 * t);                             // smooth falloff
+      const i = (y * w + x) * 4;
+      d[i] = 128 - (vx / len) * m * 127;                         // sample toward the middle: rim magnifies
+      d[i + 1] = 128 - (vy / len) * m * 127;
+      d[i + 2] = 128; d[i + 3] = 255;
+    }
+    g.putImageData(img, 0, 0);
+    return c.toDataURL();
+  }
+  function placeLens() {
+    const art = document.getElementById('gArt'), lens = document.getElementById('gLens'), g = document.getElementById('gate');
+    if (!art || !lens || !g) return;
+    const btn = g.dataset.view === 'new' ? document.getElementById('gateCreate') : g.dataset.view === 'signin' ? document.getElementById('gateLogin') : null;
+    const br = btn && btn.getBoundingClientRect();
+    if (!br || !br.width) { lens.style.display = 'none'; return; }
+    const m = art.getScreenCTM(); if (!m) return;
+    const inv = m.inverse(), pt = art.createSVGPoint();
+    pt.x = br.left; pt.y = br.top; const a = pt.matrixTransform(inv);
+    pt.x = br.right; pt.y = br.bottom; const b = pt.matrixTransform(inv);
+    const x = a.x, y = a.y, w = b.x - a.x, h = b.y - a.y, rx = h / 2, set = (id, o) => { const el = document.getElementById(id); for (const k in o) el.setAttribute(k, o[k]); };
+    const box = {x, y, width: w, height: h, rx};
+    set('gLensClipR', box); set('gLensVeil', box); set('gLensGlow', box); set('gLensRim', box);
+    set('gLensShadow', {x: x + w * .04, y: y + h * .18, width: w * .92, height: h, rx});
+    set('gLensF', {x: x - 2, y: y - 2, width: w + 4, height: h + 4});
+    const url = lensMap(Math.round(br.width * 2), Math.round(br.height * 2));
+    set('gLensMap', Object.assign({x, y, width: w, height: h}, url ? {href: url} : {}));
+    const cx = x + w / 2, cy = y + h / 2;   // slight overall magnification, like looking through a thick pane
+    set('gLensUse', {transform: `translate(${cx} ${cy}) scale(1.05) translate(${-cx} ${-cy})`});
+    lens.style.display = '';
+  }
+  ['gateCreate', 'gateLogin'].forEach(id => {
+    const b = document.getElementById(id); if (!b) return;
+    const on = () => document.getElementById('gLens').classList.add('press'), off = () => document.getElementById('gLens').classList.remove('press');
+    b.addEventListener('pointerdown', on); ['pointerup', 'pointerleave', 'pointercancel'].forEach(e => b.addEventListener(e, off));
+  });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(placeLens);
 
   function gate(view) {
     const g = document.getElementById('gate');
     if (!g) return;
     g.dataset.view = view || '';
     document.documentElement.classList.toggle('locked', !!view);
+    requestAnimationFrame(placeLens);
   }
   function gateMsg(t) { const m = document.getElementById('gateMsg'); if (m) { m.textContent = t; m.classList.add('on'); clearTimeout(gateMsg.t); gateMsg.t = setTimeout(() => m.classList.remove('on'), 3000); } }
 

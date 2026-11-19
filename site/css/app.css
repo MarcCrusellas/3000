@@ -451,28 +451,20 @@ html.locked #gate { display: flex; }
 .g-rule { width: 54px; height: 3px; border-radius: 3px; margin-top: 18px; background: linear-gradient(90deg, #ffd59a, #e07a86);
   animation: gGrow 1.2s .5s cubic-bezier(.2, .8, .2, 1) both; transform-origin: center; }
 .g-mid { display: flex; align-items: center; justify-content: center; min-height: 64px; margin-bottom: 17vh; }
-.g-pill, .g-spin { animation: gRise 1.2s .7s cubic-bezier(.2, .8, .2, 1) both; }
+.g-pill, .g-spin { animation: gFade 1.2s .7s ease both; }
 .g-pill, .g-spin { display: none; }
 #gate[data-view=loading] .g-spin, #gate[data-view=new] #gateCreate, #gate[data-view=signin] #gateLogin { display: inline-flex; }
-.g-pill { position: relative; isolation: isolate; overflow: hidden; align-items: center; gap: 10px; height: 62px; padding: 0 36px; border-radius: 999px;
-  color: #fff; font: 600 18px/1 var(--body); letter-spacing: .01em; text-shadow: 0 1px 2px rgba(20, 10, 50, .35);
-  background: linear-gradient(180deg, rgba(255, 255, 255, .26), rgba(255, 255, 255, .08) 55%, rgba(255, 255, 255, .14));
-  -webkit-backdrop-filter: blur(18px) saturate(190%) brightness(1.08); backdrop-filter: blur(18px) saturate(190%) brightness(1.08);
-  border: 1px solid rgba(255, 255, 255, .38);
-  box-shadow: inset 0 1.5px 0 rgba(255, 255, 255, .75), inset 0 -1px 0 rgba(255, 255, 255, .22),
-    inset 0 0 18px rgba(255, 255, 255, .14), inset 0 -10px 18px rgba(255, 200, 170, .12),
-    0 10px 30px rgba(10, 6, 30, .35), 0 2px 6px rgba(10, 6, 30, .2);
-  transition: transform .35s cubic-bezier(.3, 1.6, .5, 1), box-shadow .3s ease, background .3s ease, opacity .2s; }
-/* specular rim at the top, like light caught in the glass edge */
-.g-pill::before { content: ""; position: absolute; inset: 1px 10% auto; height: 46%; border-radius: 999px 999px 40% 40%; z-index: -1;
-  background: linear-gradient(180deg, rgba(255, 255, 255, .55), rgba(255, 255, 255, 0)); opacity: .55; pointer-events: none; }
-/* slow light sweep across the glass */
-.g-pill::after { content: ""; position: absolute; top: -20%; bottom: -20%; left: -40%; width: 35%; z-index: -1; pointer-events: none;
-  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .35), transparent); transform: skewX(-18deg) translateX(-120%);
-  animation: gSweep 5.5s 1.6s ease-in-out infinite; }
-.g-pill:active { transform: scale(.94); background: linear-gradient(180deg, rgba(255, 255, 255, .34), rgba(255, 255, 255, .14) 55%, rgba(255, 255, 255, .2)); }
+.g-pill { position: relative; align-items: center; gap: 10px; height: 62px; padding: 0 38px; border-radius: 999px;
+  background: transparent; border: 0; color: #fff; font: 600 18px/1 var(--body); letter-spacing: .01em;
+  text-shadow: 0 1px 10px rgba(10, 5, 30, .55), 0 0 2px rgba(10, 5, 30, .35);
+  transition: transform .45s cubic-bezier(.3, 1.7, .4, 1), opacity .2s; }
+.g-pill:active { transform: scale(.95); }
 .g-pill:disabled { opacity: .6; }
-.g-pill svg.i { width: 24px; height: 24px; filter: drop-shadow(0 1px 2px rgba(20, 10, 50, .3)); }
+.g-pill svg.i { width: 24px; height: 24px; filter: drop-shadow(0 1px 6px rgba(10, 5, 30, .5)); }
+/* the glass itself lives in the painting (#gLens), so it can bend the landscape behind it */
+.g-lens { transform-box: fill-box; transform-origin: center; transition: transform .45s cubic-bezier(.3, 1.7, .4, 1);
+  animation: gFade 1.2s .7s ease both; }
+.g-lens.press { transform: scale(.95); }
 .g-spin { width: 30px; height: 30px; border-radius: 50%; border: 2.5px solid rgba(255, 255, 255, .25); border-top-color: #ffd59a; animation: gsp .8s linear infinite !important; }
 .g-msg { text-align: center; color: #ffd0c8; font-size: 14px; min-height: 20px; margin-top: 14px; opacity: 0; transition: opacity .2s; }
 .g-msg.on { opacity: 1; }
@@ -490,7 +482,7 @@ html.locked #gate { display: flex; }
 @keyframes gsp { to { transform: rotate(360deg); } }
 @keyframes gRise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 @keyframes gGrow { from { opacity: 0; transform: scaleX(0); } to { opacity: 1; transform: none; } }
-@keyframes gSweep { 0%, 55% { transform: skewX(-18deg) translateX(-120%); } 100% { transform: skewX(-18deg) translateX(520%); } }
+@keyframes gFade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes gBreath { 50% { transform: scale(1.06); opacity: .92; } }
 @keyframes gTwinkle { 50% { opacity: .25; } }
 @keyframes gDrift { from { transform: translateX(-40px); } to { transform: translateX(40px); } }
