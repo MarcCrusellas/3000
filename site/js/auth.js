@@ -88,17 +88,25 @@ const AUTH = (() => {
     set('gLensShadow', {x: x - .5, y: y - .5, width: w + 1, height: h + 1, rx: rx + .5});
     set('gLensF', {x: x - 2, y: y - 2, width: w + 4, height: h + 4});
     const url = lensMap(Math.round(br.width * 2), Math.round(br.height * 2));
-    set('gLensRim', {x: x + .6, y: y + .6, width: w - 1.2, height: h - 1.2, rx: rx - .6});
+    set('gLensRim', {x: x + .5, y: y + .5, width: w - 1, height: h - 1, rx: rx - .5}); set('gLensRimB', {x: x + .5, y: y + .5, width: w - 1, height: h - 1, rx: rx - .5});
     set('gLensRimIn', {x: x + 3, y: y + 3, width: w - 6, height: h - 6, rx: rx - 3});
     set('gLensMap', Object.assign({x, y, width: w, height: h}, url ? {href: url} : {}));
     const cx = x + w / 2, cy = y + h / 2;   // slight overall magnification, like looking through a thick pane
     set('gLensUse', {transform: `translate(${cx} ${cy}) scale(1.03) translate(${-cx} ${-cy})`});
     lens.style.display = '';
   }
+  // Touch: the glass swells a little and lights up under the finger, then springs back (iOS-style).
   ['gateCreate', 'gateLogin'].forEach(id => {
     const b = document.getElementById(id); if (!b) return;
-    const on = () => document.getElementById('gLens').classList.add('press'), off = () => document.getElementById('gLens').classList.remove('press');
-    b.addEventListener('pointerdown', on); ['pointerup', 'pointerleave', 'pointercancel'].forEach(e => b.addEventListener(e, off));
+    const lens = () => document.getElementById('gLens'), spot = () => document.getElementById('gLensSpot');
+    const move = e => {
+      const art = document.getElementById('gArt'), m = art && art.getScreenCTM(); if (!m) return;
+      const pt = art.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY; const u = pt.matrixTransform(m.inverse());
+      spot().setAttribute('cx', u.x); spot().setAttribute('cy', u.y);
+    };
+    b.addEventListener('pointerdown', e => { move(e); lens().classList.add('press'); spot().setAttribute('opacity', '1'); });
+    b.addEventListener('pointermove', e => { if (lens().classList.contains('press')) move(e); });
+    ['pointerup', 'pointerleave', 'pointercancel'].forEach(ev => b.addEventListener(ev, () => { lens().classList.remove('press'); spot().setAttribute('opacity', '0'); }));
   });
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(placeLens);
 

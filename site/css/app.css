@@ -461,13 +461,14 @@ html.locked #gate { display: flex; }
   background: transparent; border: 0; color: #fff; font: 600 18px/1 var(--body); letter-spacing: .01em;
   text-shadow: 0 1px 10px rgba(10, 5, 30, .55), 0 0 2px rgba(10, 5, 30, .35);
   transition: transform .45s cubic-bezier(.3, 1.7, .4, 1), opacity .2s; }
-.g-pill:active { transform: scale(.95); }
+.g-pill:active { transform: scale(1.04); }
 .g-pill:disabled { opacity: .6; }
 .g-pill svg.i { width: 24px; height: 24px; filter: drop-shadow(0 1px 6px rgba(10, 5, 30, .5)); }
 /* the glass itself lives in the painting (#gLens), so it can bend the landscape behind it */
 .g-lens { transform-box: fill-box; transform-origin: center; transition: transform .45s cubic-bezier(.3, 1.7, .4, 1);
   animation: gFade 1.2s .7s ease both; }
-.g-lens.press { transform: scale(.95); }
+.g-lens.press { transform: scale(1.04); }
+#gLensSpot { transition: opacity .35s ease; }
 .g-spin { width: 30px; height: 30px; border-radius: 50%; border: 2.5px solid rgba(255, 255, 255, .25); border-top-color: #ffd59a; animation: gsp .8s linear infinite !important; }
 .g-msg { text-align: center; color: #ffd0c8; font-size: 14px; min-height: 20px; margin-top: 14px; opacity: 0; transition: opacity .2s; }
 .g-msg.on { opacity: 1; }

@@ -1,0 +1,102 @@
+/* ---------- 3000 · glass layer ----------
+   A middle point between iOS (Liquid Glass) and the original German 3000 look.
+   Content (cards, lists, text) stays solid like before; the controls become glass:
+   floating tab bar, sheets, segmented controls, buttons, search, toasts.
+   Glass recipe: translucent fill + backdrop blur + a thin glint that fades,
+   strongest at the top, softer at the bottom (light from above and below). */
+
+:root {
+  --g-fill: rgba(255, 255, 255, .55);
+  --g-fill-2: rgba(255, 255, 255, .72);
+  --g-edge: rgba(255, 255, 255, .7);
+  --g-edge-dim: rgba(27, 36, 34, .07);
+  --g-top: rgba(255, 255, 255, .9);
+  --g-bot: rgba(255, 255, 255, .45);
+  --g-shadow: 0 10px 34px rgba(30, 40, 60, .14), 0 1px 3px rgba(30, 40, 60, .08);
+  --g-thumb: #fff;
+  --g-track: rgba(118, 118, 128, .12);
+  --g-thumb-ink: var(--ink);
+  --bg-glow-1: rgba(122, 104, 210, .16);
+  --bg-glow-2: rgba(232, 138, 134, .14);
+  --bg-glow-3: rgba(47, 91, 211, .10);
+}
+:root[data-theme=dark] {
+  --g-fill: rgba(40, 46, 48, .62);
+  --g-fill-2: rgba(36, 42, 44, .78);
+  --g-edge: rgba(255, 255, 255, .1);
+  --g-edge-dim: rgba(0, 0, 0, .35);
+  --g-top: rgba(255, 255, 255, .26);
+  --g-bot: rgba(255, 255, 255, .1);
+  --g-shadow: 0 12px 40px rgba(0, 0, 0, .45), 0 1px 3px rgba(0, 0, 0, .3);
+  --g-thumb: rgba(255, 255, 255, .17);
+  --g-track: rgba(118, 118, 128, .24);
+  --g-thumb-ink: var(--ink);
+  --bg-glow-1: rgba(110, 90, 200, .20);
+  --bg-glow-2: rgba(224, 122, 134, .12);
+  --bg-glow-3: rgba(110, 147, 242, .10);
+}
+
+/* soft colour behind everything, so the glass has something to show */
+body::before {
+  content: ""; position: fixed; inset: -10vmax; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(42vmax 34vmax at 12% 8%, var(--bg-glow-1), transparent 70%),
+    radial-gradient(38vmax 30vmax at 92% 30%, var(--bg-glow-2), transparent 70%),
+    radial-gradient(46vmax 36vmax at 40% 96%, var(--bg-glow-3), transparent 70%);
+}
+
+/* the shared glass material */
+nav.tabs .in, .sheet, .toast, .seg, .search, .gpick select, .btn:not(.primary), .ib, .ctrls .sk, .menu {
+  background: var(--g-fill);
+  -webkit-backdrop-filter: blur(28px) saturate(180%); backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid var(--g-edge);
+  box-shadow: inset 0 1px 0 var(--g-top), inset 0 -1px 0 var(--g-bot), var(--g-shadow);
+}
+
+/* ---------- floating tab bar ---------- */
+nav.tabs { background: none; border: 0; padding: 0 14px calc(10px + env(safe-area-inset-bottom)); pointer-events: none; }
+nav.tabs .in { pointer-events: auto; max-width: 520px; height: 66px; border-radius: 33px; padding: 5px; gap: 2px; }
+nav.tabs a { height: 56px; border-radius: 28px; transition: color .2s, background .25s; }
+nav.tabs a.on { background: var(--g-thumb); box-shadow: inset 0 1px 0 var(--g-top), 0 1px 4px rgba(0, 0, 0, .08); }
+:root:not([data-theme=dark]) nav.tabs a.on { color: var(--acc); }
+.badge { top: 4px; }
+main { padding-bottom: 130px; }
+.toast { bottom: calc(92px + env(safe-area-inset-bottom)); color: var(--ink); font-weight: 500; }
+.toast button { color: var(--acc); }
+
+/* ---------- sheets: floating glass cards ---------- */
+.sheet {
+  left: 8px; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom)); border-radius: 32px;
+  background: var(--g-fill-2); padding-bottom: 22px; max-height: calc(86vh - env(safe-area-inset-bottom));
+}
+.scrim { background: rgba(0, 0, 0, .22); }
+.grab { width: 38px; height: 5px; border-radius: 3px; background: currentColor; opacity: .18; }
+.srow { border-bottom-color: color-mix(in srgb, var(--line) 70%, transparent); }
+
+/* ---------- segmented controls: one track, a raised thumb ---------- */
+.seg { display: inline-flex; flex-wrap: wrap; gap: 2px; padding: 3px; border-radius: 999px; background: var(--g-track); border-color: transparent; box-shadow: inset 0 1px 2px rgba(0, 0, 0, .06); -webkit-backdrop-filter: none; backdrop-filter: none; }
+.seg button { background: transparent; border: 0; min-height: 34px; padding: 5px 14px; border-radius: 999px; transition: background .25s, color .2s; }
+.seg button.on { background: var(--g-thumb); color: var(--g-thumb-ink); box-shadow: 0 2px 8px rgba(0, 0, 0, .12), inset 0 1px 0 var(--g-top); }
+.seg.fill { display: flex; }
+#themeSeg button { padding: 5px 11px; }
+
+/* ---------- buttons ---------- */
+.btn:not(.primary), .ib, .ctrls .sk { color: var(--ink); }
+.btn.primary { box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28), 0 6px 18px rgba(0, 0, 0, .18); }
+.btn, .ib, .ctrls .sk, .seg button, nav.tabs a { transition: transform .35s cubic-bezier(.3, 1.6, .5, 1), background .25s, color .2s; }
+.btn:active, .ib:active, .ctrls .sk:active, .seg button:active { transform: scale(1.06); }
+.play { box-shadow: inset 0 1.5px 0 rgba(255, 255, 255, .35), inset 0 -1px 0 rgba(255, 255, 255, .12), 0 14px 34px rgba(0, 0, 0, .22); transition: transform .35s cubic-bezier(.3, 1.6, .5, 1); }
+.play:active { transform: scale(1.05); }
+.ctrls .sk { width: 56px; height: 56px; }
+
+/* ---------- inputs ---------- */
+.search { min-height: 46px; }
+.search:focus { border-color: color-mix(in srgb, var(--acc) 60%, transparent); }
+
+/* ---------- content cards: same as before, slightly rounder, a hint of light on top ---------- */
+.sec, .now, .list, .tile { border-radius: 22px; box-shadow: inset 0 1px 0 color-mix(in srgb, var(--ink) 5%, transparent); }
+.tile { border-radius: 18px; }
+
+@media (prefers-reduced-transparency: reduce) {
+  nav.tabs .in, .sheet, .toast, .seg, .search, .gpick select, .btn:not(.primary), .ib, .ctrls .sk, .menu { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--card); }
+}
