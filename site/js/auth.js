@@ -89,9 +89,10 @@ const AUTH = (() => {
     set('gLensF', {x: x - 2, y: y - 2, width: w + 4, height: h + 4});
     const url = lensMap(Math.round(br.width * 2), Math.round(br.height * 2));
     set('gLensRim', {x: x + .6, y: y + .6, width: w - 1.2, height: h - 1.2, rx: rx - .6});
+    set('gLensRimIn', {x: x + 3, y: y + 3, width: w - 6, height: h - 6, rx: rx - 3});
     set('gLensMap', Object.assign({x, y, width: w, height: h}, url ? {href: url} : {}));
     const cx = x + w / 2, cy = y + h / 2;   // slight overall magnification, like looking through a thick pane
-    set('gLensUse', {transform: `translate(${cx} ${cy}) scale(1.05) translate(${-cx} ${-cy})`});
+    set('gLensUse', {transform: `translate(${cx} ${cy}) scale(1.03) translate(${-cx} ${-cy})`});
     lens.style.display = '';
   }
   ['gateCreate', 'gateLogin'].forEach(id => {
