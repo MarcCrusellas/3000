@@ -231,9 +231,20 @@ $('#resetBtn').onclick = () => {
 };
 function stateText() { return 'G3000:' + btoa(unescape(encodeURIComponent(JSON.stringify(S)))); }
 function readStateText(x) {
-  x = (x || '').trim(); let d = null;
-  try { d = JSON.parse(x.startsWith('G3000:') ? decodeURIComponent(escape(atob(x.slice(6)))) : x); } catch (e) {}
-  return d && typeof d === 'object' && Array.isArray(d.sel) && d.known && typeof d.known === 'object' ? d : null;
+  // Tolerant: finds the G3000: block anywhere in the paste and ignores spaces or line breaks added by the clipboard.
+  x = String(x || ''); let d = null; readStateText.why = '';
+  const at = x.indexOf('G3000:');
+  if (at >= 0) {
+    const b64 = x.slice(at + 6).replace(/\s+/g, '').match(/^[A-Za-z0-9+/=]*/)[0];
+    try { d = JSON.parse(decodeURIComponent(escape(atob(b64)))); } catch (e) { readStateText.why = 'Texto incompleto (' + b64.length + ' caracteres)'; }
+  } else {
+    const t = x.trim();
+    if (!t) readStateText.why = 'El texto está vacío';
+    else { try { d = JSON.parse(t); } catch (e) { readStateText.why = 'No empieza por G3000: (' + t.length + ' caracteres)'; } }
+  }
+  const ok = d && typeof d === 'object' && Array.isArray(d.sel) && d.known && typeof d.known === 'object';
+  if (d && !ok) readStateText.why = 'No es un progreso de German 3000';
+  return ok ? d : null;
 }
 $('#cpBtn').onclick = () => {
   const txt = stateText();
