@@ -15,6 +15,7 @@
   --g-shadow: 0 10px 34px rgba(30, 40, 60, .14), 0 1px 3px rgba(30, 40, 60, .08);
   --g-thumb: #fff;
   --g-track: rgba(118, 118, 128, .12);
+  --g-solid: #f7f8f8;
   --g-thumb-ink: var(--ink);
   --bg-glow-1: rgba(122, 104, 210, .16);
   --bg-glow-2: rgba(232, 138, 134, .14);
@@ -30,6 +31,7 @@
   --g-shadow: 0 12px 40px rgba(0, 0, 0, .45), 0 1px 3px rgba(0, 0, 0, .3);
   --g-thumb: rgba(255, 255, 255, .17);
   --g-track: rgba(118, 118, 128, .24);
+  --g-solid: #212728;
   --g-thumb-ink: var(--ink);
   --bg-glow-1: rgba(110, 90, 200, .20);
   --bg-glow-2: rgba(224, 122, 134, .12);
@@ -65,20 +67,21 @@ main { padding-bottom: 130px; }
 nav.tabs .in { position: relative; touch-action: none; -webkit-user-select: none; user-select: none; }
 nav.tabs a { z-index: 1; -webkit-touch-callout: none; -webkit-user-drag: none; }
 nav.tabs a svg.i, nav.tabs a .nl { transform: scale(var(--mag, 1)); transform-origin: 50% 70%; }
-.tab-drop { position: absolute; top: 5px; left: 0; height: 56px; border-radius: 28px; z-index: 0; pointer-events: none; will-change: transform; transform-origin: 50% 50%; }
-.tab-drop .base, .tab-drop .lens { position: absolute; inset: 0; border-radius: inherit; }
-.tab-drop .base { background: var(--g-thumb); box-shadow: inset 0 1px 0 var(--g-top), 0 1px 4px rgba(0, 0, 0, .08); opacity: calc(1 - var(--lift, 0)); }
-.tab-drop .lens { opacity: var(--lift, 0); background: rgba(0, 0, 0, .06);
-  box-shadow: 0 0 0 .8px rgba(0, 0, 0, .7), inset 0 0 0 .6px rgba(255, 255, 255, .1), 0 14px 30px rgba(0, 0, 0, .45); }
-/* the thick glass edge, drawn with shading only: Safari renders a backdrop-filter nested inside the
-   tab bar's own backdrop-filter as black, so the drop must not use one */
-.tab-drop .lens::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
-  box-shadow: inset 0 0 0 5px rgba(0, 0, 0, .14), inset 0 0 12px 2px rgba(0, 0, 0, .32), inset 0 1px 0 6px rgba(255, 255, 255, .03); }
-/* thin colour fringe on the rim, mostly colour, little white */
-.tab-drop .lens::before { content: ""; position: absolute; inset: 1px; border-radius: inherit; padding: 1.2px; z-index: 1;
-  background: conic-gradient(from 200deg, rgba(255, 255, 255, .35), rgba(120, 190, 255, .55), rgba(255, 140, 205, .45), transparent 34%, transparent 58%, rgba(140, 255, 200, .4), rgba(255, 210, 140, .35), rgba(255, 255, 255, .35));
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
-  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); }
+.tab-pill, .tab-drop { position: absolute; top: 5px; left: 0; height: 56px; border-radius: 28px; pointer-events: none; will-change: transform; transform-origin: 50% 50%; }
+.tab-bg { position: absolute; inset: 0; border-radius: inherit; background: var(--g-solid); z-index: -1; pointer-events: none; }
+.tab-pill { z-index: 0; background: var(--g-thumb); box-shadow: inset 0 1px 0 var(--g-top), 0 1px 4px rgba(0, 0, 0, .08); }
+.tab-drop { z-index: 3; }
+.tab-drop .lens { position: absolute; inset: 0; border-radius: inherit; }
+/* the lens has no edge of its own: through it you see the bar magnified in the middle
+   and compressed toward the rim, the way a curved glass bends what's behind it */
+.tab-drop .lens { opacity: var(--lift, 0); overflow: hidden; background: var(--g-solid); font-style: normal; }
+.tab-drop .lens .lv.core { background: var(--g-solid); -webkit-mask: radial-gradient(closest-side, #000 74%, transparent 99%); mask: radial-gradient(closest-side, #000 74%, transparent 99%); }
+.tab-drop .lens .lv.rim { opacity: .9; }
+.tab-drop .lens .lv { position: absolute; top: -5px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; padding: 5px; height: 66px; box-sizing: border-box; transform-origin: 0 0; }
+.tab-drop .lens .lv > span { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; height: 56px; color: var(--muted); font-size: 11.5px; font-weight: 500; position: relative; }
+.tab-drop .lens .lv > span.on { color: var(--ink); }
+:root:not([data-theme=dark]) .tab-drop .lens .lv > span.on { color: var(--acc); }
+.tab-drop .lens .lv svg.i { width: 24px; height: 24px; }
 .toast { bottom: calc(92px + env(safe-area-inset-bottom)); color: var(--ink); font-weight: 500; }
 .toast button { color: var(--acc); }
 
@@ -125,3 +128,10 @@ nav.tabs a svg.i, nav.tabs a .nl { transform: scale(var(--mag, 1)); transform-or
 nav.tabs .btn, nav.tabs .ib, .menu .btn, .menu .ib {
   -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--g-track);
 }
+
+/* with LiquidGlass running, the library's canvas is the lens: it shows only while the drop is lifted,
+   over a solid backing so the real icons underneath don't show through */
+.lg-on .tab-drop > canvas { opacity: var(--lift, 0); }
+.lg-on .tab-drop .lens { display: none; }
+.lg-on .tab-drop::before { content: ""; position: absolute; inset: 0; border-radius: inherit; background: var(--g-solid); opacity: var(--lift, 0); z-index: -2; }
+.lg-on .tab-drop { isolation: isolate; }

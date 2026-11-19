@@ -1,47 +1,78 @@
 'use strict';
 /* ---------- liquid tab drop ----------
-   The selected tab is a drop of glass that moves on a spring:
-   - tap another tab: it slides there, stretching in the direction of travel and settling with a little wobble;
-   - press and drag along the bar: it lifts out of the bar like a lens, follows the finger,
-     magnifies the icon under it, and drops into the nearest tab on release.
+   Two pieces move together on one spring:
+   - .tab-pill: the resting selection, under the icons;
+   - .tab-drop: the glass, above the icons, only visible while lifted. With LiquidGlass running
+     (16-lens.mjs) the library draws it as real refracting glass; otherwise a simple magnifier.
+   Tap another tab: the selection slides there, stretching in the direction of travel.
+   Press and drag along the bar: the glass lifts out of the bar, follows the finger, magnifies
+   what's under it and drops into the nearest tab on release.
    Tapping the tab that's already selected still opens its settings (handled in 12-events). */
 (function () {
   const bar = document.querySelector('nav.tabs .in');
   if (!bar) return;
   const tabs = [...bar.querySelectorAll('a[data-v]')];
   tabs.forEach(t => t.setAttribute('draggable', 'false'));
+
+  // inline the icons (<use> references can't be captured for the glass)
+  tabs.forEach(t => t.querySelectorAll('svg use').forEach(u => {
+    const sym = document.querySelector(u.getAttribute('href'));
+    const svg = u.closest('svg');
+    if (!sym || !svg) return;
+    svg.setAttribute('viewBox', sym.getAttribute('viewBox') || '0 0 24 24');
+    const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    g.innerHTML = sym.innerHTML;
+    u.replaceWith(g);
+  }));
+
+  const pill = document.createElement('div');
+  pill.className = 'tab-pill'; pill.setAttribute('aria-hidden', 'true');
+  bar.prepend(pill);
+  // the bar's colour as a layer of its own: the glass library never captures its root, only children
+  const bg = document.createElement('div');
+  bg.className = 'tab-bg'; bg.setAttribute('aria-hidden', 'true');
+  bar.prepend(bg);
   const drop = document.createElement('div');
   drop.className = 'tab-drop'; drop.setAttribute('aria-hidden', 'true');
-  drop.innerHTML = '<span class="base"></span><i class="lens"></i>';
-  bar.prepend(drop);
+  drop.innerHTML = '<span class="lens"><span class="lv rim"></span><span class="lv core"></span></span>';
+  bar.append(drop);
+  const lvs = [...drop.querySelectorAll('.lv')];
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   let G = null, x = 0, v = 0, target = 0, lift = 0, liftT = 0, raf = 0, last = 0, drag = null, swallowClick = false;
 
   function geo() {
     const b = bar.getBoundingClientRect();
-    const xs = tabs.map(t => t.getBoundingClientRect().left - b.left);
-    return {b, w: tabs[0].getBoundingClientRect().width, xs};
+    return {b, w: tabs[0].getBoundingClientRect().width, xs: tabs.map(t => t.getBoundingClientRect().left - b.left)};
   }
   const current = () => Math.max(0, tabs.findIndex(t => t.classList.contains('on')));
   const clamp = (n, a, b) => Math.min(b, Math.max(a, n));
 
+  // fallback lens (no WebGL): a copy of the bar, magnified in the middle, compressed at the rim
+  function fillLens() {
+    const html = tabs.map(t => '<span class="' + (t.classList.contains('on') ? 'on' : '') + '">' + t.innerHTML + '</span>').join('');
+    const w = bar.getBoundingClientRect().width + 'px';
+    lvs.forEach(l => { l.innerHTML = html; l.style.width = w; });
+  }
+
   function render() {
-    const s = Math.min(.42, Math.abs(v) / 2400);              // stretch from speed
-    const L = lift;
-    drop.style.width = G.w + 'px';
-    drop.style.transform = `translate3d(${x}px,0,0) scale(${1 + s + L * .14}, ${1 - s * .4 + L * .24})`;
+    const s = Math.min(.42, Math.abs(v) / 2400), L = lift;
+    pill.style.width = G.w + 'px';
+    pill.style.transform = `translate3d(${x}px,0,0) scale(${1 + s}, ${1 - s * .4})`;
+    pill.style.opacity = (1 - L).toFixed(3);
+    // the glass grows by size, not by scale: the glass library reads the layout box, a scale would throw it off
+    const dw = G.w * (1 + s + L * .24), dh = 56 * (1 - s * .4 + L * .3);
+    drop.style.width = dw + 'px'; drop.style.height = dh + 'px'; drop.style.borderRadius = dh / 2 + 'px';
+    drop.style.transform = `translate3d(${x - (dw - G.w) / 2}px,${-(dh - 56) / 2}px,0)`;
     drop.style.setProperty('--lift', L.toFixed(3));
-    const c = x + G.w / 2;                                    // magnify what's under the drop
-    tabs.forEach((t, i) => {
-      const d = Math.abs(G.xs[i] + G.w / 2 - c), k = Math.max(0, 1 - d / (G.w * .85));
-      t.style.setProperty('--mag', (1 + k * (L * .22 + s * .25)).toFixed(3));
-    });
+    const cx = x + G.w / 2, cy = 33, ox = -(x - (dw - G.w) / 2), oy = (dh - 56) / 2;
+    lvs[0].style.transform = `translate(${ox}px,${oy}px) translate(${cx}px,${cy}px) scale(.86) translate(${-cx}px,${-cy}px)`;
+    lvs[1].style.transform = `translate(${ox}px,${oy}px) translate(${cx}px,${cy}px) scale(1.12) translate(${-cx}px,${-cy}px)`;
   }
 
   function step(t) {
     const dt = Math.min(.032, (t - last) / 1000 || .016); last = t;
-    const k = drag ? 700 : 300, c = drag ? 40 : 20;           // spring: firm while dragging, bouncier when settling
+    const k = drag ? 700 : 300, c = drag ? 40 : 20;           // firm while dragging, bouncier when settling
     v += (-k * (x - target) - c * v) * dt; x += v * dt;
     lift += (liftT - lift) * Math.min(1, dt * (liftT > lift ? 18 : 9));
     render();
@@ -61,7 +92,7 @@
   bar.addEventListener('pointerdown', e => {
     if (e.button !== 0 || reduce) return;
     if (e.pointerType === 'mouse') e.preventDefault();      // no native link drag / text selection
-    G = geo();
+    G = geo(); fillLens();
     drag = {sx: e.clientX, moved: false};
     liftT = 1; kick();
     addEventListener('pointermove', onMove);
@@ -89,4 +120,7 @@
   bar.addEventListener('click', e => { if (swallowClick) { e.preventDefault(); e.stopImmediatePropagation(); swallowClick = false; } }, true);
 
   requestAnimationFrame(() => settle(true));
+  // the bar is hidden behind the sign-in screen: measure again once the app is shown
+  new MutationObserver(() => { if (!document.documentElement.classList.contains('locked')) requestAnimationFrame(() => settle(true)); })
+    .observe(document.documentElement, {attributes: true, attributeFilter: ['class']});
 })();
