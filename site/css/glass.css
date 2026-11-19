@@ -70,12 +70,10 @@ nav.tabs a svg.i, nav.tabs a .nl { transform: scale(var(--mag, 1)); transform-or
 .tab-drop .base { background: var(--g-thumb); box-shadow: inset 0 1px 0 var(--g-top), 0 1px 4px rgba(0, 0, 0, .08); opacity: calc(1 - var(--lift, 0)); }
 .tab-drop .lens { opacity: var(--lift, 0); background: rgba(0, 0, 0, .06);
   box-shadow: 0 0 0 .8px rgba(0, 0, 0, .7), inset 0 0 0 .6px rgba(255, 255, 255, .1), 0 14px 30px rgba(0, 0, 0, .45); }
-/* the thick glass edge: a ring that blurs, darkens and over-saturates what's under it, centre stays clear */
-.tab-drop .lens::after { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 8px;
-  background: radial-gradient(120% 140% at 50% 50%, transparent 55%, rgba(0, 0, 0, .28));
-  -webkit-backdrop-filter: blur(2.5px) saturate(190%) brightness(.78); backdrop-filter: blur(2.5px) saturate(190%) brightness(.78);
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
-  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); }
+/* the thick glass edge, drawn with shading only: Safari renders a backdrop-filter nested inside the
+   tab bar's own backdrop-filter as black, so the drop must not use one */
+.tab-drop .lens::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  box-shadow: inset 0 0 0 5px rgba(0, 0, 0, .14), inset 0 0 12px 2px rgba(0, 0, 0, .32), inset 0 1px 0 6px rgba(255, 255, 255, .03); }
 /* thin colour fringe on the rim, mostly colour, little white */
 .tab-drop .lens::before { content: ""; position: absolute; inset: 1px; border-radius: inherit; padding: 1.2px; z-index: 1;
   background: conic-gradient(from 200deg, rgba(255, 255, 255, .35), rgba(120, 190, 255, .55), rgba(255, 140, 205, .45), transparent 34%, transparent 58%, rgba(140, 255, 200, .4), rgba(255, 210, 140, .35), rgba(255, 255, 255, .35));
@@ -119,4 +117,11 @@ nav.tabs a svg.i, nav.tabs a .nl { transform: scale(var(--mag, 1)); transform-or
 
 @media (prefers-reduced-transparency: reduce) {
   nav.tabs .in, .sheet, .toast, .seg, .search, .gpick select, .btn:not(.primary), .ib, .ctrls .sk, .menu { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--card); }
+}
+
+/* no glass inside glass: Safari draws a nested backdrop-filter black. Controls inside a sheet,
+   the tab bar or a menu use a plain tinted fill instead. */
+.sheet .btn:not(.primary), .sheet .ib, .sheet .gpick select, .sheet .search,
+nav.tabs .btn, nav.tabs .ib, .menu .btn, .menu .ib {
+  -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--g-track);
 }
