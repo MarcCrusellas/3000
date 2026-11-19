@@ -78,7 +78,7 @@ $('#tl').onclick = e => {
   const a = b.dataset.act;
   if (a === 'tlx') sheet(false); else if (a === 'tlback') { TL.step = 0; tlRender(); } else if (a === 'tlgo') startFree();
   else if (a === 'psgo') {
-    const d = readStateText($('#psTa').value); if (!d) { toast('Ese texto no es un progreso válido'); return; }
+    const d = readStateText($('#psTa').value); if (!d) { toast(readStateText.why || 'Ese texto no es un progreso válido'); return; }
     S = Object.assign(defaults(), d); syncSel(); R.list = []; R.card = null; R.end = false; R.free = null; S.updated = Date.now(); if (store.mode === 'db') flush(); changed(); sheet(false); toast('Progreso cargado');
   }
 };
