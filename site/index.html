@@ -66,17 +66,20 @@
       <clipPath id="gLensClip" clipPathUnits="userSpaceOnUse"><rect id="gLensClipR" rx="0"/></clipPath>
       <filter id="gLensF" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
         <feImage id="gLensMap" preserveAspectRatio="none" result="map"/>
-        <feDisplacementMap in="SourceGraphic" in2="map" scale="22" xChannelSelector="R" yChannelSelector="G" result="bent"/>
-        <feGaussianBlur in="bent" stdDeviation="9" result="frost"/>
-        <feColorMatrix in="frost" type="saturate" values=".75" result="desat"/>
-        <feComponentTransfer in="desat"><feFuncR type="linear" slope=".72" intercept=".1"/><feFuncG type="linear" slope=".72" intercept=".1"/><feFuncB type="linear" slope=".72" intercept=".12"/></feComponentTransfer>
+        <feDisplacementMap in="SourceGraphic" in2="map" scale="30" xChannelSelector="R" yChannelSelector="G" result="bent"/>
+        <feGaussianBlur in="bent" stdDeviation="2.6" result="soft"/>
+        <feComponentTransfer in="soft"><feFuncR type="linear" slope=".9" intercept=".07"/><feFuncG type="linear" slope=".9" intercept=".07"/><feFuncB type="linear" slope=".9" intercept=".08"/></feComponentTransfer>
       </filter>
       <filter id="gSoft" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
-      <linearGradient id="gRimG" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset=".3" stop-color="#fff" stop-opacity=".22"/>
-        <stop offset=".6" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity=".6"/>
+      <linearGradient id="gRimG" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".18" stop-color="#fff" stop-opacity=".35"/>
+        <stop offset=".5" stop-color="#fff" stop-opacity=".06"/><stop offset=".82" stop-color="#fff" stop-opacity=".3"/><stop offset="1" stop-color="#fff" stop-opacity=".85"/>
       </linearGradient>
-      <linearGradient id="gSheenG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".04"/></linearGradient>
+      <linearGradient id="gRimIn" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".3" stop-color="#fff" stop-opacity="0"/>
+        <stop offset=".7" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".25"/>
+      </linearGradient>
+      <linearGradient id="gSheenG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".14"/><stop offset=".22" stop-color="#fff" stop-opacity="0"/><stop offset=".78" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".1"/></linearGradient>
       <linearGradient id="gHaze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e88a86" stop-opacity="0"/><stop offset=".7" stop-color="#c9708a" stop-opacity=".22"/><stop offset="1" stop-color="#c9708a" stop-opacity="0"/></linearGradient>
       <radialGradient id="gFireG" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffb35c" stop-opacity=".75"/><stop offset=".4" stop-color="#ff7a3c" stop-opacity=".25"/><stop offset="1" stop-color="#ff7a3c" stop-opacity="0"/></radialGradient>
       <radialGradient id="gOrbG" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#e6f6ff"/><stop offset=".25" stop-color="#9fd8ff" stop-opacity=".8"/><stop offset="1" stop-color="#6fb8ff" stop-opacity="0"/></radialGradient>
@@ -241,8 +244,12 @@
       <g clip-path="url(#gLensClip)">
         <g filter="url(#gLensF)"><use id="gLensUse" href="#gScene"/></g>
         <rect id="gLensVeil" fill="url(#gSheenG)"/>
-        <rect id="gLensGlow" fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="6" filter="url(#gSoft)"/>
+        <rect id="gLensGlow" fill="none" stroke="#fff" stroke-opacity=".1" stroke-width="5" filter="url(#gSoft)"/>
       </g>
+      <rect id="gLensShadow" fill="none" stroke="#05030f" stroke-opacity=".35" stroke-width=".8"/>
+      <rect id="gLensRim" fill="none" stroke="url(#gRimG)" stroke-width="1.1"/>
+      <rect id="gLensRimIn" fill="none" stroke="url(#gRimIn)" stroke-width=".8"/>
+    </g>
       <rect id="gLensShadow" fill="none" stroke="#05030f" stroke-opacity=".45" stroke-width=".9"/>
       <rect id="gLensRim" fill="none" stroke="url(#gRimG)" stroke-width="1.2"/>
     </g>
