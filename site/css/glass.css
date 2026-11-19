@@ -57,10 +57,26 @@ nav.tabs .in, .sheet, .toast, .seg, .search, .gpick select, .btn:not(.primary), 
 nav.tabs { background: none; border: 0; padding: 0 14px calc(10px + env(safe-area-inset-bottom)); pointer-events: none; }
 nav.tabs .in { pointer-events: auto; max-width: 520px; height: 66px; border-radius: 33px; padding: 5px; gap: 2px; }
 nav.tabs a { height: 56px; border-radius: 28px; transition: color .2s, background .25s; }
-nav.tabs a.on { background: var(--g-thumb); box-shadow: inset 0 1px 0 var(--g-top), 0 1px 4px rgba(0, 0, 0, .08); }
 :root:not([data-theme=dark]) nav.tabs a.on { color: var(--acc); }
 .badge { top: 4px; }
 main { padding-bottom: 130px; }
+
+/* the selection is a drop of glass (js/15-tabdrop.js): it slides, stretches and lifts like a lens */
+nav.tabs .in { position: relative; touch-action: none; -webkit-user-select: none; user-select: none; }
+nav.tabs a { z-index: 1; -webkit-touch-callout: none; -webkit-user-drag: none; }
+nav.tabs a svg.i, nav.tabs a .nl { transform: scale(var(--mag, 1)); transform-origin: 50% 70%; }
+.tab-drop { position: absolute; top: 5px; left: 0; height: 56px; border-radius: 28px; z-index: 0; pointer-events: none; will-change: transform; transform-origin: 50% 50%; }
+.tab-drop .base, .tab-drop .lens { position: absolute; inset: 0; border-radius: inherit; }
+.tab-drop .base { background: var(--g-thumb); box-shadow: inset 0 1px 0 var(--g-top), 0 1px 4px rgba(0, 0, 0, .08); opacity: calc(1 - var(--lift, 0) * .65); }
+.tab-drop .lens { opacity: var(--lift, 0);
+  background: linear-gradient(180deg, rgba(255, 255, 255, .16), rgba(255, 255, 255, .02) 40%, rgba(255, 255, 255, .02) 72%, rgba(255, 255, 255, .1));
+  -webkit-backdrop-filter: blur(1.5px) saturate(170%) brightness(1.12); backdrop-filter: blur(1.5px) saturate(170%) brightness(1.12);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+/* thin iridescent rim, only on the edge (masked ring) */
+.tab-drop .lens::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1.4px;
+  background: conic-gradient(from 210deg, rgba(255, 255, 255, .95), rgba(150, 205, 255, .7), rgba(255, 175, 225, .6), rgba(255, 255, 255, .1) 45%, rgba(255, 255, 255, .1) 60%, rgba(175, 255, 215, .55), rgba(255, 255, 255, .95));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); }
 .toast { bottom: calc(92px + env(safe-area-inset-bottom)); color: var(--ink); font-weight: 500; }
 .toast button { color: var(--acc); }
 
