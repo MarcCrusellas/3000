@@ -450,7 +450,8 @@ html.locked #gate { display: flex; }
   text-shadow: 0 2px 30px rgba(255, 190, 150, .35); animation: gRise 1.4s cubic-bezier(.2, .8, .2, 1) both; }
 .g-rule { width: 54px; height: 3px; border-radius: 3px; margin-top: 18px; background: linear-gradient(90deg, #ffd59a, #e07a86);
   animation: gGrow 1.2s .5s cubic-bezier(.2, .8, .2, 1) both; transform-origin: center; }
-.g-mid { display: flex; align-items: center; justify-content: center; min-height: 64px; margin-bottom: 17vh; }
+.g-mid { display: flex; align-items: center; justify-content: center; min-height: 64px; margin-bottom: 19vh; }
+@media (min-aspect-ratio: 3/5) { .g-mid { margin-bottom: 25vh; } }
 .g-pill, .g-spin { animation: gFade 1.2s .7s ease both; }
 .g-pill, .g-spin { display: none; }
 #gate[data-view=loading] .g-spin, #gate[data-view=new] #gateCreate, #gate[data-view=signin] #gateLogin { display: inline-flex; }
@@ -479,6 +480,28 @@ html.locked #gate { display: flex; }
 .g-glint { transform-box: fill-box; transform-origin: center; animation: gGlint 5s ease-in-out infinite; }
 .g-birds { animation: gFly 28s linear infinite; }
 
+.g-rays { transform-box: view-box; transform-origin: 330px 470px; animation: gSpin 140s linear infinite; }
+.g-dragon { animation: gDragon 46s linear infinite; }
+.g-dragon-body { animation: gBob 3.2s ease-in-out infinite; }
+.g-wing { transform-box: fill-box; transform-origin: 50% 100%; animation: gFlap 1.6s ease-in-out infinite; }
+.g-wing.far { animation-delay: -.12s; }
+.g-flag { transform-box: fill-box; transform-origin: 0 50%; animation: gWave 1.4s ease-in-out infinite; }
+.g-mist { animation: gDrift 38s ease-in-out infinite alternate; }
+.g-flame { transform-box: fill-box; transform-origin: 50% 100%; animation: gFlick .5s ease-in-out infinite alternate; }
+.g-flame.b { animation-duration: .37s; }
+.g-fireglow { transform-box: fill-box; transform-origin: center; animation: gGlow 2.2s ease-in-out infinite; }
+.g-spark { animation: gSpark 2.4s ease-out infinite; }
+.g-spark.s2 { animation-delay: .6s; } .g-spark.s3 { animation-delay: 1.2s; } .g-spark.s4 { animation-delay: 1.8s; }
+.g-orb { transform-box: fill-box; transform-origin: center; animation: gOrb 3s ease-in-out infinite; }
+@keyframes gSpin { to { transform: rotate(360deg); } }
+@keyframes gDragon { from { transform: translate(720px, 330px) scale(.62); } to { transform: translate(-260px, 370px) scale(.62); } }
+@keyframes gBob { 50% { transform: translateY(-10px); } }
+@keyframes gFlap { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(-.35); } }
+@keyframes gWave { 50% { transform: skewY(8deg) scaleX(.9); } }
+@keyframes gFlick { to { transform: scale(.88, 1.12); } }
+@keyframes gGlow { 50% { opacity: .75; transform: scale(.95); } }
+@keyframes gSpark { 0% { opacity: 0; transform: translate(0, 0); } 15% { opacity: 1; } 100% { opacity: 0; transform: translate(6px, -46px); } }
+@keyframes gOrb { 50% { transform: scale(1.25); opacity: .7; } }
 @keyframes gsp { to { transform: rotate(360deg); } }
 @keyframes gRise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 @keyframes gGrow { from { opacity: 0; transform: scaleX(0); } to { opacity: 1; transform: none; } }
