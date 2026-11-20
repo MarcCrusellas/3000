@@ -34,8 +34,8 @@ function renderLookup() {
   lkOff();
 }
 function lkOff() {
-  const el = $('#lk'), b = $('#lkBody');
-  el.style.setProperty('--off', Math.max(0, el.offsetHeight - (b.offsetTop + b.offsetHeight + 26)) + 'px');
+  const b = $('#lkBody');
+  fitSheet($('#lk'), b.offsetTop + b.offsetHeight + 22);
 }
 window.addEventListener('resize', () => { if ($('#lk').classList.contains('on')) lkOff(); });
 let FORMS = null, formsP = null, SIDX = null;
