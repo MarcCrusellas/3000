@@ -15,6 +15,7 @@ function sheet(on, id) {
   id = id || 'sheet';
   document.querySelectorAll('.sheet').forEach(x => x.classList.toggle('on', !!on && x.id === id));
   $('#scrim').classList.toggle('on', !!on);
+  document.documentElement.classList.toggle('sheet-on', !!on);   // the page behind stays put
   if (!on && LK.el) { LK.el.classList.remove('on'); LK.el = null; }
   if (!on) {
     edCloseLayer();
@@ -23,37 +24,6 @@ function sheet(on, id) {
   }
   if (!on) { closeMenu(); setTimeout(() => { if (!$('#lk').classList.contains('on')) $('#lk').classList.remove('full'); if (!$('#sheet').classList.contains('on')) $('#sheet').classList.remove('full'); }, 260); }
 }
-(function () {
-  const el = $('#lk'); let y0 = 0, base = 0, y = 0, drag = false, moved = false, pts = [], raf = 0;
-  const off = () => parseFloat(el.style.getPropertyValue('--off')) || 0;
-  const zone = e => e.target.closest('.grabz') || (e.target.closest('.lkh') && !e.target.closest('button'));
-  el.addEventListener('pointerdown', e => {
-    if (!zone(e)) return;
-    drag = true; moved = false; y0 = e.clientY; base = el.classList.contains('full') ? 0 : off(); y = base; pts = [[e.timeStamp, e.clientY]];
-    try { el.setPointerCapture(e.pointerId); } catch (x) {}
-  });
-  el.addEventListener('pointermove', e => {
-    if (!drag) return;
-    const dy = e.clientY - y0;
-    if (!moved && Math.abs(dy) < 5) return;
-    if (!moved) { moved = true; el.classList.add('drag'); if (el.classList.contains('full')) { el.scrollTop = 0; } }
-    y = Math.max(0, base + dy); pts.push([e.timeStamp, e.clientY]); if (pts.length > 6) pts.shift();
-    if (!raf) raf = requestAnimationFrame(() => { raf = 0; el.style.transform = 'translate3d(0,' + y + 'px,0)'; });
-  });
-  const end = () => {
-    if (!drag) return; drag = false;
-    if (raf) { cancelAnimationFrame(raf); raf = 0; }
-    const full = el.classList.contains('full');
-    if (!moved) { lkFull(!full); return; }
-    const a = pts[0], b = pts[pts.length - 1], v = (b[1] - a[1]) / Math.max(16, b[0] - a[0]), o = off();
-    el.classList.remove('drag'); el.style.transform = '';
-    const dy = y - base;
-    if (!full) { if (v < -0.35 || dy < -50) lkFull(true); else if (v > 0.35 || dy > 90) sheet(false); else lkFull(false); }
-    else if (dy > o + 100) sheet(false);
-    else lkFull(!(v > 0.35 || dy > 90));
-  };
-  el.addEventListener('pointerup', end); el.addEventListener('pointercancel', end);
-})();
 $('#menu').onclick = e => {
   const nx = e.target.closest('[data-nx]');
   if (nx) {
@@ -105,42 +75,60 @@ function openSettings(v) {
 }
 function setOff() {
   const el = $('#sheet'), sg = el.querySelector('.sg:not([hidden])'); if (!sg) return;
-  const h = sg.offsetTop + sg.offsetHeight + 26;
-  el.style.setProperty('--off', Math.max(0, el.offsetHeight - Math.min(h, innerHeight * .62)) + 'px');
+  fitSheet(el, Math.min(sg.offsetTop + sg.offsetHeight + 26, innerHeight * .62));
+}
+// a sheet rests at its content's height (bottom edge visible) and grows to --hf when expanded
+function fitSheet(el, h) {
+  let bottom = 0;
+  for (const c of el.children) if (c.offsetHeight) bottom = Math.max(bottom, c.offsetTop + c.offsetHeight);
+  const max = parseFloat(getComputedStyle(el).maxHeight) || innerHeight * .94;
+  const all = Math.min(max, bottom + (parseFloat(getComputedStyle(el).paddingBottom) || 0));
+  el.style.setProperty('--h', Math.min(all, h) + 'px');
+  el.style.setProperty('--hf', all + 'px');
 }
 function setFull(on) { const el = $('#sheet'); if (!on) el.scrollTop = 0; el.classList.toggle('full', on); }
 window.addEventListener('resize', () => { if ($('#sheet').classList.contains('on')) setOff(); });
-(function () {
-  const el = $('#sheet'); let y0 = 0, base = 0, y = 0, drag = false, moved = false, pts = [], raf = 0;
-  const off = () => parseFloat(el.style.getPropertyValue('--off')) || 0;
-  const zone = e => e.target.closest('#sheet .grabz') || e.target.closest('#sheet .sh');
+/* Drag a sheet: up grows it (to full), down shrinks it back and then slides it away.
+   Any empty spot of a resting sheet is a handle; once full, the top strip is (the rest scrolls). */
+function sheetDrag(el, full) {
+  let y0 = 0, hb = 0, h0 = 0, hf = 0, wasFull = false, drag = false, moved = false, tapper = false, pts = [], raf = 0, h = 0, t = 0;
+  const px = n => parseFloat(el.style.getPropertyValue(n)) || 0;
+  const ui = 'button,a,input,select,textarea,label,canvas,.seg,[data-act],[class^="e-"],[class*=" e-"]';
   el.addEventListener('pointerdown', e => {
-    if (!zone(e)) return;
-    drag = true; moved = false; y0 = e.clientY; base = el.classList.contains('full') ? 0 : off(); y = base; pts = [[e.timeStamp, e.clientY]];
+    if (e.button) return;
+    const top = e.clientY - el.getBoundingClientRect().top < 64, grip = e.target.closest('.grabz,.lkh,.sh');
+    if (e.target.closest(ui) && !e.target.closest('.grabz')) return;
+    if (!(grip || top || !el.classList.contains('full'))) return;
+    if (e.pointerType === 'mouse') e.preventDefault();   // no text selection / native drag stealing the gesture
+    drag = true; moved = false; tapper = !!(grip || top); y0 = e.clientY; wasFull = el.classList.contains('full');
+    hb = el.offsetHeight; h0 = px('--h'); hf = Math.max(h0, px('--hf')); pts = [[e.timeStamp, e.clientY]];
     try { el.setPointerCapture(e.pointerId); } catch (x) {}
   });
   el.addEventListener('pointermove', e => {
     if (!drag) return;
     const dy = e.clientY - y0;
     if (!moved && Math.abs(dy) < 5) return;
-    if (!moved) { moved = true; el.classList.add('drag'); if (el.classList.contains('full')) el.scrollTop = 0; }
-    y = Math.max(0, base + dy); pts.push([e.timeStamp, e.clientY]); if (pts.length > 6) pts.shift();
-    if (!raf) raf = requestAnimationFrame(() => { raf = 0; el.style.transform = 'translate3d(0,' + y + 'px,0)'; });
+    if (!moved) { moved = true; el.classList.add('drag'); el.scrollTop = 0; }
+    h = hb - dy; t = 0;
+    if (h > hf) h = hf + (h - hf) * .25;            // a little give past full
+    if (h < h0) { t = h0 - h; h = h0; }              // below its resting size it slides away instead
+    pts.push([e.timeStamp, e.clientY]); if (pts.length > 6) pts.shift();
+    if (!raf) raf = requestAnimationFrame(() => { raf = 0; el.style.height = h + 'px'; el.style.transform = 'translate3d(0,' + t + 'px,0)'; });
   });
-  const end = () => {
+  const end = e => {
     if (!drag) return; drag = false;
     if (raf) { cancelAnimationFrame(raf); raf = 0; }
-    const full = el.classList.contains('full');
-    if (!moved) { setFull(!full); return; }
-    const a = pts[0], b = pts[pts.length - 1], v = (b[1] - a[1]) / Math.max(16, b[0] - a[0]), o = off();
-    el.classList.remove('drag'); el.style.transform = '';
-    const dy = y - base;
-    if (!full) { if (v < -0.35 || dy < -50) setFull(true); else if (v > 0.35 || dy > 90) sheet(false); else setFull(false); }
-    else if (dy > o + 100) sheet(false);
-    else setFull(!(v > 0.35 || dy > 90));
+    if (!moved) { if (tapper && e.type === 'pointerup') full(!wasFull); return; }
+    const a = pts[0], b = pts[pts.length - 1], v = (b[1] - a[1]) / Math.max(16, b[0] - a[0]), dy = b[1] - y0;
+    el.classList.remove('drag'); el.style.height = ''; el.style.transform = '';
+    if (!wasFull) { if (v < -0.35 || dy < -50) full(true); else if (v > 0.35 || dy > 90) sheet(false); else full(false); }
+    else if (t > 100 || (t > 0 && v > 0.5)) sheet(false);
+    else full(!(v > 0.35 || dy > 90));
   };
   el.addEventListener('pointerup', end); el.addEventListener('pointercancel', end);
-})();
+}
+sheetDrag($('#lk'), on => lkFull(on));
+sheetDrag($('#sheet'), setFull);
 document.querySelector('nav.tabs').addEventListener('click', e => { const a = e.target.closest('a[data-v]'); if (a && a.classList.contains('on')) { e.preventDefault(); openSettings(a.dataset.v); } });
 $('#scrim').onclick = () => sheet(false);
 $('#dailySeg').onclick = e => { const b = e.target.closest('button'); if (!b) return; S.set.daily = +b.dataset.n; save(); renderPlayer(); };
