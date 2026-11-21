@@ -168,10 +168,16 @@ function knowCurrent() {
   markKnown(k); save(); renderBadge(); renderWords(); renderCheck(); renderPlayer(); skipKnown();
   toast(w.w + ' ✓', 'Deshacer', () => { restore(k, prev); save(); renderAll(); });
 }
-$('#next10').onclick = next10;
+$('#next10').onclick = () => next10(true);
+$('#tSeg').onclick = e => { const b = e.target.closest('button'); if (!b) return; W.t = W.t === b.dataset.t ? '' : b.dataset.t; W.lim = 120; renderWords(); window.scrollTo(0, 0); const c = $('#tSeg button[data-t="' + b.dataset.t + '"]'); if (c) c.scrollIntoView({inline: 'nearest', block: 'nearest'}); };
+for (const k of ['wt', 'wa', 'wb', 'wn', 'wp', 'wx']) $('#' + k + 'Tog').onclick = () => { S.set[k] = !wOn(k); save(); renderPlayer(); renderWords(); };
+$('#bjump').onclick = e => { const b = e.target.closest('[data-jb]'); if (b) jumpBlock(+b.dataset.jb); };
+document.addEventListener('pointerdown', e => { if (!$('#bjump').hidden && !e.target.closest('#bjump') && !e.target.closest('.bh')) closeBlocks(); }, true);
 $('#q').oninput = e => { W.q = e.target.value.trim(); W.lim = 120; renderWords(); };
-$('#fSeg').onclick = e => { const b = e.target.closest('button'); if (!b) return; W.f = b.dataset.f; W.lim = 120; renderWords(); window.scrollTo(0, 0); };
+$('#fSeg').onclick = e => { const b = e.target.closest('button'); if (!b) return; W.f = b.dataset.f; W.lim = 120; renderWords(); window.scrollTo(0, 0); b.scrollIntoView({inline: 'nearest', block: 'nearest'}); };
 $('#list').onclick = e => {
+  const bh = e.target.closest('.bh'); if (bh) { if ($('#bjump').hidden) openBlocks(bh); else closeBlocks(); return; }
+  if (e.target.closest('[data-act="xall"]')) { W.xa = !W.xa; renderWords(); return; }
   const xr = e.target.closest('[data-x]'); if (xr) { openLookup(xr.dataset.x); return; }
   const row = e.target.closest('[data-k]'); if (!row) return;
   const k = row.dataset.k;

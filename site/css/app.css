@@ -262,7 +262,7 @@ button,[data-lk]{-webkit-tap-highlight-color:transparent}
 .menu button{display:flex;align-items:center;justify-content:space-between;width:100%;padding:11px 12px;border-radius:10px;font:500 15px var(--body);text-align:left}
 .menu button.on{color:var(--acc)} .menu button svg.i{width:18px;height:18px}
 .srch{display:flex;gap:8px;align-items:center} .srch .search{flex:1}
-#fSeg{margin-top:10px;flex-wrap:nowrap;gap:5px} #fSeg button{flex:1 1 auto;justify-content:center;padding:6px 8px;font-size:13.5px;gap:4px;min-width:0}
+#fSeg{margin-top:10px;flex-wrap:nowrap;gap:5px} #fSeg button{flex:1 0 auto;justify-content:center;padding:6px 10px;font-size:13.5px;gap:4px;min-width:max-content;white-space:nowrap}
 .bd{display:inline-flex;gap:3px} .bd i{width:6px;height:6px;border-radius:50%;background:var(--track)} .bd i.on{background:var(--good)} .bd.due i.on{background:var(--warn)}
 .more{height:1px}
 .nk{opacity:0;visibility:hidden;animation:nkIn .3s 3s forwards}
@@ -518,3 +518,20 @@ html.locked #gate { display: flex; }
 }
 #acctAdd { display: inline-flex; align-items: center; gap: 4px; }
 #acctAdd b { font-weight: 600; }
+/* Palabras: scrolling tabs, type chips, blocks of 100, ranks, all extras */
+.seg.scr{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.seg.scr::-webkit-scrollbar,.seg.chips::-webkit-scrollbar{display:none}
+.seg.chips{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:6px;margin-top:10px;padding:0;background:none;box-shadow:none;border-radius:0}
+.seg.chips[hidden]{display:none}
+.seg.chips button{flex:none;min-height:32px;padding:4px 12px;font-size:13px;border:1px solid var(--line)}
+.bh{display:flex;align-items:center;gap:8px;width:100%;padding:14px 0 8px;border:0;border-bottom:1px solid var(--line);background:none;color:var(--ink);font:600 13px var(--body);text-align:left;cursor:pointer}
+.bh span{flex:1;letter-spacing:.02em} .bh small{font-weight:400;color:var(--muted)} .bh svg.i{width:15px;height:15px;color:var(--muted)}
+.list > .bh:first-child{padding-top:10px}
+.list.rkd .wr .rk{width:34px;margin-right:-4px;font-variant-numeric:tabular-nums}
+.bjump{width:min(344px,calc(100vw - 16px));display:grid;grid-template-columns:repeat(4,1fr);gap:4px;max-height:60vh;overflow:auto}
+.bjump[hidden]{display:none}
+.bjump button{flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:9px 4px;font:500 13px var(--body);text-align:center}
+.bjump button small{font-size:11px;color:var(--muted);font-weight:400}
+.xall{display:block;width:100%;padding:12px 0;border:0;border-bottom:1px solid var(--line);background:none;color:var(--acc);font:500 14px var(--body);text-align:left;cursor:pointer}
+.xi.none{border:1.5px solid var(--line)}
+.srow.dim{opacity:.45}
