@@ -1,0 +1,1000 @@
+1	der	F	Was macht das?
+2	und	F	Gut. Und dir?
+3	in	F	Ich bin im Auto.
+4	sein	V	Ist da jemand?
+5	ein	F	Nur eine Minute.
+6	zu	F	Sie geht zur Schule.
+7	haben	V	Habt ihr Kinder?
+8	ich	F	Ich glaube nicht.
+9	von	F	Ich kenne keine von ihnen.
+10	werden	V	Wird sie kommen?
+11	nicht	F	Ich lese nicht.
+12	mit	F	Was ist mit uns?
+13	es	F	Ist es wichtig?
+14	auf	F	Das geht aufs Haus.
+15	für	F	Schön für dich.
+16	an	F	Ich glaube an dich.
+17	sich	F	Kennen wir uns?
+18	sie	F	Leben Sie hier?
+19	auch	A	Kommen Sie auch?
+20	bei	F	Es liegt bei dir.
+21	können	V	Kann ich helfen?
+22	als	F	Leichter gesagt als getan.
+23	er	F	Er schreibt Bücher.
+24	dieser	F	Gehört dies Ihnen?
+25	dass	F	Danke, dass du gekommen bist.
+26	so	A	Um so besser!
+27	wie	F	Wie war ich?
+28	ihr	F	Wo seid ihr?
+29	aber	F	Aber ich will nicht!
+30	aus	F	Sie geht mir aus dem Weg.
+31	sein	F	Das ist sein Auto.
+32	nach	F	Sie ging nach Hause.
+33	noch	A	Sonst noch etwas?
+34	alle	F	Hast du alles?
+35	wir	F	Wir brauchen Geld.
+36	du	F	Was liest du?
+37	nur	A	Ich frage nur.
+38	wenn	F	Wenn nicht jetzt, wann?
+39	oder	F	Du bist neu, oder?
+40	gut	A	Das ist besser.
+41	um	F	Bitte nicht um Geld.
+42	man	F	Ich weiß, wie man es macht.
+43	mein	F	Das ist mein Auto.
+44	kein	F	Ich habe kein Geld.
+45	was	F	Was willst du?
+46	über	F	Sie redeten über Liebe.
+47	müssen	V	Wir müssen gehen.
+48	da	A	Da sind wir.
+49	dann	A	Wenn nicht jetzt, wann dann?
+50	machen	V	Das macht nichts.
+51	schon	A	Ich glaube schon.
+52	mehr	A	Ich will mehr.
+53	das Jahr	N	Wir kennen uns seit drei Jahren.
+54	ja	A	Ja, ich weiß.
+55	viel	F	Das ist viel!
+56	geben	V	Gibt es Fragen?
+57	vor	F	Er hat Angst vor Hunden.
+58	sollen	V	Wir sollten gehen.
+59	wollen	V	Ich will fahren.
+60	mir	F	Das Auto gehört mir.
+61	durch	F	Wir sind durch die Stadt gefahren.
+62	hier	A	Ist hier jemand?
+63	bis	F	Bis später, Leute!
+64	doch	A	Dafür sind Freunde doch da.
+65	immer	A	Das sagst du immer.
+66	jetzt	A	Gehen wir jetzt!
+67	anderer	A	Das ist etwas anderes.
+68	kommen	V	Sie kommt vielleicht.
+69	gehen	V	Ich gehe arbeiten.
+70	ganz	A	Das ist ein ganz neues Buch.
+71	neu	A	Es ist neu.
+72	sagen	V	Sie sagte nichts.
+73	wieder	A	Ich habe sie wieder gesehen.
+74	mich	F	Sie kennt mich.
+75	sehr	A	Ich bin sehr groß.
+76	wer	F	Wer sind sie?
+77	unter	F	Sind wir unter uns?
+78	jeder	F	Jeder braucht Freunde.
+79	sehen	V	Lass mal sehen!
+80	unser	F	Es war nicht unserer.
+81	finden	V	Ich muss es finden.
+82	erster	A	Das ist mein erstes Mal.
+83	die Zeit	N	Zeit ist Geld.
+84	gegen	F	Ich bin absolut gegen den Plan.
+85	einfach	A	Es war einfach.
+86	mal	A	Ich muss mal.
+87	also	A	Also, hier sind wir!
+88	dein	F	Welches ist dein Buch?
+89	uns	F	Diese Bücher gehören uns.
+90	ab	F	Ab und zu kommt sie zu spät in die Schule.
+91	der Tag	N	Die Tage werden länger.
+92	der Mensch	N	Sie ist ein guter Mensch.
+93	denn	A	Was machst du denn hier?
+94	lassen	V	Ich bin gelassen.
+95	das Mal	N	Das ist das letzte Mal.
+96	damit	A	Was willst du damit sagen?
+97	dir	F	Ich glaube dir.
+98	zwei	NUM	Danke, ihr zwei!
+99	ohne	F	Sind Sie ohne Arbeit?
+100	weil	F	Weil er krank ist, kann er nicht kommen.
+101	weit	A	Das geht zu weit.
+102	etwas	F	Darf ich etwas sagen?
+103	stehen	V	Stehe ich dir im Weg?
+104	seit	F	Wir kennen uns seit Jahren.
+105	der Mann	N	Der Mann ist alt.
+106	die Frau	N	Frauen lieben das.
+107	selbst	A	Ich kann nur für mich selbst sprechen.
+108	wo	A	Wo spielt er?
+109	dich	F	Ich suche dich.
+110	klein	A	Du bist klein.
+111	heute	A	Ich habe heute frei.
+112	nun	A	Nun verstehe ich.
+113	nichts	F	Das ist nichts.
+114	das Kind	N	Ihr seid Kinder.
+115	einer	F	Nehmen Sie noch eine.
+116	ob	F	Ich weiß nicht, ob ich Zeit habe.
+117	ihm	F	Das gehört ihm.
+118	alt	A	Das Haus ist alt.
+119	ihn	F	Kennen Sie ihn?
+120	zwischen	F	Rufen Sie mich bitte zwischen sieben und acht Uhr an.
+121	deutsch	A	Ich habe ein deutsches Auto.
+122	liegen	V	Dort liegt das Problem.
+123	beide	F	Beide sind tot.
+124	tun	V	Hast du zu tun?
+125	hoch	A	Die Preise sind hoch.
+126	schön	A	Das Haus ist schön.
+127	dabei	A	Ich bin dabei!
+128	bleiben	V	Ich will bleiben.
+129	welcher	F	Welches Buch ist besser?
+130	spielen	V	Ich will spielen.
+131	denken	V	Was denkst du?
+132	dort	A	Wir werden dort sein.
+133	gerade	A	Sie spricht gerade.
+134	sondern	F	Sie spricht nicht nur Englisch, sondern auch Deutsch.
+135	wirklich	A	Willst du es wirklich?
+136	erst	A	Das war erst der Anfang.
+137	dürfen	V	Darf ich dir helfen?
+138	gleich	A	Er kommt gleich.
+139	das Leben	N	Das Leben ist kurz.
+140	einige	F	Ich habe einige Häuser.
+141	warum	A	Warum laufen wir?
+142	richtig	A	Das ist richtig.
+143	letzter	A	Ich sah sie letzte Woche.
+144	ihnen	F	Ich glaube Ihnen.
+145	die Stadt	N	Ich werde euch die Stadt zeigen.
+146	weiter	A	Ich mache nicht weiter
+147	das Land	N	Mein Land braucht mich.
+148	drei	NUM	Es ist fast drei.
+149	lang	A	Das ist zu lang.
+150	vielleicht	A	Vielleicht kommt sie.
+151	nehmen	V	Ich nehme ein Buch.
+152	zeigen	V	Kannst du es mir zeigen?
+153	dazu	A	Hier ist ein Beispiel dazu.
+154	euch	F	Ich kenne euch nicht.
+155	genau	A	Ich möchte es gerne genau wissen.
+156	wohl	A	Leben Sie wohl!
+157	die Leute	N	Wer sind diese Leute?
+158	eigen	A	Sie haben ihre eigenen Probleme.
+159	bitte	A	Bitte setzen Sie sich!
+160	sowie	F	Sowie er allein gelassen wurde, öffnete er den Brief.
+161	das Haus	N	Ich mag mein Haus.
+162	bringen	V	Bringen Sie es mir.
+163	bekommen	V	Ich habe es bekommen.
+164	während	F	Hat jemand für mich angerufen, während ich weg war?
+165	dafür	A	Ich habe keine Zeit dafür.
+166	die Uhr	N	Ich mag Uhren.
+167	das Ende	N	Es fehlt ein Punkt am Ende des Satzes.
+168	die Welt	N	Ich möchte die Welt verändern.
+169	wissen	V	Was weiß ich?
+170	nie	A	Ich habe nie nein gesagt.
+171	wegen	F	Ich bin wegen dir gekommen.
+172	bereits	A	Sie sind bereits hier.
+173	der Teil	N	Teilen wir das Geld.
+174	natürlich	A	Natürlich, warum nicht?
+175	der Fall	N	Auf jeden Fall!
+176	halten	V	Wie lange halten wir hier?
+177	einmal	A	Lass es uns noch einmal versuchen.
+178	das Deutsch	N	Sprechen Sie Deutsch?
+179	glauben	V	Glauben Sie das?
+180	die Frage	N	Er hat eine Frage.
+181	schnell	A	Er geht schnell.
+182	wichtig	A	Ich bin wichtig.
+183	kurz	A	Das Leben ist sehr kurz.
+184	die Seite	N	Er ist immer an meiner Seite.
+185	brauchen	V	Ich brauche Freunde.
+186	gar	A	Das kann gar nicht sein.
+187	suchen	V	Was suchen sie?
+188	gehören	V	Ich habe nicht gehört, was du gesagt hast.
+189	stellen	V	Sie dürfen gerne Fragen stellen.
+190	eigentlich	A	Eigentlich verstehe ich.
+191	weniger	F	Sie hat wenige Freunde.
+192	die Woche	N	Was hast du diese Woche gemacht?
+193	etwa	A	Sie ist etwa genauso groß wie du.
+194	das Problem	N	Ich habe Probleme.
+195	stark	A	Sie ist stark.
+196	das Bild	N	Ich liebe dieses Bild.
+197	das Recht	N	Habe ich recht?
+198	spät	A	Es ist zu spät.
+199	klar	A	Ist das klar?
+200	sicher	A	Sind Sie sicher?
+201	das Geld	N	Ich brauche Geld.
+202	führen	V	Das führt zu nichts.
+203	der Weg	N	Sie gingen verschiedene Wege.
+204	arbeiten	V	Hier arbeite ich.
+205	die Arbeit	N	Ich will Arbeit.
+206	schreiben	V	Wer hat dieses Buch geschrieben?
+207	zweiter	A	Ich gebe dir eine zweite Chance.
+208	sprechen	V	Er spricht gut.
+209	der Grund	N	Es gibt keinen Grund, Angst zu haben.
+210	leben	V	Er lebt noch.
+211	davon	A	Was habe ich davon?
+212	fast	A	Es ist fast sechs Uhr.
+213	danke	V	Danke, dass du zu mir gekommen bist.
+214	fragen	V	Ich werde ihn fragen.
+215	verstehen	V	Sie werden verstehen.
+216	der Name	N	Wie ist ihr Name?
+217	die Art	N	Welche Art Arbeit machst du?
+218	möchten	V	Ich möchte laufen.
+219	solcher	F	Solche Filme mögen alle.
+220	die Person	N	Wie viel kostet es für eine Person?
+221	jedoch	A	Jedoch gibt es ein Problem.
+222	zurück	A	Ich will das Geld zurück haben.
+223	aussehen	V	Er sieht gut aus.
+224	früh	A	Es ist zu früh.
+225	das Spiel	N	Ich liebe Spiele.
+226	groß	A	Ich bin groß.
+227	zusammen	A	Wir könnten zusammen gehen.
+228	die Stunde	N	Ich werde in einer Stunde gehen.
+229	kennen	V	Kennen Sie sie?
+230	der Freund	N	Sind sie Freunde?
+231	echt	A	Ist das echt?
+232	treffen	V	Wir können uns treffen.
+233	nächster	A	Bis nächste Woche!
+234	erhalten	V	Ich gebe das Geld aus, sobald ich es erhalte.
+235	sogar	A	Sogar wir sind Leute.
+236	zwar	A	Ich hab es zwar gesagt, aber nicht so gemeint.
+237	meist	F	Die meisten denken so.
+238	darauf	A	Ich bin nicht stolz darauf.
+239	versuchen	V	Versuchen wir es.
+240	das Wort	N	Er hat kein Wort gesagt.
+241	der Platz	N	Gibt es noch einen freien Platz?
+242	schaffen	V	Du hast es geschafft!
+243	die Geschichte	N	Seine Geschichte muss wahr sein.
+244	allerdings	A	Allerdings habe ich kein Geld.
+245	lange	A	Wie lange wohnt ihr schon hier?
+246	das Thema	N	Wir sprechen über verschiedene Themen.
+247	die Monat	N	Sein Bruder ist letzten Monat gestorben.
+248	die Familie	N	Ich habe eine Familie.
+249	schwer	A	Dieses Buch ist schwer.
+250	nein	F	Ich sage nein.
+251	der Herr	N	Wer ist dieser Herr?
+252	fahren	V	Wir werden fahren.
+253	wenig	F	Ich habe wenig Geld.
+254	gerne	A	Ich lese gerne.
+255	möglich	A	Alles ist möglich.
+256	die Minute	N	Ich brauche nur eine Minute.
+257	frei	A	Sie sind frei.
+258	heißen	V	Wie heißt euer Hund?
+259	oft	A	Ich bin oft hier.
+260	lesen	V	Ich lese viel.
+261	laufen	V	Wir sind viel gelaufen.
+262	die Sache	N	Das ist deine Sache.
+263	neben	F	Alle wollen neben ihr sitzen.
+264	statt	F	Ich will Zeit statt Geld.
+265	bestehen	V	Meine Familie besteht aus vier Personen.
+266	die Hand	N	Kann ich deine Hand halten?
+267	jemand	F	Ist jemand gestorben?
+268	helfen	V	Ich will helfen.
+269	nennen	V	Wie nennt man das?
+270	gelten	V	Das gilt auch für ihn.
+271	verschieden	A	Sie ist verschieden.
+272	mögen	V	Sie mag ihn.
+273	am	F	Wer am weitesten wirft, gewinnt.
+274	lieben	V	Ich liebe Filme.
+275	besonders	A	Alles hier ist besonders schön.
+276	die Schule	N	Ich gehe zur Schule.
+277	setzen	V	Er setzte sich aufs Bett.
+278	direkt	A	Ich werde direkt sein.
+279	paar	F	Ich habe ein paar Bücher.
+280	darüber	A	Was denkst du darüber?
+281	vier	NUM	Es ist vier Uhr.
+282	das Buch	N	Ich will ein Buch.
+283	der Junge	N	Ich kenne den Jungen.
+284	sonst	A	Und wer kommt sonst noch?
+285	fallen	V	Mir hat es nicht gefallen.
+286	schlecht	A	Mir geht es sehr schlecht.
+287	leicht	A	Es ist zu leicht.
+288	hin	A	Hin und wieder ruft er mich noch an.
+289	voll	A	Dieser hier ist voll.
+290	erreichen	V	Haben Sie Ihr Ziel erreicht?
+291	der Euro	N	Wie viel bekommen Sie? - Vier Euro, bitte.
+292	gewinnen	V	Ich will gewinnen.
+293	das Auto	N	Sie fahren Auto.
+294	das Beispiel	N	Geben Sie Beispiele!
+295	das Ding	N	Es gibt wichtigere Dinge im Leben.
+296	der Ort	N	Alle mögen diesen Ort.
+297	beginnen	V	Er begann zu singen.
+298	tragen	V	Ich trage nicht gerne die Sachen von anderen Leuten.
+299	die Gruppe	N	Ist er aus dieser Gruppe?
+300	der Film	N	Ich mag keine Filme.
+301	je	A	Sie sah schöner aus als je zuvor.
+302	verlieren	V	Er verlor seine Arbeit.
+303	folgen	V	Kannst du mir folgen?
+304	scheinen	V	Es scheint, dass ihr recht habt.
+305	erklären	V	Erkläre es mir.
+306	die Nacht	N	Es war Nacht.
+307	deshalb	A	Bist du deshalb hier?
+308	eben	A	So ist er eben.
+309	die Polizei	N	Die Polizei kommt.
+310	mehrere	F	Es gab mehrere Kinder in dem Raum.
+311	das Auge	N	Öffnet eure Augen.
+312	kaufen	V	Ich werde dies kaufen.
+313	hören	V	Ich höre etwas.
+314	leider	A	Leider ist es nicht möglich.
+315	bekannt	A	Dein Name kommt mir bekannt vor.
+316	der Punkt	N	Er musste Punkt fünf hier sein.
+317	toll	A	Das macht er toll.
+318	daher	A	Ich habe meine Uhr verloren, daher muss ich eine neue kaufen.
+319	kaum	A	Er arbeitet kaum.
+320	der Gott	N	Ich glaube an Gott.
+321	lernen	V	Was lernst du?
+322	jung	A	Wir sind jung.
+323	aktuell	A	Ist das ein aktuelles Foto?
+324	aufstehen	V	Sie stand auf.
+325	daran	A	Ich arbeite daran.
+326	halt	A	Halt mir einen Platz frei.
+327	meinen	V	Meinen Sie das ernst?
+328	einzig	A	Er machte keine einzige Arbeit.
+329	niemand	F	Das weiß niemand.
+330	politisch	A	Die politische Situation hat sich verändert.
+331	der Kopf	N	Ich habe eine Lösung im Kopf.
+332	genug	A	Das ist genug.
+333	der Preis	N	Die Preise sind gestiegen.
+334	passieren	V	Es passiert nichts.
+335	allein	A	Er lebt allein.
+336	überhaupt	A	Nein, überhaupt nicht.
+337	die Idee	N	Ich habe eine Idee.
+338	das Wasser	N	Ich brauche Wasser.
+339	anders	A	Wir sind anders.
+340	der Erfolg	N	Ich bin mir sicher, dass er Erfolg haben wird.
+341	gemeinsam	A	Sie haben nichts gemeinsam.
+342	rund	A	Die Welt ist rund.
+343	deutlich	A	Sprechen Sie langsam und deutlich.
+344	das Team	N	Wir haben ein tolles Team.
+345	hinter	F	Schau hinter dich.
+346	rein	A	Das Wasser ist rein.
+347	ebenfalls	A	Ebenfalls gibt es Länder, in denen die freie Rede eingeschränkt ist.
+348	eher	A	Warum hast du nicht eher daran gedacht?
+349	pro	F	Er schreibt mir einmal pro Woche.
+350	die Musik	N	Wir hören Musik.
+351	der Staat	N	Der Staat bin ich!
+352	schwarz	A	Alles wurde schwarz.
+353	bestimmt	A	Er hat kein bestimmtes Ziel im Leben.
+354	reden	V	Sie redet viel.
+355	laut	A	War ich zu laut?
+356	der Vater	N	Wo ist mein Vater?
+357	sterben	V	Jeder muss sterben.
+358	die Million	N	Der letzte Gott starb vor Millionen von Jahren.
+359	bald	A	Ich muss bald gehen.
+360	nachdem	F	Nachdem er es beendet hatte, ging er schlafen.
+361	sofort	A	Ich muss dich sofort sehen.
+362	die Gesellschaft	N	Wir leben in einer Gesellschaft.
+363	grün	A	Sie hat grüne Augen.
+364	die Partei	N	Die Partei hat immer Recht.
+365	handeln	V	Wir müssen jetzt handeln.
+366	falsch	A	Diese Daten sind falsch.
+367	danach	A	Danach ging er nach Hause.
+368	der Abend	N	Kommt ihr heute Abend?
+369	die Mutter	N	Meine Mutter liebt mich.
+370	freuen	V	Ich freue mich, dich zu sehen.
+371	öffentlich	A	Sie mag nicht öffentlich sprechen.
+372	das Ziel	N	Er erreichte sein Ziel.
+373	der Sohn	N	Was macht dein Sohn?
+374	endlich	A	Gehen wir endlich?
+375	wählen	V	Haben Sie schon gewählt?
+376	das Mitglied	N	Er ist kein Mitglied.
+377	damals	A	Damals waren wir jünger.
+378	die Form	N	Sie war nicht in Form.
+379	fünf	NUM	Gebt mir fünf Tage.
+380	euer	F	Wo ist euer Vater?
+381	die Folge	N	Folgen Sie diesem Auto.
+382	hoffen	V	Ich hoffe, dass du gewinnen wirst.
+383	rot	A	Mein Auto ist rot.
+384	fühlen	V	Wie fühlen Sie sich?
+385	egal	A	Es ist mir egal.
+386	die Wahl	N	Ich habe keine Wahl.
+387	die Bereich	N	Wo ist der Bereich für Kinder?
+388	das Ergebnis	N	Dieses Ergebnis habe ich nicht erwartet.
+389	das Unternehmen	N	Ich arbeite für dieses Unternehmen.
+390	entscheiden	V	Er entschied sich, Arzt zu werden.
+391	schauen	V	Schau dich um.
+392	die Foto	N	Ich liebe dieses Foto.
+393	die Möglichkeit	N	Das ist die einzige Möglichkeit.
+394	gegenüber	F	Sie wohnen im Haus gegenüber von uns.
+395	der Anfang	N	Lass uns am Anfang beginnen.
+396	oben	A	Ich bin hier oben.
+397	warten	V	Wartet auf uns!
+398	erwarten	V	Ich habe dich erwartet.
+399	keiner	F	Keiner glaubt mir.
+400	stimmen	V	Stimmt etwas nicht?
+401	offen	A	Kann ich offen sein?
+402	der Tod	N	Es könnte zum Tod führen.
+403	morgen	A	Wir arbeiten morgen.
+404	die Regierung	N	Eine neue Regierung ist gewählt worden.
+405	der Krieg	N	Wer mag Krieg?
+406	bisher	A	Bisher ist nichts geplant, aber wer weiß.
+407	die Eltern	N	Leben Ihre Eltern noch?
+408	der Artikel	N	Habt ihr diesen Artikel gelesen?
+409	international	A	Englisch ist eine internationale Sprache.
+410	die Hilfe	N	Sie braucht Hilfe.
+411	die Richtung	N	Aus welcher Richtung?
+412	trotzdem	A	Trotzdem will ich sie sehen.
+413	das Glück	N	Er hatte Glück.
+414	kosten	V	Was kostet das?
+415	die Stelle	N	Das wird mich meine Stelle kosten.
+416	das Internet	N	Ich brauche Internet.
+417	legen	V	Er legte das Buch auf den Tisch.
+418	fehlen	V	Es fehlt etwas.
+419	sitzen	V	Ich möchte am Fenster sitzen.
+420	die Zahl	N	Kopf oder Zahl?
+421	die Politik	N	Meiner Mutter ist Politik egal.
+422	zunächst	A	Zunächst glaubten sie ihm nicht.
+423	ändern	V	Das änderte alles.
+424	oh	F	Oh mein Gott!
+425	die Kirche	N	Das ist eine Kirche.
+426	erzählen	V	Ich erzähle dir morgen den Rest.
+427	das Video	N	Ich habe das Video.
+428	verkaufen	V	Das Haus wurde verkauft.
+429	mancher	F	Das erklärt so manches.
+430	das Mädchen	N	Die Mädchen gewannen.
+431	bedeuten	V	Was bedeutet das?
+432	die Herz	N	Du hast kein Herz.
+433	das Prozent	N	Zehn Prozent der Bevölkerung arbeiten nicht.
+434	die Regel	N	Es gibt Regeln.
+435	her	A	Wir liefen hin und her.
+436	folgend	A	Ich brauche die folgenden Dinge.
+437	ankommen	V	Er ist gerade angekommen.
+438	wünschen	V	Was wünschen Sie?
+439	die Nachricht	N	Ich habe eine Nachricht.
+440	selber	A	Ich hätte es selber tun sollen.
+441	der Sinn	N	Es hat keinen Sinn.
+442	die Zukunft	N	Ich habe keine Zukunft.
+443	der Moment	N	Ich bin im Moment beschäftigt.
+444	die Angst	N	Hab keine Angst.
+445	das Stück	N	Ich lese ein Stück.
+446	darum	A	Darum geht es hier nicht.
+447	die Erfahrung	N	Er hat viel Erfahrung auf diesem Gebiet.
+448	erkennen	V	Ich habe sie gleich erkannt, als ich sie sah.
+449	essen	V	Ich esse viel.
+450	bisschen	A	Könnten Sie ein bisschen langsamer sprechen?
+451	die Meinung	N	Ich bin anderer Meinung.
+452	erscheinen	V	Ein Mädchen erschien vor mir.
+453	das Gefühl	N	Ich kenne das Gefühl.
+454	bevor	F	Ich denke, bevor ich handle.
+455	manchmal	A	Manchmal verstehe ich ihn nicht.
+456	raus	A	Raus aus dem Bett!
+457	super	A	Du bist super.
+458	befinden	V	Wo befindet sich meine Mutter?
+459	die Wohnung	N	Sie sucht eine große Wohnung.
+460	der Blick	N	Es war Liebe auf den ersten Blick.
+461	bauen	V	Wer hat es gebaut?
+462	häufig	A	Ich lese häufig Bücher.
+463	die Chance	N	Du hast keine Chance.
+464	das Werk	N	Leider kennen wir ihre übrigen Werke nicht.
+465	die Sprache	N	Ich mag Sprachen!
+466	ähnlich	A	Meine Schwester sieht meiner Mutter ähnlich.
+467	verwenden	V	Darf ich das verwenden?
+468	sozial	A	Der Mensch ist ein soziales Tier.
+469	dritter	A	Eine dritte Chance gibt es nicht.
+470	der Raum	N	Dieser Raum ist zu klein für uns.
+471	die Entwicklung	N	Er hat zur Entwicklung der Wirtschaft viel beigetragen.
+472	obwohl	F	Ich kann nicht, obwohl ich will.
+473	ziemlich	A	Dieses Haus ist ziemlich klein.
+474	europäisch	A	Die Stadt hat eine europäische Atmosphäre.
+475	tatsächlich	A	Du hast tatsächlich recht.
+476	hart	A	Sie arbeitete hart.
+477	das Interesse	N	Hat sie noch Interesse?
+478	der Job	N	Es ist mein Job.
+479	bieten	V	Wir bieten Ihnen einen guten Job.
+480	stattfinden	V	Wann findet die Party statt?
+481	dadurch	A	Dadurch fühle ich mich nicht besser.
+482	die Lage	N	Bitte verstehe meine Lage.
+483	der September	N	Bald ist September.
+484	wann	A	Wann gehen wir?
+485	wieso	A	Wir fragen uns, wieso.
+486	vergessen	V	Vergessen Sie es nicht!
+487	übernehmen	V	Sie übernehmen unser Land.
+488	die Gemeinde	N	Dieser Park wird von der Gemeinde unterhalten.
+489	entwickeln	V	Jede Sprache entwickelt sich weiter.
+490	nutzen	V	Ich werde die Chance nutzen.
+491	persönlich	A	Er kam persönlich.
+492	das Projekt	N	Was ist Ihr größtes Projekt?
+493	die Entscheidung	N	Es ist deine Entscheidung.
+494	die Antwort	N	Ich warte auf deine Antwort.
+495	aufgrund	F	Aufgrund ihrer Arbeit reisen sie um die ganze Welt.
+496	innerhalb	F	Er wird innerhalb einer Stunde ankommen.
+497	insgesamt	A	Wie viel ist das insgesamt?
+498	die Klasse	N	Erste Klasse bitte.
+499	die Rolle	N	Ihre Rolle ist hier so wichtig.
+500	völlig	A	Du hast völlig recht.
+501	ansehen	V	Ich werde es mir ansehen.
+502	die Aufgabe	N	Das ist deine Aufgabe.
+503	die Information	N	Wir wollen Informationen.
+504	die Firma	N	Das Geld gehört der Firma.
+505	erinnern	V	Jetzt erinnere ich mich.
+506	ziehen	V	Dieses Thema zieht sich durch das ganze Buch.
+507	die Meter	N	Er ist fast zwei Meter groß.
+508	lieber	A	Ich möchte das lieber nicht heute machen.
+509	entstehen	V	Wir wissen nicht, wann diese Welt entstand.
+510	die Sorge	N	Sorge für dich selbst!
+511	der Bruder	N	Hat er Brüder?
+512	die Typ	N	Sie ist mein Typ.
+513	die Grenze	N	Sie kennt ihre Grenzen.
+514	gern	A	Ich laufe gern.
+515	irgendwie	A	Kann ich dir irgendwie helfen?
+516	vorbei	A	Es ist vorbei.
+517	die Liebe	N	Was ist Liebe?
+518	gestern	A	Ich bin gestern gekommen.
+519	zahlreich	A	Du hast zahlreiche Bücher.
+520	der Mai	N	Morgen ist der erste Mai.
+521	unterstützen	V	Ich unterstütze ihn.
+522	das Gesetz	N	Gesetz ist Gesetz.
+523	das Jahrhundert	N	Das Haus wurde Anfang des Jahrhunderts gebaut.
+524	der Mitarbeiter	N	Die meisten unserer Mitarbeiter sind jung.
+525	schlimm	A	Das ist nicht schlimm.
+526	halb	A	Es war halb acht.
+527	verdienen	V	Du hast es verdient.
+528	anbieten	V	Ich dachte, die hätten dir eine Stelle angeboten.
+529	der Zug	N	Ich mag Züge.
+530	vorstellen	V	Ich möchte dir meinen Sohn vorstellen.
+531	der Dank	N	Gott sei Dank.
+532	das Alter	N	Ich habe dein Alter.
+533	dagegen	A	Ich habe nichts dagegen.
+534	ebenso	A	Er schrieb drei Bücher in ebenso vielen Jahren.
+535	das System	N	Es ist ein sehr gefährliches System.
+536	tief	A	Ist der See tief?
+537	gesamt	A	Die gesamte Stadt war ohne Strom.
+538	bilden	V	Reisen bildet junge Leute.
+539	das Tier	N	Ich liebe Tiere.
+540	trotz	F	Trotz allem ist die Welt noch schön.
+541	anfangen	V	Wer wird anfangen?
+542	der König	N	Lange lebe der König!
+543	zahlen	V	Lass mich zahlen.
+544	aufnehmen	V	Wie hat er die Nachricht aufgenommen?
+545	die Lösung	N	Es gibt keine Lösung.
+546	wirken	V	Wie wirkt sie auf dich?
+547	wahr	A	Das ist nicht wahr.
+548	sechs	NUM	Ich stehe um sechs auf.
+549	der Beitrag	N	Fast jeden Tag mache ich Beiträge für dieses Forum.
+550	bezeichnen	V	
+551	die Menge	N	Ich habe eine Menge Bücher.
+552	linker	A	Sie schreibt mit der linken Hand.
+553	langsam	A	Ich esse langsam.
+554	annehmen	V	Wir haben sein Angebot angenommen.
+555	die Kraft	N	Er hat mehr Kraft als ich.
+556	weg	A	Ich bin weg.
+557	erfolgreich	A	Sie sind erfolgreich.
+558	wahrscheinlich	A	Er wird wahrscheinlich kommen.
+559	fest	A	Leider hat sie schon einen festen Freund.
+560	der Gedanke	N	Die Gedanken sind frei.
+561	die Mitte	N	Teilen Sie dies in der Mitte.
+562	der November	N	Es war November.
+563	sowohl	F	Sowohl sein Vater als auch seine Mutter sind tot.
+564	die Tochter	N	Habt ihr Töchter?
+565	verbinden	V	Er ist ihr verbunden.
+566	der Präsident	N	Wo ist der Präsident?
+567	besonderer	A	Heute ist ein sehr besonderer Tag.
+568	der März	N	Wir haben jetzt März.
+569	benutzen	V	Ich benutze es.
+570	die Höhe	N	Das ist doch die Höhe!
+571	das Datum	N	Welches Datum ist heute?
+572	selten	A	Ich sehe sie selten.
+573	der Spieler	N	Wie viele Spieler gibt es?
+574	der April	N	Die Schule fängt im April an.
+575	per	F	Ich schicke das Buch per Post.
+576	ernst	A	Er sieht ernst aus.
+577	wohnen	V	Ich wohne hier.
+578	interessant	A	Es ist interessant.
+579	das Gesicht	N	Hast du ihre Gesichter gesehen?
+580	rechter	A	Alles war an rechter Stelle.
+581	ach	I	Ach nein! Wirklich?
+582	der Juli	N	Ich komme im Juli.
+583	der Juni	N	Wir haben jetzt Juni.
+584	links	A	Links von dir ist ein Fenster.
+585	nämlich	A	Ich kann dir nicht helfen, bin nämlich gerade ein bisschen beschäftigt.
+586	der Oktober	N	Es geschah letzten Oktober.
+587	die Reihe	N	Du bist an der Reihe.
+588	die Karte	N	Ich brauche eine Karte.
+589	reich	A	Er wurde reich.
+590	schicken	V	Ich schicke dir eine Nachricht.
+591	die Leistung	N	Das ist eine Leistung!
+592	die Bahn	N	Ich habe die letzte Bahn verpasst.
+593	das Angebot	N	Steht Ihr Angebot noch?
+594	reichen	V	Das reicht mir.
+595	der Fehler	N	Das ist mein Fehler.
+596	der Sommer	N	Wie war dein Sommer?
+597	funktionieren	V	Das wird nicht funktionieren.
+598	der August	N	Im August ist kein Unterricht.
+599	modern	A	Ich mag moderne Musik.
+600	komplett	A	Wir sind komplett verloren.
+601	die Situation	N	Kannst du dir die Situation vorstellen?
+602	der Einsatz	N	Er hat das Baby unter Einsatz seines Lebens gerettet.
+603	falls	F	Falls ich es vergessen sollte, erinnere mich bitte daran.
+604	gleichzeitig	A	Sie versuchten alle gleichzeitig zu reden.
+605	der Rahmen	N	Ich werde Ihnen im Rahmen meiner Möglichkeiten helfen.
+606	der Titel	N	Was ist der Titel des Buchs?
+607	der Vergleich	N	Vergleiche deine Antworten mit denen des Lehrers.
+608	teilen	V	Frauen teilen alles.
+609	der Arzt	N	Ist sein Vater Arzt?
+610	die Kultur	N	Sie sprachen über Kultur.
+611	die Verbindung	N	Es gibt keine Verbindung zwischen den beiden.
+612	der Plan	N	Wir brauchen einen Plan.
+613	der Sex	N	Sex ist mir wichtig.
+614	zehn	NUM	Sie hat zehn Kinder.
+615	der Kreis	N	Geld bedeutet in politischen Kreisen viel.
+616	nah	A	Das Ende war nah.
+617	aktiv	A	Ich war aktiv.
+618	wert	A	Das ist nicht der Rede wert.
+619	die Stimme	N	Ich höre Stimmen.
+620	bezahlen	V	Lass mich bezahlen.
+621	der Satz	N	Das ist mein Satz!
+622	das Opfer	N	Das Opfer starb sofort.
+623	der Hund	N	Ich habe einen Hund.
+624	starten	V	Sie starteten zur gleichen Zeit.
+625	der Kampf	N	Wir gewannen den Kampf.
+626	erfahren	V	Alle werden es erfahren.
+627	übrigens	A	Was machst du übrigens so?
+628	die Kunst	N	Jeder liebt Kunst.
+629	zumindest	A	Mein Bruder ist sehr wichtig. Zumindest denkt er das.
+630	der Kunde	N	Der Kunde hat immer Recht.
+631	die Studie	N	
+632	bestimmen	V	Sie mag bestimmt Tiere.
+633	die Zeitung	N	Wo ist die Zeitung von heute?
+634	schlagen	V	Meine Frau schlägt mich.
+635	das Programm	N	Sie folgen nicht ihren Programmen.
+636	lieb	A	Mein lieber Freund!
+637	die Weise	N	Ich konnte es in keiner Weise.
+638	der Schritt	N	Sie geht immer leichten Schrittes.
+639	der Schüler	N	Wir sind Schüler.
+640	allgemein	A	Das ist allgemein bekannt.
+641	zählen	V	Er kann nicht zählen.
+642	die Bank	N	Ich gehe zur Bank.
+643	berichten	V	Es gibt nichts zu berichten.
+644	absolut	A	Ich bin absolut dagegen.
+645	hinaus	A	Willst du auf etwas hinaus?
+646	mindestens	A	Ich habe mindestens zehn Bücher.
+647	die Sicherheit	N	Sicherheit ist wichtig.
+648	der Fan	N	Sie zeigte mir einige Briefe, die sie von ihren Fans bekommen hatte.
+649	passen	V	Passt jetzt alles?
+650	klingen	V	Wie klingt es?
+651	positiv	A	Ich sehe die positive Seite der Dinge.
+652	enthalten	V	Was enthält es?
+653	rechts	A	Ja, sie ist hier rechts.
+654	der Verein	N	Gibt es in deiner Stadt viele Vereine?
+655	die Quelle	N	Das war die Quelle seiner Probleme.
+656	na	I	Na, so was!
+657	melden	V	Ich werde mich bald bei dir melden.
+658	drauf	A	Kommt drauf an.
+659	weiterhin	A	Ihre Mutter wird weiterhin arbeiten.
+660	überall	A	Wir haben überall gesucht.
+661	die Saison	N	Für ihn ist die Saison zu Ende.
+662	normal	A	Ist das normal?
+663	perfekt	A	Das ist perfekt.
+664	das Licht	N	Das Licht ging aus.
+665	veröffentlichen	V	Sie hat schon zwei Bücher veröffentlicht.
+666	der Körper	N	Kein Körper ist perfekt.
+667	die Linie	N	Kein Tag ohne Linie.
+668	besuchen	V	Sie besuchten uns.
+669	der Politiker	N	Politiker sind nichts wert.
+670	dennoch	A	Ich fühlte mich nicht besonders gut, ging aber dennoch arbeiten.
+671	der Dezember	N	Der Monat Dezember beginnt.
+672	der Boden	N	Sie liegt auf dem Boden.
+673	tot	A	Sie waren tot.
+674	plötzlich	A	Die Preise sind plötzlich gefallen.
+675	der Markt	N	Wer geht zum Markt?
+676	breit	A	Wie breit ist es?
+677	das Tor	N	Er sagt, es wäre kein Tor.
+678	der Bürger	N	Jeder Bürger sollte ihnen helfen.
+679	die Band	N	Dieses Buch hat zwei Bände.
+680	der Grad	N	Wie viel Grad haben wir heute?
+681	öffnen	V	Öffnen wir das Fenster!
+682	der Gast	N	Wir haben Gäste.
+683	das Gebiet	N	Wir sind alle dumm, nur auf verschiedenen Gebieten.
+684	die Nähe	N	Sie wohnen in der Nähe.
+685	vorher	A	Ich hätte vorher daran denken sollen.
+686	der Januar	N	Heute ist der zweite Januar.
+687	steigen	V	Die Preise steigen.
+688	die Freundin	N	Ich bin nicht Ihre Freundin.
+689	nett	A	Seien Sie nett!
+690	zusätzlich	A	Unser Plan hat viele zusätzliche Vorteile.
+691	die Kritik	N	Der Film hat gute Kritiken bekommen.
+692	kriegen	V	Ich kriege dich.
+693	fertig	A	Sind Sie fertig?
+694	die Luft	N	Mir ging die Luft aus.
+695	der Wert	N	Dieses Buch hat keinen Wert.
+696	historisch	A	Dies ist ein historischer Moment.
+697	die Tür	N	Da ist jemand an der Tür.
+698	das Gebäude	N	Ich habe das Gebäude gefunden.
+699	unterschiedlich	A	Sie gingen in unterschiedliche Richtungen.
+700	das Hotel	N	Er blieb im Hotel.
+701	bereit	A	Bist du bereit?
+702	glücklich	A	Sie ist glücklich.
+703	der Sonntag	N	Heute ist Sonntag.
+704	erleben	V	Wir haben drei Kriege erlebt.
+705	das Volk	N	Wir sind das Volk.
+706	gelingen	V	Mir gelingt nichts.
+707	ausgehen	V	Mir ist das Geld ausgegangen.
+708	der Februar	N	Ich habe im Februar Geburtstag.
+709	heraus	A	
+710	nochmal	A	Darf ich das nochmal sehen?
+711	die Region	N	Dieses Video ist in Ihrer Region nicht verfügbar.
+712	unten	A	Heute oben, morgen unten.
+713	die Wirtschaft	N	Nicht den Menschen, sondern der Wirtschaft muss es gut gehen!
+714	feiern	V	Wer möchte feiern?
+715	geschehen	V	Was ist geschehen?
+716	der Bericht	N	Er schrieb den Bericht.
+717	das Paar	N	Zwei geben ein Paar.
+718	dauern	V	Wie lange dauert es?
+719	der Text	N	Der Text ist zu lang.
+720	das Zimmer	N	Wo ist dein Zimmer?
+721	der Autor	N	Wer ist der Autor dieses Buchs?
+722	die Beziehung	N	Unsere Beziehung ist stärker denn je.
+723	technisch	A	Ich wundere mich immer wieder über den technischen Fortschritt.
+724	die Bevölkerung	N	Zehn Prozent der Bevölkerung arbeiten nicht.
+725	darin	A	Frauen sind besser darin als Männer.
+726	herstellen	V	Ist das hier hergestellt worden?
+727	planen	V	Das war nicht geplant.
+728	dienen	V	Erst reich werden, dann Gott dienen.
+729	das Produkt	N	Wir verkaufen nur Produkte bester Qualität.
+730	der Flüchtling	N	Unter den Flüchtlingen sind viele Kinder.
+731	die Bedeutung	N	Die Nachricht ist von großer Bedeutung.
+732	los	A	Was ist los?
+733	lustig	A	Du bist lustig.
+734	acht	NUM	Sie ist acht.
+735	heutig	A	Ich las es in der heutigen Ausgabe.
+736	der Vertrag	N	Vertrag ist Vertrag.
+737	der Unterschied	N	Was ist der Unterschied?
+738	die Ausbildung	N	Wer hat deine Ausbildung bezahlt?
+739	der Beginn	N	Das war der Beginn einer großen Liebe.
+740	deswegen	A	Deswegen bin ich hier.
+741	teilweise	A	Seine Geschichte ist teilweise wahr.
+742	weder	F	Weder Gott noch Herr.
+743	der Inhalt	N	Was ist der Inhalt von diesem Buch?
+744	die Dame	N	Nicht so schnell, junge Dame!
+745	empfehlen	V	Was empfehlen Sie mir?
+746	die Hälfte	N	Das ist deine Hälfte.
+747	das Bett	N	Ich will ins Bett.
+748	bestätigen	V	Man hat es bestätigt.
+749	unbedingt	A	Du musst diesen Film unbedingt sehen.
+750	das Wochenende	N	Wie war dein Wochenende?
+751	schützen	V	Ich muss mich schützen.
+752	die Veranstaltung	N	Wir besuchen dieselben Veranstaltungen.
+753	die Gefahr	N	Wir sind in Gefahr.
+754	entdecken	V	Ich habe alles entdeckt!
+755	unterwegs	A	Wir sind unterwegs.
+756	wenigstens	A	Wenigstens konnte ich dich sehen.
+757	zuvor	A	Er ist stärker als je zuvor.
+758	schlafen	V	Ich will schlafen.
+759	russisch	A	Sie spricht Russisch.
+760	die Bewegung	N	Setzen wir uns in Bewegung!
+761	bitten	V	Ich wurde gebeten, hier zu warten.
+762	lösen	V	Können Sie dieses Problem lösen?
+763	werfen	V	Er warf mich aus dem Haus.
+764	die Schuld	N	Es ist deine Schuld.
+765	ständig	A	Er liest ständig.
+766	sieben	NUM	Ich stehe um sieben auf.
+767	verändern	V	Alles verändert sich.
+768	ergeben	V	Das ergibt Sinn.
+769	die Universität	N	Er geht zur Universität.
+770	der Kontakt	N	Wir bleiben in Kontakt.
+771	unternehmen	V	Wir müssen etwas unternehmen.
+772	der Sport	N	Ich mag Sport.
+773	die Ahnung	N	Ich habe keine Ahnung.
+774	indem	F	Man lernt, indem man lehrt.
+775	zuerst	A	Die Frauen zuerst.
+776	dumm	A	Sei nicht dumm.
+777	interessieren	V	Für was interessieren Sie sich?
+778	verlassen	V	Du kannst mich nicht verlassen.
+779	erwähnen	V	Er hat es erwähnt.
+780	treten	V	Er tritt mich!
+781	ehrlich	A	Ich glaube, dass er ehrlich ist.
+782	der Dienst	N	Ich stehe Ihnen zu Diensten.
+783	verhindern	V	Wer kann das verhindern?
+784	jener	F	Jene Person ist gestorben.
+785	schwierig	A	Es ist zu schwierig.
+786	total	A	Du hast total recht.
+787	knapp	A	Das war knapp!
+788	holen	V	Ich muss Geld holen gehen.
+789	alleine	A	Bist du alleine?
+790	der Druck	N	Der Reifen hat einen sehr hohen Druck.
+791	genauso	A	Ich habe genauso viel Geld wie er.
+792	lediglich	A	Ich habe ihn lediglich einmal getroffen.
+793	die Liste	N	Machen Sie eine Liste.
+794	soweit	F	Ich bin soweit.
+795	der Kommentar	N	Wer schreibt diese Kommentare?
+796	die Farbe	N	Ich vergaß seine Farben.
+797	der Versuch	N	Versuche das nicht zu Hause!
+798	die Wahrheit	N	Ich kenne die Wahrheit.
+799	anrufen	V	Ich habe ihn angerufen.
+800	das Gespräch	N	Dieses Gespräch wird aufgenommen.
+801	entfernt	A	Ich sah ein weit entferntes Licht.
+802	täglich	A	Wir sehen uns täglich.
+803	das Mittel	N	Wir versuchen es mit allen Mitteln.
+804	blau	A	Das Auto ist blau.
+805	der Morgen	N	Er stand heute Morgen früh auf.
+806	verletzen	V	Bist du verletzt?
+807	einsetzen	V	Man musste schweres Gerät einsetzen.
+808	dran	A	Du bist dran.
+809	durchaus	A	Das ist mir durchaus recht.
+810	inzwischen	A	Inzwischen habe ich mich daran gewöhnt.
+811	niemals	A	Ich gebe niemals auf.
+812	die Unterstützung	N	Vielen Dank für eure Unterstützung.
+813	die Verfügung	N	Ich habe viel Geld zur Verfügung.
+814	der Begriff	N	Sie ist im Begriff zu gehen.
+815	die Aktion	N	Ich musste eine Aktion durchführen, die mir Angst machte.
+816	die Aussage	N	Du hast das Recht, die Aussage zu verweigern.
+817	kämpfen	V	Wir kämpfen nicht.
+818	privat	A	Das ist seine private Website.
+819	der Kollege	N	Er ist mein Kollege.
+820	die Funktion	N	
+821	beschäftigen	V	Sie waren beschäftigt.
+822	der Berg	N	Der Berg ist grün.
+823	die Erde	N	Die Erde ist rund.
+824	erneut	A	Ich werde es erneut versuchen.
+825	die Natur	N	Ich liebe die Natur.
+826	überzeugen	V	Das hat niemanden überzeugt.
+827	stecken	V	Sie steckte ihren Kopf aus dem Fenster.
+828	kostenlos	A	Ist es kostenlos?
+829	der Lehrer	N	Er ist Lehrer.
+830	einzeln	A	Jeder einzelne Baum muss heute geschützt werden.
+831	amerikanisch	A	Ich habe ein paar amerikanische Freunde.
+832	die Mannschaft	N	Unsere Mannschaft hat verloren.
+833	die Ordnung	N	Hier ist alles in Ordnung.
+834	der Samstag	N	Es ist Samstag.
+835	vermutlich	A	Vermutlich wird er nicht kommen.
+836	die Runde	N	Diese Runde geht auf mich. Was möchten Sie?
+837	das Gericht	N	Nein, chinesische Gerichte sind die besten.
+838	die Macht	N	Macht keine Fehler!
+839	besitzen	V	Ich besitze dieses Auto.
+840	das Geschäft	N	Geschäft ist Geschäft.
+841	merken	V	Ich merke das ja.
+842	behandeln	V	Lass dich behandeln.
+843	trinken	V	Ich trinke nie.
+844	töten	V	Bitte töte mich nicht.
+845	der Dollar	N	Hier sind zehn Dollar.
+846	entweder	F	Entweder hast du Recht oder ich.
+847	das Fest	N	Er wird zum Fest kommen.
+848	erlauben	V	Ist das erlaubt?
+849	notwendig	A	Tun Sie, was immer notwendig ist.
+850	derselbe	F	Sie kommen aus derselben Stadt.
+851	frisch	A	Es ist frisch heute.
+852	der Patient	N	Patienten erzählen Geschichten.
+853	einstellen	V	Niemand wird dich einstellen.
+854	ruhig	A	Bitte seid alle ruhig.
+855	der Sieg	N	Sieg oder Tod!
+856	der Besuch	N	Wir haben Besuch.
+857	die Reise	N	Was ist der Zweck ihrer Reise?
+858	das Lied	N	Ich kannte das Lied nicht.
+859	erhöhen	V	Wir müssen die Preise erhöhen.
+860	der Chef	N	Wo ist der Chef?
+861	der Freitag	N	Gestern war Freitag.
+862	der Baum	N	Das ist ein Baum.
+863	die Ausgabe	N	Die Ausgaben sind sehr hoch.
+864	auftreten	V	Er ist oft im Fernsehen aufgetreten.
+865	die Diskussion	N	Diese Frage ist in der Diskussion.
+866	die Sekunde	N	Du hast drei Sekunden.
+867	bewegen	V	Ich kann mich nicht bewegen.
+868	teuer	A	Wie viel kostet das teuerste Auto?
+869	der Club	N	Ich sehe ihn manchmal im Club.
+870	der Rest	N	Den Rest wissen Sie.
+871	liefern	V	Kannst du das liefern?
+872	anziehen	V	Sie war angezogen.
+873	die Gewalt	N	Bildung ist das beste Mittel gegen Gewalt.
+874	die Nummer	N	Hier ist meine Nummer.
+875	die Waffe	N	Zu den Waffen!
+876	der Wald	N	Wir sind im Wald.
+877	das Haar	N	Sie hat kurze Haare.
+878	enden	V	Wann endet es?
+879	das Fahrzeug	N	Ich musste mein Fahrzeug verkaufen.
+880	das Gold	N	Das ist reines Gold.
+881	der Laden	N	Ich arbeite im Laden meines Freundes.
+882	das Schiff	N	Wir haben das Schiff verlassen.
+883	übrig	A	Es ist nur noch eine übrig.
+884	arm	A	Sie ist nicht arm.
+885	der Hinweis	N	Danke für den Hinweis!
+886	durchführen	V	Das Projekt ist sehr schwer durchzuführen.
+887	das Studium	N	Wie läuft dein Studium?
+888	das Handy	N	Sie verliert ständig ihr Handy.
+889	der Tisch	N	Da ist ein Tisch.
+890	gefährlich	A	Ich bin gefährlich.
+891	leisten	V	Ich leiste dir Gesellschaft.
+892	der Anspruch	N	Die Aufgabe nahm mehr Zeit in Anspruch als erwartet.
+893	der Lauf	N	Lauf nicht so schnell.
+894	die Energie	N	Kinder sind voller Energie.
+895	die Bildung	N	Meiner Meinung nach ist nichts so wichtig wie die Bildung.
+896	eh	A	Eh, Kumpel, ich rede mit dir!
+897	irgendwann	A	Jeder stirbt irgendwann.
+898	offenbar	A	Du hast offenbar recht.
+899	die Post	N	Du hast Post.
+900	gering	A	Das ist meine geringste Sorge.
+901	die Freude	N	Lesen macht mir Freude.
+902	der Künstler	N	Ich bin ein Künstler.
+903	verbieten	V	Das Gesetz verbietet es.
+904	ursprünglich	A	Ursprünglich waren sie Bauern.
+905	das Fenster	N	Öffnen Sie nicht das Fenster.
+906	retten	V	Sie haben uns gerettet.
+907	fliegen	V	Die Zeit fliegt.
+908	die Insel	N	Das ist keine Insel.
+909	der Zustand	N	In was für einem Zustand befindet sich das Gebäude?
+910	erfüllen	V	Die Nachrichten aus meinem Land erfüllten mich mehr und mehr mit Sorge.
+911	der Brief	N	Da ist ein Brief für dich.
+912	der See	N	Der See ist groß.
+913	der Test	N	Der Test war einfach.
+914	drin	A	Ich bin hier drin.
+915	die Freiheit	N	Was ist Freiheit?
+916	das Zeichen	N	Was bedeutet dieses Zeichen?
+917	zuletzt	A	Wann hast du sie zuletzt gesehen?
+918	der Soldat	N	Sie waren Soldaten.
+919	speziell	A	Sie sind speziell.
+920	zerstören	V	Ich habe alles zerstört.
+921	nötig	A	Wir haben Geld nötig.
+922	baden	V	Ich bade gerade.
+923	der Stein	N	Der Stein ist schwer.
+924	das Modell	N	Das ist ein neues Modell.
+925	angreifen	V	Wir werden angegriffen.
+926	die Kilometer	N	Ich laufe jeden Tag zehn Kilometer.
+927	die Schwester	N	Sie ist meine Schwester.
+928	die Erinnerung	N	Danke für die Erinnerungen.
+929	betreiben	V	
+930	die Hoffnung	N	Es gibt nicht viel Hoffnung.
+931	der Meister	N	Ich stellte mich dem Meister.
+932	der Zweck	N	Es hat keinen Zweck.
+933	anschauen	V	Sie schaute mich an.
+934	das Englisch	N	Sie lernt Englisch.
+935	singen	V	Ich singe gerne.
+936	der Traum	N	Mein Traum ist wahr geworden.
+937	derzeit	A	Das ist alles, was derzeit bekannt ist.
+938	der Montag	N	Heute ist Montag.
+939	der Zusammenhang	N	Das kommt auf den Zusammenhang an.
+940	die Sonne	N	Die Sonne scheint.
+941	stolz	A	Ich bin sehr stolz auf meinen Vater.
+942	der Bau	N	Eine neue Schule ist im Bau.
+943	günstig	A	Es war sehr günstig.
+944	das Bein	N	Er hat lange Beine.
+945	beteiligen	V	Ich bin beteiligt.
+946	sorgen	V	Meine Mutter sorgt sich um alles.
+947	vollständig	A	Wir wollen vollständige Sätze.
+948	betrachten	V	Er betrachtete mein Gesicht.
+949	die Ruhe	N	Lass uns in Ruhe!
+950	der Winter	N	Ich mag Winter.
+951	das Museum	N	Wo ist das Museum?
+952	der Himmel	N	Warum ist der Himmel blau?
+953	verfolgen	V	Ich werde verfolgt.
+954	praktisch	A	Wir sind praktisch wie Brüder.
+955	betreffen	V	Das betrifft mich nicht.
+956	das Interview	N	Wie war Ihr Interview?
+957	der/die Jugendliche	N	Es ist der Traum eines jeden Jugendlichen.
+958	daraus	A	Ich möchte keine große Sache daraus machen.
+959	die Sicht	N	Land in Sicht!
+960	der Zeitpunkt	N	Sie kommen zum richtigen Zeitpunkt.
+961	die Kamera	N	Ich habe viele Kameras.
+962	die Rede	N	Rede nicht so.
+963	der Schutz	N	Sie wollten Schutz.
+964	vertreten	V	Mich vertritt er nicht.
+965	vorkommen	V	Kommt dir das bekannt vor?
+966	danken	V	Nichts zu danken.
+967	verlangen	V	Sie verlangen viel von mir.
+968	lachen	V	Er lacht immer.
+969	das Essen	N	Ich warte auf das Essen.
+970	offiziell	A	Diese Nachrichten sind offiziell.
+971	aufgeben	V	Ich habe einfach aufgegeben.
+972	kalt	A	Heute ist es kalt.
+973	beenden	V	Meine Arbeit ist beendet.
+974	das Krankenhaus	N	Er ist im Krankenhaus.
+975	richten	V	Ich möchte jetzt gerne einige Fragen an Sie richten.
+976	informieren	V	Niemand ist informiert.
+977	der Vorteil	N	Wir haben einen Vorteil.
+978	dick	A	Ich bin dick.
+979	die Anzahl	N	Die Anzahl privater Universitäten ist gestiegen.
+980	immerhin	A	Immerhin habe ich versucht, etwas zu unternehmen.
+981	die Lust	N	Ich hab Lust dich zu sehen.
+982	sobald	F	Ich komme, sobald ich kann.
+983	solange	F	Solange man lebt, solange besteht Hoffnung.
+984	die Website	N	Hast du eine Website?
+985	dank	F	Habt Dank, Brüder.
+986	die Wand	N	Die Wand ist zwei Meter dick.
+987	der Polizist	N	Ich bin Polizist.
+988	eröffnen	V	Das Krankenhaus wurde letzten Monat eröffnet.
+989	behaupten	V	Wie können Sie das behaupten?
+990	das Dorf	N	Es ist ein Dorf.
+991	ausgeben	V	Sie gaben Geld aus.
+992	entsprechen	V	Alles, was er sagte, entsprach der Wahrheit.
+993	nahe	F	Sie kam nahe zu mir.
+994	wesentlich	A	Das scheint mir ein ganz wesentlicher Satz zu sein.
+995	die Strecke	N	Strecken Sie Ihre Arme aus.
+996	gesund	A	Bist du gesund?
+997	das Verhalten	N	Sie verstand ihr eigenes Verhalten nicht.
+998	der Urlaub	N	Ich mache Urlaub.
+999	krank	A	Du bist krank!
+1000	die Qualität	N	Dieser Artikel ist von hoher Qualität.
