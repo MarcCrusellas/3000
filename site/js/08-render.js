@@ -103,6 +103,18 @@ function toggleSel(k) {
   else if (SEL.has(k)) S.sel = S.sel.filter(x => x !== k); else S.sel.push(k);
   syncSel(); changed();
 }
+/* words saved under Otras that are now list words: "quiero aprenderla" joins the list, "ya la sé" counts as known */
+function promoteExtras() {
+  if (!DATA) return;
+  let n = 0;
+  for (const k of Object.keys(S.extra)) {
+    if (!WBY.has(k)) continue;
+    if (S.extra[k].s === 'known') { if (!S.known[k]) markKnown(k); }
+    else if (!S.known[k] && !S.sel.includes(k)) S.sel.push(k);
+    delete S.extra[k]; n++;
+  }
+  if (n) { syncSel(); changed(); }
+}
 function autoAdd() {
   if (!DATA) return;
   const t = today(); if (S.auto === t) return;

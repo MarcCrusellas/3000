@@ -1,7 +1,8 @@
 # Adding words (1001 to 3000)
 
 How the data and audio for words 1 to 1000 were built, and what to change to add more.
-Nothing here has been run for words past 1000 yet.
+**Words 1001 to 2000 were added on 2026-11-21 with `scripts/extend/`**: see "How 1001 to 2000 were added" at the end.
+That is the way to do 2001 to 3000 as well; the sections before it describe the original 1000-word build.
 
 **Be warned:** these scripts were written for a one-off 1000-word build. Several steps were run by hand,
 and `1000` is hard-coded in a few places. Read the "Before you run" list first.
@@ -97,3 +98,43 @@ Rendering 2000 words is a few hours, mostly audio.
 - Run `tests/e2e.py` and try the app with the new data (Palabras, a listening loop, a Repasar session).
 - Check a sample of the new glosses and sentences by ear.
 - Deploy: commit `site/data/` and the new `site/audio/` packs.
+
+## How 1001 to 2000 were added (2026-11-21)
+
+`scripts/extend/` appends to the live `words.json` instead of rebuilding it, so keys, ranks, sentence ids and the
+old audio packs stay exactly as they were. Inputs as above (Tatoeba exports, `nouns.csv`, the kaikki German JSONL).
+
+```
+G=/tmp/g3   # scratch: tatoeba/, parsed.pkl, clips, caches
+python3 -I extend/parse.py $T $G/parsed.pkl                         # every deu sentence with Spanish, 3-18 words (~2 min)
+python3 -I extend/sharp_s.py $G/parsed.pkl build 2100 $G/sharp.json  # ß words ranks.json lost (see below)
+python3 -I extend/pick_words.py build $G/parsed.pkl $N site/data/words.json 1000 $G/newwords.json $G/sharp.json
+# manual: build/glosses_es_2.tsv  (key, meaning, optional w=<display> pl=<plural or ->)
+python3 -I extend/select_sents.py $T $G/parsed.pkl build site/data/words.json $G/newwords.json $G/sel.json
+# manual, repeat until select_sents prints "keys to gloss 0" and every word has its supplements:
+#   build/extra_glosses_2.tsv  meanings for words outside the list that the sentences use
+#   build/supplement_2.tsv     Claude-written sentences (key, de, es) for words Tatoeba has too few for
+python3 -I extend/merge.py build $G/parsed.pkl $N $G/wikt.jsonl $G/newwords.json $G/sel.json site $G/render.json
+# audio: queue/plan for the render list only (see make_audio_plan.py), fetch_native.py, then
+EDGE_TTS_CA=... python3 edge_render.py $G/plan.json $G/render_words.json $G/native $G/clips
+python3 -I extend/pack_ext.py $G/plan.json $G/render.json $G/clips site
+EDGE_TTS_CA=... python3 extend/words_ext.py site $G/wcache
+```
+
+What changed on the way:
+- **ß words were missing.** wordfreq folds ß into ss, so `build_data.py` never matched Straße, Spaß, außerdem, Fuß...
+  against Tatoeba, and they are not in `ranks.json` (13 of them should have been in the first 1000). `sharp_s.py`
+  recomputes their scores; they now sit at the start of 1001+ and in frequency order after that.
+- **Dropped from the list** (`extend/remap.py`): lemmatizer leftovers (geh, sag, Gute, könnsten...), which `REMAP`
+  folds into the real word, and rude subtitle words (Arsch, ficken, Scheiße).
+- **Names allowed**: sentences may contain common Tatoeba names and places (Tom, Maria, Boston...), which are not
+  counted as unknown words. Other proper nouns still rule a sentence out.
+- **Sentence rules** as agreed: see the docstring of `select_sents.py`. 926 of the 1000 new words have a sentence
+  where they are the only new word. Words with fewer than 2 short sentences or 3 in all got Claude-written ones.
+- **Longer sentences** (11-18 words, native recordings first) were added to every word that Tatoeba has them for,
+  up to 2 per word, after the short ones. They carry `L: 1`; the app keeps them out of most review tests.
+- **Packs**: new words' sentences in `pack-41..50`, new sentences of words 1-1000 in `pack-71..80`,
+  single-word audio of 1001+ in `pack-61`. `pack-30..40` are untouched.
+
+For 2001 to 3000: the same commands with the next 1000. Their sentence packs continue at 51..60, which are free;
+single-word audio goes to pack-62 (`words_ext.py site <cache> 2001`).
