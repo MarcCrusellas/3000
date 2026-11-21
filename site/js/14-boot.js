@@ -12,5 +12,5 @@
     $('#buildInfo').textContent = DATA.v + ' · ' + DATA.words.length + ' palabras · ' + Object.keys(DATA.sents).length + ' frases.';
     renderAll();
   } catch (e) { toast('Error: ' + e.message); }
-  initStore().finally(autoAdd);
+  initStore().finally(() => { promoteExtras(); autoAdd(); });
 })();

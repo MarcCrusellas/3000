@@ -70,13 +70,16 @@ function umlaut(x) {
   }
   return x;
 }
-function sentWith(w, r) { for (const i of shuffle(w.s.map((_, i) => i), r)) if (hasTok(w.s[i], (w.gp || [])[i])) return i; return -1; }
+/* long sentences (L, 11+ words) are for listening: tests use the short ones when a word has any */
+const isL = sid => !!(DATA.sents[sid] || {}).L;
+function shortS(w) { const s = w.s.filter(sid => !isL(sid)); return s.length ? s : w.s; }
+function sentWith(w, r) { for (const i of shuffle(w.s.map((_, i) => i), r).sort((a, b) => isL(w.s[a]) - isL(w.s[b]))) if (hasTok(w.s[i], (w.gp || [])[i])) return i; return -1; }
 function meanQ(w, r, hard) {
   const pool = DATA.words.filter(x => x !== w && x.c === w.c && headG(x.g) !== headG(w.g));
   const near = pool.filter(x => Math.abs(x.r - w.r) <= 200), fresh = (x, o) => !o.some(y => headG(y.g) === headG(x.g));
   let ds = hard ? simWords(w, r, 3) : pickN(near.length >= 8 ? near : pool, 3, r, fresh);
   if (ds.length < 3) ds = ds.concat(pickN(DATA.words.filter(x => x !== w && headG(x.g) !== headG(w.g)), 3 - ds.length, r, (x, o) => fresh(x, o.concat(ds))));
-  return {type: 'mean', opts: shuffle([w.g, ...ds.map(x => x.g)], r), ans: w.g, sid: w.s[Math.floor(r() * w.s.length)], dsw: ds};
+  return {type: 'mean', opts: shuffle([w.g, ...ds.map(x => x.g)], r), ans: w.g, sid: (ws => ws[Math.floor(r() * ws.length)])(shortS(w)), dsw: ds};
 }
 function writeQ(w, r) {
   const i = sentWith(w, r), ans = [bare(w)]; if (artOf(w)) ans.push(w.w);
@@ -226,7 +229,7 @@ function sentQ(w, r, slow, lvl, contrast) {
   return {type: 'sent', sid, slow, ans: DATA.sents[sid].es, opts: shuffle([DATA.sents[sid].es, ...ds], r)};
 }
 function transQ(w, r, dir, typed, aud, lvl) {
-  const sid = bestSent(w.s, r, w.k), s = DATA.sents[sid], f = dir === 'es' ? 'de' : 'es';
+  const sid = bestSent(shortS(w), r, w.k), s = DATA.sents[sid], f = dir === 'es' ? 'de' : 'es';
   const i = w.s.indexOf(sid), surf = ((w.gp || [])[i] || bare(w)).toLowerCase();
   const ds = typed ? [] : hardSents(sid, r, 2, lvl || 0, w.k, isShort(w) ? surf : null).map(id => DATA.sents[id][f]);
   return {type: 'trans', sid, dir, typed, aud: aud && dir === 'de' && s.a && s.a.de, ans: s[f], opts: typed ? null : shuffle([s[f], ...ds], r)};

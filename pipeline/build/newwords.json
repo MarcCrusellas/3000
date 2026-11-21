@@ -1,0 +1,8500 @@
+[
+{
+"r": 1001,
+"k": "N:Straße",
+"r0": 1000.49,
+"n": 197,
+"w": "die Straße",
+"pl": "Straßen",
+"gen": "f"
+},
+{
+"r": 1002,
+"k": "W:außerdem",
+"r0": 1000.49,
+"n": 21,
+"w": "außerdem",
+"pl": ""
+},
+{
+"r": 1003,
+"k": "W:schließlich",
+"r0": 1000.49,
+"n": 57,
+"w": "schließlich",
+"pl": ""
+},
+{
+"r": 1004,
+"k": "N:Spaß",
+"r0": 1000.49,
+"n": 91,
+"w": "der Spaß",
+"pl": "Späße",
+"gen": "m"
+},
+{
+"r": 1005,
+"k": "W:außer",
+"r0": 1000.49,
+"n": 123,
+"w": "außer",
+"pl": ""
+},
+{
+"r": 1006,
+"k": "N:Fuß",
+"r0": 1000.49,
+"n": 148,
+"w": "der Fuß",
+"pl": "Füße",
+"gen": "m"
+},
+{
+"r": 1007,
+"k": "N:Fußball",
+"r0": 1000.49,
+"n": 77,
+"w": "der Fußball",
+"pl": "Fußbälle",
+"gen": "m"
+},
+{
+"r": 1008,
+"k": "W:regelmäßig",
+"r0": 1000.49,
+"n": 36,
+"w": "regelmäßig",
+"pl": ""
+},
+{
+"r": 1009,
+"k": "N:Größe",
+"r0": 1000.49,
+"n": 24,
+"w": "die Größe",
+"pl": "Größen",
+"gen": "f"
+},
+{
+"r": 1010,
+"k": "W:bloß",
+"r0": 1000.49,
+"n": 45,
+"w": "bloß",
+"pl": ""
+},
+{
+"r": 1011,
+"k": "N:Maßnahme",
+"r0": 1000.49,
+"n": 23,
+"w": "die Maßnahme",
+"pl": "Maßnahmen",
+"gen": "f"
+},
+{
+"r": 1012,
+"k": "W:anschließend",
+"r0": 1000.49,
+"n": 5,
+"w": "anschließend",
+"pl": ""
+},
+{
+"r": 1013,
+"k": "W:süß",
+"r0": 1000.49,
+"n": 72,
+"w": "süß",
+"pl": ""
+},
+{
+"r": 1014,
+"k": "W:verschwinden",
+"r0": 1001,
+"n": 53,
+"w": "verschwinden",
+"pl": ""
+},
+{
+"r": 1015,
+"k": "W:eng",
+"r0": 1002,
+"n": 25,
+"w": "eng",
+"pl": ""
+},
+{
+"r": 1016,
+"k": "N:Angriff",
+"r0": 1004,
+"n": 9,
+"w": "der Angriff",
+"pl": "Angriffe",
+"gen": "m"
+},
+{
+"r": 1017,
+"k": "N:Stern",
+"r0": 1005,
+"n": 99,
+"w": "der Stern",
+"pl": "Sterne",
+"gen": "m"
+},
+{
+"r": 1018,
+"k": "W:rechnen",
+"r0": 1006,
+"n": 13,
+"w": "rechnen",
+"pl": ""
+},
+{
+"r": 1019,
+"k": "N:Kaffee",
+"r0": 1007,
+"n": 289,
+"w": "der Kaffee",
+"pl": "Kaffees",
+"gen": "m"
+},
+{
+"r": 1020,
+"k": "N:Schaden",
+"r0": 1008,
+"n": 23,
+"w": "der Schaden",
+"pl": "Schäden",
+"gen": "m"
+},
+{
+"r": 1021,
+"k": "W:beobachten",
+"r0": 1009,
+"n": 44,
+"w": "beobachten",
+"pl": ""
+},
+{
+"r": 1022,
+"k": "W:leer",
+"r0": 1010,
+"n": 72,
+"w": "leer",
+"pl": ""
+},
+{
+"r": 1023,
+"k": "N:Wagen",
+"r0": 1012,
+"n": 99,
+"w": "der Wagen",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1024,
+"k": "N:Bus",
+"r0": 1014,
+"n": 216,
+"w": "der Bus",
+"pl": "Busse",
+"gen": "m"
+},
+{
+"r": 1025,
+"k": "W:gründen",
+"r0": 1015,
+"n": 16,
+"w": "gründen",
+"pl": ""
+},
+{
+"r": 1026,
+"k": "N:Gerät",
+"r0": 1016,
+"n": 15,
+"w": "das Gerät",
+"pl": "Geräte",
+"gen": "n"
+},
+{
+"r": 1027,
+"k": "N:Vorstellung",
+"r0": 1017,
+"n": 26,
+"w": "die Vorstellung",
+"pl": "Vorstellungen",
+"gen": "f"
+},
+{
+"r": 1028,
+"k": "W:zurückkommen",
+"r0": 1018,
+"n": 131,
+"w": "zurückkommen",
+"pl": ""
+},
+{
+"r": 1029,
+"k": "N:Technik",
+"r0": 1019,
+"n": 15,
+"w": "die Technik",
+"pl": "Techniken",
+"gen": "f"
+},
+{
+"r": 1030,
+"k": "N:Union",
+"r0": 1020,
+"n": 20,
+"w": "die Union",
+"pl": "Unionen",
+"gen": "f"
+},
+{
+"r": 1031,
+"k": "N:Werbung",
+"r0": 1021,
+"n": 12,
+"w": "die Werbung",
+"pl": "Werbungen",
+"gen": "f"
+},
+{
+"r": 1032,
+"k": "N:Garten",
+"r0": 1022,
+"n": 160,
+"w": "der Garten",
+"pl": "Gärten",
+"gen": "m"
+},
+{
+"r": 1033,
+"k": "W:weltweit",
+"r0": 1023,
+"n": 8,
+"w": "weltweit",
+"pl": ""
+},
+{
+"r": 1034,
+"k": "N:Geist",
+"r0": 1024,
+"n": 51,
+"w": "der Geist",
+"pl": "Geister",
+"gen": "m"
+},
+{
+"r": 1035,
+"k": "W:bestellen",
+"r0": 1025,
+"n": 46,
+"w": "bestellen",
+"pl": ""
+},
+{
+"r": 1036,
+"k": "W:froh",
+"r0": 1026,
+"n": 47,
+"w": "froh",
+"pl": ""
+},
+{
+"r": 1037,
+"k": "W:französisch",
+"r0": 1027,
+"n": 76,
+"w": "französisch",
+"pl": ""
+},
+{
+"r": 1038,
+"k": "W:beweisen",
+"r0": 1028,
+"n": 34,
+"w": "beweisen",
+"pl": ""
+},
+{
+"r": 1039,
+"k": "W:unglaublich",
+"r0": 1029,
+"n": 39,
+"w": "unglaublich",
+"pl": ""
+},
+{
+"r": 1040,
+"k": "N:Generation",
+"r0": 1030,
+"n": 11,
+"w": "die Generation",
+"pl": "Generationen",
+"gen": "f"
+},
+{
+"r": 1041,
+"k": "W:rufen",
+"r0": 1031,
+"n": 81,
+"w": "rufen",
+"pl": ""
+},
+{
+"r": 1042,
+"k": "N:Amt",
+"r0": 1032,
+"n": 4,
+"w": "das Amt",
+"pl": "Ämter",
+"gen": "n"
+},
+{
+"r": 1043,
+"k": "N:Betrieb",
+"r0": 1033,
+"n": 8,
+"w": "der Betrieb",
+"pl": "Betriebe",
+"gen": "m"
+},
+{
+"r": 1044,
+"k": "N:Bier",
+"r0": 1034,
+"n": 123,
+"w": "das Bier",
+"pl": "Biere",
+"gen": "n"
+},
+{
+"r": 1045,
+"k": "N:Einfluss",
+"r0": 1035,
+"n": 15,
+"w": "der Einfluss",
+"pl": "Einflüsse",
+"gen": "m"
+},
+{
+"r": 1046,
+"k": "N:Jugend",
+"r0": 1036,
+"n": 24,
+"w": "die Jugend",
+"pl": "",
+"gen": "f"
+},
+{
+"r": 1047,
+"k": "W:möglichst",
+"r0": 1037,
+"n": 4,
+"w": "möglichst",
+"pl": ""
+},
+{
+"r": 1048,
+"k": "N:Teilnehmer",
+"r0": 1038,
+"n": 9,
+"w": "der Teilnehmer",
+"pl": "Teilnehmer",
+"gen": "m"
+},
+{
+"r": 1049,
+"k": "N:Material",
+"r0": 1039,
+"n": 11,
+"w": "das Material",
+"pl": "Materialien",
+"gen": "n"
+},
+{
+"r": 1050,
+"k": "W:ausziehen",
+"r0": 1040,
+"n": 69,
+"w": "ausziehen",
+"pl": ""
+},
+{
+"r": 1051,
+"k": "W:wachsen",
+"r0": 1041,
+"n": 58,
+"w": "wachsen",
+"pl": ""
+},
+{
+"r": 1052,
+"k": "W:stammen",
+"r0": 1042,
+"n": 21,
+"w": "stammen",
+"pl": ""
+},
+{
+"r": 1053,
+"k": "W:erzielen",
+"r0": 1043,
+"n": 10,
+"w": "erzielen",
+"pl": ""
+},
+{
+"r": 1054,
+"k": "W:aufhören",
+"r0": 1044,
+"n": 196,
+"w": "aufhören",
+"pl": ""
+},
+{
+"r": 1055,
+"k": "N:Maschine",
+"r0": 1045,
+"n": 53,
+"w": "die Maschine",
+"pl": "Maschinen",
+"gen": "f"
+},
+{
+"r": 1056,
+"k": "W:beschreiben",
+"r0": 1046,
+"n": 47,
+"w": "beschreiben",
+"pl": ""
+},
+{
+"r": 1057,
+"k": "W:trennen",
+"r0": 1047,
+"n": 33,
+"w": "trennen",
+"pl": ""
+},
+{
+"r": 1058,
+"k": "N:Spur",
+"r0": 1048,
+"n": 14,
+"w": "die Spur",
+"pl": "Spuren",
+"gen": "f"
+},
+{
+"r": 1059,
+"k": "W:menschlich",
+"r0": 1049,
+"n": 62,
+"w": "menschlich",
+"pl": ""
+},
+{
+"r": 1060,
+"k": "W:wild",
+"r0": 1050,
+"n": 18,
+"w": "wild",
+"pl": ""
+},
+{
+"r": 1061,
+"k": "W:gebären",
+"r0": 1051,
+"n": 156,
+"w": "gebären",
+"pl": ""
+},
+{
+"r": 1062,
+"k": "W:dunkel",
+"r0": 1052,
+"n": 96,
+"w": "dunkel",
+"pl": ""
+},
+{
+"r": 1063,
+"k": "N:Netz",
+"r0": 1053,
+"n": 12,
+"w": "das Netz",
+"pl": "Netze",
+"gen": "n"
+},
+{
+"r": 1064,
+"k": "N:Verhältnis",
+"r0": 1054,
+"n": 11,
+"w": "das Verhältnis",
+"pl": "Verhältnisse",
+"gen": "n"
+},
+{
+"r": 1065,
+"k": "W:traurig",
+"r0": 1055,
+"n": 99,
+"w": "traurig",
+"pl": ""
+},
+{
+"r": 1066,
+"k": "N:Reaktion",
+"r0": 1056,
+"n": 9,
+"w": "die Reaktion",
+"pl": "Reaktionen",
+"gen": "f"
+},
+{
+"r": 1067,
+"k": "W:cool",
+"r0": 1057,
+"n": 5,
+"w": "cool",
+"pl": ""
+},
+{
+"r": 1068,
+"k": "N:Auftrag",
+"r0": 1058,
+"n": 3,
+"w": "der Auftrag",
+"pl": "Aufträge",
+"gen": "m"
+},
+{
+"r": 1069,
+"k": "N:Professor",
+"r0": 1060,
+"n": 41,
+"w": "der Professor",
+"pl": "Professoren",
+"gen": "m"
+},
+{
+"r": 1070,
+"k": "W:relativ",
+"r0": 1061,
+"n": 9,
+"w": "relativ",
+"pl": ""
+},
+{
+"r": 1071,
+"k": "N:Show",
+"r0": 1062,
+"n": 4,
+"w": "die Show",
+"pl": "Shows",
+"gen": "f"
+},
+{
+"r": 1072,
+"k": "W:stets",
+"r0": 1063,
+"n": 19,
+"w": "stets",
+"pl": ""
+},
+{
+"r": 1073,
+"k": "N:Version",
+"r0": 1064,
+"n": 6,
+"w": "die Version",
+"pl": "Versionen",
+"gen": "f"
+},
+{
+"r": 1074,
+"k": "W:zugeben",
+"r0": 1065,
+"n": 69,
+"w": "zugeben",
+"pl": ""
+},
+{
+"r": 1075,
+"k": "W:schätzen",
+"r0": 1066,
+"n": 59,
+"w": "schätzen",
+"pl": ""
+},
+{
+"r": 1076,
+"k": "W:negativ",
+"r0": 1067,
+"n": 14,
+"w": "negativ",
+"pl": ""
+},
+{
+"r": 1077,
+"k": "W:leiden",
+"r0": 1068,
+"n": 49,
+"w": "leiden",
+"pl": ""
+},
+{
+"r": 1078,
+"k": "W:draußen",
+"r0": 1068.99,
+"n": 94,
+"w": "draußen",
+"pl": ""
+},
+{
+"r": 1079,
+"k": "W:angehen",
+"r0": 1069,
+"n": 26,
+"w": "angehen",
+"pl": ""
+},
+{
+"r": 1080,
+"k": "W:kümmern",
+"r0": 1070,
+"n": 73,
+"w": "kümmern",
+"pl": ""
+},
+{
+"r": 1081,
+"k": "W:wechseln",
+"r0": 1071,
+"n": 37,
+"w": "wechseln",
+"pl": ""
+},
+{
+"r": 1082,
+"k": "N:Wunsch",
+"r0": 1072,
+"n": 37,
+"w": "der Wunsch",
+"pl": "Wünsche",
+"gen": "m"
+},
+{
+"r": 1083,
+"k": "W:benötigen",
+"r0": 1073,
+"n": 67,
+"w": "benötigen",
+"pl": ""
+},
+{
+"r": 1084,
+"k": "W:hängen",
+"r0": 1074,
+"n": 45,
+"w": "hängen",
+"pl": ""
+},
+{
+"r": 1085,
+"k": "N:Steuer",
+"r0": 1075,
+"n": 20,
+"w": "die Steuer",
+"pl": "Steuern",
+"gen": "f"
+},
+{
+"r": 1086,
+"k": "N:Methode",
+"r0": 1076,
+"n": 25,
+"w": "die Methode",
+"pl": "Methoden",
+"gen": "f"
+},
+{
+"r": 1087,
+"k": "W:sammeln",
+"r0": 1077,
+"n": 42,
+"w": "sammeln",
+"pl": ""
+},
+{
+"r": 1088,
+"k": "W:außerhalb",
+"r0": 1077.99,
+"n": 19,
+"w": "außerhalb",
+"pl": ""
+},
+{
+"r": 1089,
+"k": "W:überlegen",
+"r0": 1078,
+"n": 16,
+"w": "überlegen",
+"pl": ""
+},
+{
+"r": 1090,
+"k": "N:Basis",
+"r0": 1079,
+"n": 3,
+"w": "die Basis",
+"pl": "Basen",
+"gen": "f"
+},
+{
+"r": 1091,
+"k": "W:dahin",
+"r0": 1080,
+"n": 29,
+"w": "dahin",
+"pl": ""
+},
+{
+"r": 1092,
+"k": "W:irgendwo",
+"r0": 1081,
+"n": 36,
+"w": "irgendwo",
+"pl": ""
+},
+{
+"r": 1093,
+"k": "N:Partner",
+"r0": 1082,
+"n": 7,
+"w": "der Partner",
+"pl": "Partner",
+"gen": "m"
+},
+{
+"r": 1094,
+"k": "N:Richter",
+"r0": 1083,
+"n": 9,
+"w": "der Richter",
+"pl": "Richter",
+"gen": "m"
+},
+{
+"r": 1095,
+"k": "N:Figur",
+"r0": 1084,
+"n": 10,
+"w": "die Figur",
+"pl": "Figuren",
+"gen": "f"
+},
+{
+"r": 1096,
+"k": "N:Verkehr",
+"r0": 1085,
+"n": 16,
+"w": "der Verkehr",
+"pl": "Verkehre",
+"gen": "m"
+},
+{
+"r": 1097,
+"k": "N:Konzert",
+"r0": 1086,
+"n": 71,
+"w": "das Konzert",
+"pl": "Konzerte",
+"gen": "n"
+},
+{
+"r": 1098,
+"k": "N:Party",
+"r0": 1087,
+"n": 97,
+"w": "die Party",
+"pl": "Partys",
+"gen": "f"
+},
+{
+"r": 1099,
+"k": "N:Rat",
+"r0": 1088,
+"n": 93,
+"w": "der Rat",
+"pl": "Räte",
+"gen": "m"
+},
+{
+"r": 1100,
+"k": "N:Wissenschaft",
+"r0": 1089,
+"n": 53,
+"w": "die Wissenschaft",
+"pl": "Wissenschaften",
+"gen": "f"
+},
+{
+"r": 1101,
+"k": "W:vorbereiten",
+"r0": 1090,
+"n": 54,
+"w": "vorbereiten",
+"pl": ""
+},
+{
+"r": 1102,
+"k": "W:reisen",
+"r0": 1091,
+"n": 127,
+"w": "reisen",
+"pl": ""
+},
+{
+"r": 1103,
+"k": "W:kritisch",
+"r0": 1092,
+"n": 15,
+"w": "kritisch",
+"pl": ""
+},
+{
+"r": 1104,
+"k": "W:verbessern",
+"r0": 1093,
+"n": 52,
+"w": "verbessern",
+"pl": ""
+},
+{
+"r": 1105,
+"k": "W:warm",
+"r0": 1094,
+"n": 90,
+"w": "warm",
+"pl": ""
+},
+{
+"r": 1106,
+"k": "N:Roman",
+"r0": 1095,
+"n": 100,
+"w": "der Roman",
+"pl": "Romane",
+"gen": "m"
+},
+{
+"r": 1107,
+"k": "W:klassisch",
+"r0": 1096,
+"n": 24,
+"w": "klassisch",
+"pl": ""
+},
+{
+"r": 1108,
+"k": "N:Masse",
+"r0": 1097,
+"n": 3,
+"w": "die Masse",
+"pl": "Massen",
+"gen": "f"
+},
+{
+"r": 1109,
+"k": "N:Flughafen",
+"r0": 1098,
+"n": 72,
+"w": "der Flughafen",
+"pl": "Flughäfen",
+"gen": "m"
+},
+{
+"r": 1110,
+"k": "W:zufrieden",
+"r0": 1099,
+"n": 77,
+"w": "zufrieden",
+"pl": ""
+},
+{
+"r": 1111,
+"k": "W:ersetzen",
+"r0": 1100,
+"n": 18,
+"w": "ersetzen",
+"pl": ""
+},
+{
+"r": 1112,
+"k": "N:Religion",
+"r0": 1101,
+"n": 36,
+"w": "die Religion",
+"pl": "Religionen",
+"gen": "f"
+},
+{
+"r": 1113,
+"k": "W:hinten",
+"r0": 1102,
+"n": 17,
+"w": "hinten",
+"pl": ""
+},
+{
+"r": 1114,
+"k": "N:Kontrolle",
+"r0": 1103,
+"n": 15,
+"w": "die Kontrolle",
+"pl": "Kontrollen",
+"gen": "f"
+},
+{
+"r": 1115,
+"k": "N:Rücken",
+"r0": 1104,
+"n": 48,
+"w": "der Rücken",
+"pl": "Rücken",
+"gen": "m"
+},
+{
+"r": 1116,
+"k": "N:Vergangenheit",
+"r0": 1105,
+"n": 32,
+"w": "die Vergangenheit",
+"pl": "Vergangenheiten",
+"gen": "f"
+},
+{
+"r": 1117,
+"k": "N:Risiko",
+"r0": 1106,
+"n": 19,
+"w": "das Risiko",
+"pl": "Risikos",
+"gen": "n"
+},
+{
+"r": 1118,
+"k": "N:Unfall",
+"r0": 1107,
+"n": 144,
+"w": "der Unfall",
+"pl": "Unfälle",
+"gen": "m"
+},
+{
+"r": 1119,
+"k": "N:Feld",
+"r0": 1108,
+"n": 12,
+"w": "das Feld",
+"pl": "Felder",
+"gen": "n"
+},
+{
+"r": 1120,
+"k": "N:Pferd",
+"r0": 1109,
+"n": 129,
+"w": "das Pferd",
+"pl": "Pferde",
+"gen": "n"
+},
+{
+"r": 1121,
+"k": "W:nachdenken",
+"r0": 1110,
+"n": 69,
+"w": "nachdenken",
+"pl": ""
+},
+{
+"r": 1122,
+"k": "N:Gegensatz",
+"r0": 1111,
+"n": 6,
+"w": "der Gegensatz",
+"pl": "Gegensätze",
+"gen": "m"
+},
+{
+"r": 1123,
+"k": "W:diskutieren",
+"r0": 1112,
+"n": 33,
+"w": "diskutieren",
+"pl": ""
+},
+{
+"r": 1124,
+"k": "N:Telefon",
+"r0": 1113,
+"n": 112,
+"w": "das Telefon",
+"pl": "Telefone",
+"gen": "n"
+},
+{
+"r": 1125,
+"k": "W:riesig",
+"r0": 1114,
+"n": 33,
+"w": "riesig",
+"pl": ""
+},
+{
+"r": 1126,
+"k": "W:sparen",
+"r0": 1115,
+"n": 33,
+"w": "sparen",
+"pl": ""
+},
+{
+"r": 1127,
+"k": "W:reagieren",
+"r0": 1116,
+"n": 16,
+"w": "reagieren",
+"pl": ""
+},
+{
+"r": 1128,
+"k": "W:anzeigen",
+"r0": 1117,
+"n": 10,
+"w": "anzeigen",
+"pl": ""
+},
+{
+"r": 1129,
+"k": "N:Baby",
+"r0": 1118,
+"n": 102,
+"w": "das Baby",
+"pl": "Babys",
+"gen": "n"
+},
+{
+"r": 1130,
+"k": "N:Feuer",
+"r0": 1119,
+"n": 112,
+"w": "das Feuer",
+"pl": "Feuer",
+"gen": "n"
+},
+{
+"r": 1131,
+"k": "N:Literatur",
+"r0": 1120,
+"n": 12,
+"w": "die Literatur",
+"pl": "Literaturen",
+"gen": "f"
+},
+{
+"r": 1132,
+"k": "W:miteinander",
+"r0": 1121,
+"n": 41,
+"w": "miteinander",
+"pl": ""
+},
+{
+"r": 1133,
+"k": "N:Organisation",
+"r0": 1122,
+"n": 11,
+"w": "die Organisation",
+"pl": "Organisationen",
+"gen": "f"
+},
+{
+"r": 1134,
+"k": "N:Umgebung",
+"r0": 1123,
+"n": 14,
+"w": "die Umgebung",
+"pl": "Umgebungen",
+"gen": "f"
+},
+{
+"r": 1135,
+"k": "W:verantwortlich",
+"r0": 1124,
+"n": 28,
+"w": "verantwortlich",
+"pl": ""
+},
+{
+"r": 1136,
+"k": "N:Zusammenarbeit",
+"r0": 1125,
+"n": 5,
+"w": "die Zusammenarbeit",
+"pl": "",
+"gen": "f"
+},
+{
+"r": 1137,
+"k": "W:leiten",
+"r0": 1126,
+"n": 10,
+"w": "leiten",
+"pl": ""
+},
+{
+"r": 1138,
+"k": "N:Ecke",
+"r0": 1127,
+"n": 23,
+"w": "die Ecke",
+"pl": "Ecken",
+"gen": "f"
+},
+{
+"r": 1139,
+"k": "N:Meer",
+"r0": 1128,
+"n": 99,
+"w": "das Meer",
+"pl": "Meere",
+"gen": "n"
+},
+{
+"r": 1140,
+"k": "N:Jude",
+"r0": 1129,
+"n": 11,
+"w": "der Jude",
+"pl": "Juden",
+"gen": "m"
+},
+{
+"r": 1141,
+"k": "N:Seele",
+"r0": 1130,
+"n": 66,
+"w": "die Seele",
+"pl": "Seelen",
+"gen": "f"
+},
+{
+"r": 1142,
+"k": "N:Forschung",
+"r0": 1132,
+"n": 7,
+"w": "die Forschung",
+"pl": "Forschungen",
+"gen": "f"
+},
+{
+"r": 1143,
+"k": "W:dasein",
+"r0": 1133,
+"n": 68,
+"w": "dasein",
+"pl": ""
+},
+{
+"r": 1144,
+"k": "N:Park",
+"r0": 1134,
+"n": 124,
+"w": "der Park",
+"pl": "Parks",
+"gen": "m"
+},
+{
+"r": 1145,
+"k": "N:Vorschlag",
+"r0": 1135,
+"n": 51,
+"w": "der Vorschlag",
+"pl": "Vorschläge",
+"gen": "m"
+},
+{
+"r": 1146,
+"k": "W:antworten",
+"r0": 1136,
+"n": 78,
+"w": "antworten",
+"pl": ""
+},
+{
+"r": 1147,
+"k": "N:Urteil",
+"r0": 1137,
+"n": 14,
+"w": "das Urteil",
+"pl": "Urteile",
+"gen": "n"
+},
+{
+"r": 1148,
+"k": "N:Wetter",
+"r0": 1138,
+"n": 143,
+"w": "das Wetter",
+"pl": "Wetter",
+"gen": "n"
+},
+{
+"r": 1149,
+"k": "W:ausschließlich",
+"r0": 1138.99,
+"n": 5,
+"w": "ausschließlich",
+"pl": ""
+},
+{
+"r": 1150,
+"k": "W:gelb",
+"r0": 1139,
+"n": 67,
+"w": "gelb",
+"pl": ""
+},
+{
+"r": 1151,
+"k": "N:Ausstellung",
+"r0": 1140,
+"n": 10,
+"w": "die Ausstellung",
+"pl": "Ausstellungen",
+"gen": "f"
+},
+{
+"r": 1152,
+"k": "N:Kurs",
+"r0": 1141,
+"n": 15,
+"w": "der Kurs",
+"pl": "Kurse",
+"gen": "m"
+},
+{
+"r": 1153,
+"k": "W:böse",
+"r0": 1142,
+"n": 87,
+"w": "böse",
+"pl": ""
+},
+{
+"r": 1154,
+"k": "N:Geburtstag",
+"r0": 1143,
+"n": 106,
+"w": "der Geburtstag",
+"pl": "Geburtstage",
+"gen": "m"
+},
+{
+"r": 1155,
+"k": "W:extrem",
+"r0": 1144,
+"n": 19,
+"w": "extrem",
+"pl": ""
+},
+{
+"r": 1156,
+"k": "N:Maß",
+"r0": 1144.99,
+"n": 9,
+"w": "das Maß",
+"pl": "Maße",
+"gen": "n"
+},
+{
+"r": 1157,
+"k": "N:Haut",
+"r0": 1145,
+"n": 27,
+"w": "die Haut",
+"pl": "Häute",
+"gen": "f"
+},
+{
+"r": 1158,
+"k": "N:Mund",
+"r0": 1146,
+"n": 93,
+"w": "der Mund",
+"pl": "Münder",
+"gen": "m"
+},
+{
+"r": 1159,
+"k": "W:treiben",
+"r0": 1147,
+"n": 25,
+"w": "treiben",
+"pl": ""
+},
+{
+"r": 1160,
+"k": "W:heilig",
+"r0": 1149,
+"n": 24,
+"w": "heilig",
+"pl": ""
+},
+{
+"r": 1161,
+"k": "N:Ei",
+"r0": 1150,
+"n": 105,
+"w": "das Ei",
+"pl": "Eier",
+"gen": "n"
+},
+{
+"r": 1162,
+"k": "N:Prozess",
+"r0": 1151,
+"n": 3,
+"w": "der Prozess",
+"pl": "Prozesse",
+"gen": "m"
+},
+{
+"r": 1163,
+"k": "N:Temperatur",
+"r0": 1152,
+"n": 28,
+"w": "die Temperatur",
+"pl": "Temperaturen",
+"gen": "f"
+},
+{
+"r": 1164,
+"k": "N:Armee",
+"r0": 1153,
+"n": 15,
+"w": "die Armee",
+"pl": "Armeen",
+"gen": "f"
+},
+{
+"r": 1165,
+"k": "N:Arm",
+"r0": 1154,
+"n": 80,
+"w": "der Arm",
+"pl": "Arme",
+"gen": "m"
+},
+{
+"r": 1166,
+"k": "W:betragen",
+"r0": 1155,
+"n": 9,
+"w": "betragen",
+"pl": ""
+},
+{
+"r": 1167,
+"k": "W:schließen",
+"r0": 1157,
+"n": 150,
+"w": "schließen",
+"pl": ""
+},
+{
+"r": 1168,
+"k": "W:mitnehmen",
+"r0": 1158,
+"n": 46,
+"w": "mitnehmen",
+"pl": ""
+},
+{
+"r": 1169,
+"k": "W:ablehnen",
+"r0": 1159,
+"n": 50,
+"w": "ablehnen",
+"pl": ""
+},
+{
+"r": 1170,
+"k": "W:schade",
+"r0": 1160,
+"n": 36,
+"w": "schade",
+"pl": ""
+},
+{
+"r": 1171,
+"k": "W:großartig",
+"r0": 1160.99,
+"n": 35,
+"w": "großartig",
+"pl": ""
+},
+{
+"r": 1172,
+"k": "N:Krankheit",
+"r0": 1161,
+"n": 82,
+"w": "die Krankheit",
+"pl": "Krankheiten",
+"gen": "f"
+},
+{
+"r": 1173,
+"k": "W:fordern",
+"r0": 1162,
+"n": 18,
+"w": "fordern",
+"pl": ""
+},
+{
+"r": 1174,
+"k": "N:Bürgermeister",
+"r0": 1163,
+"n": 16,
+"w": "der Bürgermeister",
+"pl": "Bürgermeister",
+"gen": "m"
+},
+{
+"r": 1175,
+"k": "W:behalten",
+"r0": 1164,
+"n": 29,
+"w": "behalten",
+"pl": ""
+},
+{
+"r": 1176,
+"k": "W:belegen",
+"r0": 1165,
+"n": 6,
+"w": "belegen",
+"pl": ""
+},
+{
+"r": 1177,
+"k": "W:verbreiten",
+"r0": 1166,
+"n": 20,
+"w": "verbreiten",
+"pl": ""
+},
+{
+"r": 1178,
+"k": "W:unmittelbar",
+"r0": 1167,
+"n": 11,
+"w": "unmittelbar",
+"pl": ""
+},
+{
+"r": 1179,
+"k": "W:landen",
+"r0": 1168,
+"n": 20,
+"w": "landen",
+"pl": ""
+},
+{
+"r": 1180,
+"k": "N:Beweis",
+"r0": 1169,
+"n": 27,
+"w": "der Beweis",
+"pl": "Beweise",
+"gen": "m"
+},
+{
+"r": 1181,
+"k": "N:Wirkung",
+"r0": 1170,
+"n": 15,
+"w": "die Wirkung",
+"pl": "Wirkungen",
+"gen": "f"
+},
+{
+"r": 1182,
+"k": "W:begleiten",
+"r0": 1171,
+"n": 46,
+"w": "begleiten",
+"pl": ""
+},
+{
+"r": 1183,
+"k": "N:Student",
+"r0": 1172,
+"n": 167,
+"w": "der Student",
+"pl": "Studenten",
+"gen": "m"
+},
+{
+"r": 1184,
+"k": "W:brechen",
+"r0": 1173,
+"n": 76,
+"w": "brechen",
+"pl": ""
+},
+{
+"r": 1185,
+"k": "N:Erklärung",
+"r0": 1174,
+"n": 42,
+"w": "die Erklärung",
+"pl": "Erklärungen",
+"gen": "f"
+},
+{
+"r": 1186,
+"k": "N:Eindruck",
+"r0": 1175,
+"n": 22,
+"w": "der Eindruck",
+"pl": "Eindrücke",
+"gen": "m"
+},
+{
+"r": 1187,
+"k": "W:hingegen",
+"r0": 1176,
+"n": 10,
+"w": "hingegen",
+"pl": ""
+},
+{
+"r": 1188,
+"k": "N:Praxis",
+"r0": 1177,
+"n": 4,
+"w": "die Praxis",
+"pl": "Praxen",
+"gen": "f"
+},
+{
+"r": 1189,
+"k": "N:Szene",
+"r0": 1178,
+"n": 9,
+"w": "die Szene",
+"pl": "Szenen",
+"gen": "f"
+},
+{
+"r": 1190,
+"k": "W:weiß",
+"r0": 1179,
+"n": 99,
+"w": "weiß",
+"pl": ""
+},
+{
+"r": 1191,
+"k": "W:zugleich",
+"r0": 1180,
+"n": 11,
+"w": "zugleich",
+"pl": ""
+},
+{
+"r": 1192,
+"k": "N:Ansicht",
+"r0": 1181,
+"n": 14,
+"w": "die Ansicht",
+"pl": "Ansichten",
+"gen": "f"
+},
+{
+"r": 1193,
+"k": "W:darstellen",
+"r0": 1182,
+"n": 10,
+"w": "darstellen",
+"pl": ""
+},
+{
+"r": 1194,
+"k": "W:dessen",
+"r0": 1184,
+"n": 12,
+"w": "dessen",
+"pl": ""
+},
+{
+"r": 1195,
+"k": "N:Einheit",
+"r0": 1185,
+"n": 4,
+"w": "die Einheit",
+"pl": "Einheiten",
+"gen": "f"
+},
+{
+"r": 1196,
+"k": "N:Experte",
+"r0": 1186,
+"n": 12,
+"w": "der Experte",
+"pl": "Experten",
+"gen": "m"
+},
+{
+"r": 1197,
+"k": "W:finanziell",
+"r0": 1187,
+"n": 17,
+"w": "finanziell",
+"pl": ""
+},
+{
+"r": 1198,
+"k": "N:Bedingung",
+"r0": 1188,
+"n": 17,
+"w": "die Bedingung",
+"pl": "Bedingungen",
+"gen": "f"
+},
+{
+"r": 1199,
+"k": "W:wunderbar",
+"r0": 1189,
+"n": 47,
+"w": "wunderbar",
+"pl": ""
+},
+{
+"r": 1200,
+"k": "N:Jahrzehnt",
+"r0": 1190,
+"n": 12,
+"w": "das Jahrzehnt",
+"pl": "Jahrzehnte",
+"gen": "n"
+},
+{
+"r": 1201,
+"k": "W:gucken",
+"r0": 1191,
+"n": 26,
+"w": "gucken",
+"pl": ""
+},
+{
+"r": 1202,
+"k": "W:drücken",
+"r0": 1192,
+"n": 42,
+"w": "drücken",
+"pl": ""
+},
+{
+"r": 1203,
+"k": "W:zwingen",
+"r0": 1193,
+"n": 52,
+"w": "zwingen",
+"pl": ""
+},
+{
+"r": 1204,
+"k": "W:üblich",
+"r0": 1194,
+"n": 20,
+"w": "üblich",
+"pl": ""
+},
+{
+"r": 1205,
+"k": "N:Osten",
+"r0": 1195,
+"n": 16,
+"w": "der Osten",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1206,
+"k": "W:wen",
+"r0": 1196,
+"n": 60,
+"w": "wen",
+"pl": ""
+},
+{
+"r": 1207,
+"k": "N:Album",
+"r0": 1197,
+"n": 6,
+"w": "das Album",
+"pl": "Alben",
+"gen": "n"
+},
+{
+"r": 1208,
+"k": "N:Demokratie",
+"r0": 1198,
+"n": 25,
+"w": "die Demokratie",
+"pl": "Demokratien",
+"gen": "f"
+},
+{
+"r": 1209,
+"k": "W:längst",
+"r0": 1199,
+"n": 7,
+"w": "längst",
+"pl": ""
+},
+{
+"r": 1210,
+"k": "W:verbringen",
+"r0": 1200,
+"n": 141,
+"w": "verbringen",
+"pl": ""
+},
+{
+"r": 1211,
+"k": "W:einladen",
+"r0": 1201,
+"n": 142,
+"w": "einladen",
+"pl": ""
+},
+{
+"r": 1212,
+"k": "W:zustimmen",
+"r0": 1202,
+"n": 37,
+"w": "zustimmen",
+"pl": ""
+},
+{
+"r": 1213,
+"k": "W:okay",
+"r0": 1203,
+"n": 3,
+"w": "okay",
+"pl": ""
+},
+{
+"r": 1214,
+"k": "W:komisch",
+"r0": 1204,
+"n": 19,
+"w": "komisch",
+"pl": ""
+},
+{
+"r": 1215,
+"k": "N:Umstand",
+"r0": 1205,
+"n": 21,
+"w": "der Umstand",
+"pl": "Umstände",
+"gen": "m"
+},
+{
+"r": 1216,
+"k": "W:hassen",
+"r0": 1206,
+"n": 171,
+"w": "hassen",
+"pl": ""
+},
+{
+"r": 1217,
+"k": "N:Änderung",
+"r0": 1207,
+"n": 8,
+"w": "die Änderung",
+"pl": "Änderungen",
+"gen": "f"
+},
+{
+"r": 1218,
+"k": "W:existieren",
+"r0": 1208,
+"n": 50,
+"w": "existieren",
+"pl": ""
+},
+{
+"r": 1219,
+"k": "N:Tätigkeit",
+"r0": 1209,
+"n": 4,
+"w": "die Tätigkeit",
+"pl": "Tätigkeiten",
+"gen": "f"
+},
+{
+"r": 1220,
+"k": "W:überraschen",
+"r0": 1210,
+"n": 115,
+"w": "überraschen",
+"pl": ""
+},
+{
+"r": 1221,
+"k": "N:Zuschauer",
+"r0": 1211,
+"n": 9,
+"w": "der Zuschauer",
+"pl": "Zuschauer",
+"gen": "m"
+},
+{
+"r": 1222,
+"k": "N:Katze",
+"r0": 1212,
+"n": 422,
+"w": "die Katze",
+"pl": "Katzen",
+"gen": "f"
+},
+{
+"r": 1223,
+"k": "W:verpassen",
+"r0": 1213,
+"n": 89,
+"w": "verpassen",
+"pl": ""
+},
+{
+"r": 1224,
+"k": "N:General",
+"r0": 1214,
+"n": 11,
+"w": "der General",
+"pl": "Generale",
+"gen": "m"
+},
+{
+"r": 1225,
+"k": "N:Milliarde",
+"r0": 1215,
+"n": 7,
+"w": "die Milliarde",
+"pl": "Milliarden",
+"gen": "f"
+},
+{
+"r": 1226,
+"k": "N:Verantwortung",
+"r0": 1216,
+"n": 26,
+"w": "die Verantwortung",
+"pl": "Verantwortungen",
+"gen": "f"
+},
+{
+"r": 1227,
+"k": "N:Behandlung",
+"r0": 1217,
+"n": 15,
+"w": "die Behandlung",
+"pl": "Behandlungen",
+"gen": "f"
+},
+{
+"r": 1228,
+"k": "W:diesmal",
+"r0": 1218,
+"n": 8,
+"w": "diesmal",
+"pl": ""
+},
+{
+"r": 1229,
+"k": "W:hoffentlich",
+"r0": 1219,
+"n": 13,
+"w": "hoffentlich",
+"pl": ""
+},
+{
+"r": 1230,
+"k": "N:Konzept",
+"r0": 1220,
+"n": 4,
+"w": "das Konzept",
+"pl": "Konzepte",
+"gen": "n"
+},
+{
+"r": 1231,
+"k": "W:plus",
+"r0": 1221,
+"n": 12,
+"w": "plus",
+"pl": ""
+},
+{
+"r": 1232,
+"k": "N:Ausland",
+"r0": 1222,
+"n": 90,
+"w": "das Ausland",
+"pl": "",
+"gen": "n"
+},
+{
+"r": 1233,
+"k": "N:Finger",
+"r0": 1223,
+"n": 40,
+"w": "der Finger",
+"pl": "Finger",
+"gen": "m"
+},
+{
+"r": 1234,
+"k": "W:löschen",
+"r0": 1224,
+"n": 29,
+"w": "löschen",
+"pl": ""
+},
+{
+"r": 1235,
+"k": "N:Leiter",
+"r0": 1225,
+"n": 25,
+"w": "der Leiter",
+"pl": "Leiter",
+"gen": "m"
+},
+{
+"r": 1236,
+"k": "N:Veränderung",
+"r0": 1226,
+"n": 11,
+"w": "die Veränderung",
+"pl": "Veränderungen",
+"gen": "f"
+},
+{
+"r": 1237,
+"k": "W:offensichtlich",
+"r0": 1227,
+"n": 36,
+"w": "offensichtlich",
+"pl": ""
+},
+{
+"r": 1238,
+"k": "W:stören",
+"r0": 1228,
+"n": 45,
+"w": "stören",
+"pl": ""
+},
+{
+"r": 1239,
+"k": "N:Strom",
+"r0": 1229,
+"n": 22,
+"w": "der Strom",
+"pl": "Ströme",
+"gen": "m"
+},
+{
+"r": 1240,
+"k": "N:Gelegenheit",
+"r0": 1230,
+"n": 92,
+"w": "die Gelegenheit",
+"pl": "Gelegenheiten",
+"gen": "f"
+},
+{
+"r": 1241,
+"k": "W:verzichten",
+"r0": 1231,
+"n": 9,
+"w": "verzichten",
+"pl": ""
+},
+{
+"r": 1242,
+"k": "N:Ehre",
+"r0": 1232,
+"n": 18,
+"w": "die Ehre",
+"pl": "Ehren",
+"gen": "f"
+},
+{
+"r": 1243,
+"k": "N:Nachbar",
+"r0": 1233,
+"n": 91,
+"w": "der Nachbar",
+"pl": "Nachbarn",
+"gen": "m"
+},
+{
+"r": 1244,
+"k": "N:Tatsache",
+"r0": 1234,
+"n": 40,
+"w": "die Tatsache",
+"pl": "Tatsachen",
+"gen": "f"
+},
+{
+"r": 1245,
+"k": "N:Brücke",
+"r0": 1235,
+"n": 74,
+"w": "die Brücke",
+"pl": "Brücken",
+"gen": "f"
+},
+{
+"r": 1246,
+"k": "W:umsetzen",
+"r0": 1236,
+"n": 8,
+"w": "umsetzen",
+"pl": ""
+},
+{
+"r": 1247,
+"k": "N:Spiegel",
+"r0": 1237,
+"n": 38,
+"w": "der Spiegel",
+"pl": "Spiegel",
+"gen": "m"
+},
+{
+"r": 1248,
+"k": "N:Ehe",
+"r0": 1238,
+"n": 21,
+"w": "die Ehe",
+"pl": "Ehen",
+"gen": "f"
+},
+{
+"r": 1249,
+"k": "N:Geschenk",
+"r0": 1239,
+"n": 113,
+"w": "das Geschenk",
+"pl": "Geschenke",
+"gen": "n"
+},
+{
+"r": 1250,
+"k": "N:Prüfung",
+"r0": 1240,
+"n": 94,
+"w": "die Prüfung",
+"pl": "Prüfungen",
+"gen": "f"
+},
+{
+"r": 1251,
+"k": "N:Forderung",
+"r0": 1241,
+"n": 10,
+"w": "die Forderung",
+"pl": "Forderungen",
+"gen": "f"
+},
+{
+"r": 1252,
+"k": "W:wenden",
+"r0": 1242,
+"n": 16,
+"w": "wenden",
+"pl": ""
+},
+{
+"r": 1253,
+"k": "N:Blut",
+"r0": 1243,
+"n": 63,
+"w": "das Blut",
+"pl": "Blute",
+"gen": "n"
+},
+{
+"r": 1254,
+"k": "N:Gegner",
+"r0": 1244,
+"n": 8,
+"w": "der Gegner",
+"pl": "Gegner",
+"gen": "m"
+},
+{
+"r": 1255,
+"k": "N:Industrie",
+"r0": 1245,
+"n": 3,
+"w": "die Industrie",
+"pl": "Industrien",
+"gen": "f"
+},
+{
+"r": 1256,
+"k": "N:Leitung",
+"r0": 1246,
+"n": 13,
+"w": "die Leitung",
+"pl": "Leitungen",
+"gen": "f"
+},
+{
+"r": 1257,
+"k": "N:Mehrheit",
+"r0": 1247,
+"n": 18,
+"w": "die Mehrheit",
+"pl": "Mehrheiten",
+"gen": "f"
+},
+{
+"r": 1258,
+"k": "W:vorne",
+"r0": 1249,
+"n": 13,
+"w": "vorne",
+"pl": ""
+},
+{
+"r": 1259,
+"k": "N:Westen",
+"r0": 1250,
+"n": 8,
+"w": "der Westen",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1260,
+"k": "N:Heimat",
+"r0": 1251,
+"n": 10,
+"w": "die Heimat",
+"pl": "Heimaten",
+"gen": "f"
+},
+{
+"r": 1261,
+"k": "N:Schmerz",
+"r0": 1252,
+"n": 91,
+"w": "der Schmerz",
+"pl": "Schmerzen",
+"gen": "m"
+},
+{
+"r": 1262,
+"k": "W:erheben",
+"r0": 1253,
+"n": 26,
+"w": "erheben",
+"pl": ""
+},
+{
+"r": 1263,
+"k": "W:ewig",
+"r0": 1254,
+"n": 35,
+"w": "ewig",
+"pl": ""
+},
+{
+"r": 1264,
+"k": "N:Wind",
+"r0": 1255,
+"n": 67,
+"w": "der Wind",
+"pl": "Winde",
+"gen": "m"
+},
+{
+"r": 1265,
+"k": "N:Papier",
+"r0": 1256,
+"n": 68,
+"w": "das Papier",
+"pl": "Papiere",
+"gen": "n"
+},
+{
+"r": 1266,
+"k": "N:Ausnahme",
+"r0": 1257,
+"n": 23,
+"w": "die Ausnahme",
+"pl": "Ausnahmen",
+"gen": "f"
+},
+{
+"r": 1267,
+"k": "W:abgeben",
+"r0": 1258,
+"n": 18,
+"w": "abgeben",
+"pl": ""
+},
+{
+"r": 1268,
+"k": "W:schenken",
+"r0": 1259,
+"n": 85,
+"w": "schenken",
+"pl": ""
+},
+{
+"r": 1269,
+"k": "W:vergangen",
+"r0": 1260,
+"n": 38,
+"w": "vergangen",
+"pl": ""
+},
+{
+"r": 1270,
+"k": "W:bewusst",
+"r0": 1261,
+"n": 36,
+"w": "bewusst",
+"pl": ""
+},
+{
+"r": 1271,
+"k": "N:Schuh",
+"r0": 1262,
+"n": 171,
+"w": "der Schuh",
+"pl": "Schuhe",
+"gen": "m"
+},
+{
+"r": 1272,
+"k": "N:Bauer",
+"r0": 1263,
+"n": 20,
+"w": "der Bauer",
+"pl": "Bauern",
+"gen": "m"
+},
+{
+"r": 1273,
+"k": "W:spannend",
+"r0": 1264,
+"n": 6,
+"w": "spannend",
+"pl": ""
+},
+{
+"r": 1274,
+"k": "W:geeignet",
+"r0": 1265,
+"n": 17,
+"w": "geeignet",
+"pl": ""
+},
+{
+"r": 1275,
+"k": "W:ausmachen",
+"r0": 1266,
+"n": 34,
+"w": "ausmachen",
+"pl": ""
+},
+{
+"r": 1276,
+"k": "W:unterscheiden",
+"r0": 1267,
+"n": 58,
+"w": "unterscheiden",
+"pl": ""
+},
+{
+"r": 1277,
+"k": "N:Büro",
+"r0": 1268,
+"n": 86,
+"w": "das Büro",
+"pl": "Büros",
+"gen": "n"
+},
+{
+"r": 1278,
+"k": "N:Bahnhof",
+"r0": 1270,
+"n": 138,
+"w": "der Bahnhof",
+"pl": "Bahnhöfe",
+"gen": "m"
+},
+{
+"r": 1279,
+"k": "W:kommend",
+"r0": 1271,
+"n": 10,
+"w": "kommend",
+"pl": ""
+},
+{
+"r": 1280,
+"k": "W:unabhängig",
+"r0": 1272,
+"n": 18,
+"w": "unabhängig",
+"pl": ""
+},
+{
+"r": 1281,
+"k": "W:zuhause",
+"r0": 1273,
+"n": 78,
+"w": "zuhause",
+"pl": ""
+},
+{
+"r": 1282,
+"k": "W:unbekannt",
+"r0": 1274,
+"n": 23,
+"w": "unbekannt",
+"pl": ""
+},
+{
+"r": 1283,
+"k": "W:typisch",
+"r0": 1275,
+"n": 14,
+"w": "typisch",
+"pl": ""
+},
+{
+"r": 1284,
+"k": "N:Kaiser",
+"r0": 1276,
+"n": 5,
+"w": "der Kaiser",
+"pl": "Kaiser",
+"gen": "m"
+},
+{
+"r": 1285,
+"k": "W:neun",
+"r0": 1277,
+"n": 65,
+"w": "neun",
+"pl": ""
+},
+{
+"r": 1286,
+"k": "N:Theater",
+"r0": 1278,
+"n": 31,
+"w": "das Theater",
+"pl": "Theater",
+"gen": "n"
+},
+{
+"r": 1287,
+"k": "N:Bezug",
+"r0": 1279,
+"n": 13,
+"w": "der Bezug",
+"pl": "Bezüge",
+"gen": "m"
+},
+{
+"r": 1288,
+"k": "N:Anwendung",
+"r0": 1280,
+"n": 5,
+"w": "die Anwendung",
+"pl": "Anwendungen",
+"gen": "f"
+},
+{
+"r": 1289,
+"k": "W:wirtschaftlich",
+"r0": 1281,
+"n": 11,
+"w": "wirtschaftlich",
+"pl": ""
+},
+{
+"r": 1290,
+"k": "N:Besucher",
+"r0": 1282,
+"n": 14,
+"w": "der Besucher",
+"pl": "Besucher",
+"gen": "m"
+},
+{
+"r": 1291,
+"k": "W:beziehen",
+"r0": 1283,
+"n": 8,
+"w": "beziehen",
+"pl": ""
+},
+{
+"r": 1292,
+"k": "N:Ohr",
+"r0": 1285,
+"n": 81,
+"w": "das Ohr",
+"pl": "Ohren",
+"gen": "n"
+},
+{
+"r": 1293,
+"k": "W:ausführen",
+"r0": 1286,
+"n": 24,
+"w": "ausführen",
+"pl": ""
+},
+{
+"r": 1294,
+"k": "N:Ereignis",
+"r0": 1287,
+"n": 13,
+"w": "das Ereignis",
+"pl": "Ereignisse",
+"gen": "n"
+},
+{
+"r": 1295,
+"k": "W:zurückkehren",
+"r0": 1288,
+"n": 72,
+"w": "zurückkehren",
+"pl": ""
+},
+{
+"r": 1296,
+"k": "N:Charakter",
+"r0": 1289,
+"n": 17,
+"w": "der Charakter",
+"pl": "Charaktere",
+"gen": "m"
+},
+{
+"r": 1297,
+"k": "W:außen",
+"r0": 1289.99,
+"n": 9,
+"w": "außen",
+"pl": ""
+},
+{
+"r": 1298,
+"k": "N:Detail",
+"r0": 1290,
+"n": 20,
+"w": "das Detail",
+"pl": "Details",
+"gen": "n"
+},
+{
+"r": 1299,
+"k": "N:Prinzip",
+"r0": 1291,
+"n": 8,
+"w": "das Prinzip",
+"pl": "Prinzipien",
+"gen": "n"
+},
+{
+"r": 1300,
+"k": "W:ungefähr",
+"r0": 1292,
+"n": 98,
+"w": "ungefähr",
+"pl": ""
+},
+{
+"r": 1301,
+"k": "N:Tradition",
+"r0": 1293,
+"n": 8,
+"w": "die Tradition",
+"pl": "Traditionen",
+"gen": "f"
+},
+{
+"r": 1302,
+"k": "N:Herbst",
+"r0": 1294,
+"n": 44,
+"w": "der Herbst",
+"pl": "Herbste",
+"gen": "m"
+},
+{
+"r": 1303,
+"k": "W:real",
+"r0": 1295,
+"n": 8,
+"w": "real",
+"pl": ""
+},
+{
+"r": 1304,
+"k": "W:herum",
+"r0": 1298,
+"n": 10,
+"w": "herum",
+"pl": ""
+},
+{
+"r": 1305,
+"k": "N:Vertreter",
+"r0": 1299,
+"n": 3,
+"w": "der Vertreter",
+"pl": "Vertreter",
+"gen": "m"
+},
+{
+"r": 1306,
+"k": "W:fort",
+"r0": 1300,
+"n": 12,
+"w": "fort",
+"pl": ""
+},
+{
+"r": 1307,
+"k": "W:vermissen",
+"r0": 1301,
+"n": 70,
+"w": "vermissen",
+"pl": ""
+},
+{
+"r": 1308,
+"k": "N:Stärke",
+"r0": 1302,
+"n": 19,
+"w": "die Stärke",
+"pl": "Stärken",
+"gen": "f"
+},
+{
+"r": 1309,
+"k": "N:Journalist",
+"r0": 1303,
+"n": 12,
+"w": "der Journalist",
+"pl": "Journalisten",
+"gen": "m"
+},
+{
+"r": 1310,
+"k": "W:vollkommen",
+"r0": 1304,
+"n": 39,
+"w": "vollkommen",
+"pl": ""
+},
+{
+"r": 1311,
+"k": "N:Gestalt",
+"r0": 1305,
+"n": 5,
+"w": "die Gestalt",
+"pl": "Gestalten",
+"gen": "f"
+},
+{
+"r": 1312,
+"k": "W:traditionell",
+"r0": 1306,
+"n": 9,
+"w": "traditionell",
+"pl": ""
+},
+{
+"r": 1313,
+"k": "N:Rechnung",
+"r0": 1307,
+"n": 37,
+"w": "die Rechnung",
+"pl": "Rechnungen",
+"gen": "f"
+},
+{
+"r": 1314,
+"k": "N:Theorie",
+"r0": 1308,
+"n": 31,
+"w": "die Theorie",
+"pl": "Theorien",
+"gen": "f"
+},
+{
+"r": 1315,
+"k": "W:vierter",
+"r0": 1309,
+"n": 16,
+"w": "vierter",
+"pl": ""
+},
+{
+"r": 1316,
+"k": "N:Kino",
+"r0": 1310,
+"n": 81,
+"w": "das Kino",
+"pl": "Kinos",
+"gen": "n"
+},
+{
+"r": 1317,
+"k": "W:teilnehmen",
+"r0": 1311,
+"n": 45,
+"w": "teilnehmen",
+"pl": ""
+},
+{
+"r": 1318,
+"k": "W:erstellen",
+"r0": 1312,
+"n": 3,
+"w": "erstellen",
+"pl": ""
+},
+{
+"r": 1319,
+"k": "W:verfügen",
+"r0": 1313,
+"n": 16,
+"w": "verfügen",
+"pl": ""
+},
+{
+"r": 1320,
+"k": "W:irgendwas",
+"r0": 1314,
+"n": 14,
+"w": "irgendwas",
+"pl": ""
+},
+{
+"r": 1321,
+"k": "W:produzieren",
+"r0": 1315,
+"n": 14,
+"w": "produzieren",
+"pl": ""
+},
+{
+"r": 1322,
+"k": "N:Zeuge",
+"r0": 1316,
+"n": 14,
+"w": "der Zeuge",
+"pl": "Zeugen",
+"gen": "m"
+},
+{
+"r": 1323,
+"k": "W:schmecken",
+"r0": 1317,
+"n": 90,
+"w": "schmecken",
+"pl": ""
+},
+{
+"r": 1324,
+"k": "N:Kosten",
+"r0": 1318,
+"n": 14,
+"w": "die Kosten",
+"pl": "",
+"gen": "pl"
+},
+{
+"r": 1325,
+"k": "N:Anzeige",
+"r0": 1319,
+"n": 9,
+"w": "die Anzeige",
+"pl": "Anzeigen",
+"gen": "f"
+},
+{
+"r": 1326,
+"k": "N:Computer",
+"r0": 1320,
+"n": 137,
+"w": "der Computer",
+"pl": "Computer",
+"gen": "m"
+},
+{
+"r": 1327,
+"k": "N:Grundlage",
+"r0": 1321,
+"n": 7,
+"w": "die Grundlage",
+"pl": "Grundlagen",
+"gen": "f"
+},
+{
+"r": 1328,
+"k": "N:Karriere",
+"r0": 1322,
+"n": 11,
+"w": "die Karriere",
+"pl": "Karrieren",
+"gen": "f"
+},
+{
+"r": 1329,
+"k": "W:niedrig",
+"r0": 1323,
+"n": 20,
+"w": "niedrig",
+"pl": ""
+},
+{
+"r": 1330,
+"k": "W:freundlich",
+"r0": 1324,
+"n": 53,
+"w": "freundlich",
+"pl": ""
+},
+{
+"r": 1331,
+"k": "N:Rand",
+"r0": 1325,
+"n": 9,
+"w": "der Rand",
+"pl": "Ränder",
+"gen": "m"
+},
+{
+"r": 1332,
+"k": "W:untersuchen",
+"r0": 1326,
+"n": 33,
+"w": "untersuchen",
+"pl": ""
+},
+{
+"r": 1333,
+"k": "W:feststellen",
+"r0": 1327,
+"n": 17,
+"w": "feststellen",
+"pl": ""
+},
+{
+"r": 1334,
+"k": "N:Wille",
+"r0": 1328,
+"n": 30,
+"w": "der Wille",
+"pl": "Willen",
+"gen": "m"
+},
+{
+"r": 1335,
+"k": "W:beibringen",
+"r0": 1329,
+"n": 70,
+"w": "beibringen",
+"pl": ""
+},
+{
+"r": 1336,
+"k": "N:Feind",
+"r0": 1330,
+"n": 88,
+"w": "der Feind",
+"pl": "Feinde",
+"gen": "m"
+},
+{
+"r": 1337,
+"k": "N:Beruf",
+"r0": 1331,
+"n": 26,
+"w": "der Beruf",
+"pl": "Berufe",
+"gen": "m"
+},
+{
+"r": 1338,
+"k": "N:Fahrer",
+"r0": 1332,
+"n": 27,
+"w": "der Fahrer",
+"pl": "Fahrer",
+"gen": "m"
+},
+{
+"r": 1339,
+"k": "W:kritisieren",
+"r0": 1333,
+"n": 23,
+"w": "kritisieren",
+"pl": ""
+},
+{
+"r": 1340,
+"k": "N:Glas",
+"r0": 1334,
+"n": 113,
+"w": "das Glas",
+"pl": "Gläser",
+"gen": "n"
+},
+{
+"r": 1341,
+"k": "W:englisch",
+"r0": 1335,
+"n": 60,
+"w": "englisch",
+"pl": ""
+},
+{
+"r": 1342,
+"k": "N:Ursache",
+"r0": 1336,
+"n": 28,
+"w": "die Ursache",
+"pl": "Ursachen",
+"gen": "f"
+},
+{
+"r": 1343,
+"k": "N:Ton",
+"r0": 1337,
+"n": 12,
+"w": "der Ton",
+"pl": "Tone",
+"gen": "m"
+},
+{
+"r": 1344,
+"k": "N:Bekannte",
+"r0": 1338,
+"n": 10,
+"w": "die Bekannte",
+"pl": "",
+"gen": "f"
+},
+{
+"r": 1345,
+"k": "W:blöd",
+"r0": 1340,
+"n": 27,
+"w": "blöd",
+"pl": ""
+},
+{
+"r": 1346,
+"k": "W:beantworten",
+"r0": 1341,
+"n": 90,
+"w": "beantworten",
+"pl": ""
+},
+{
+"r": 1347,
+"k": "W:britisch",
+"r0": 1342,
+"n": 15,
+"w": "britisch",
+"pl": ""
+},
+{
+"r": 1348,
+"k": "W:drehen",
+"r0": 1343,
+"n": 29,
+"w": "drehen",
+"pl": ""
+},
+{
+"r": 1349,
+"k": "N:Pause",
+"r0": 1344,
+"n": 29,
+"w": "die Pause",
+"pl": "Pausen",
+"gen": "f"
+},
+{
+"r": 1350,
+"k": "W:abschließen",
+"r0": 1345,
+"n": 31,
+"w": "abschließen",
+"pl": ""
+},
+{
+"r": 1351,
+"k": "N:Frieden",
+"r0": 1346,
+"n": 53,
+"w": "der Frieden",
+"pl": "Frieden",
+"gen": "m"
+},
+{
+"r": 1352,
+"k": "W:hauptsächlich",
+"r0": 1347,
+"n": 15,
+"w": "hauptsächlich",
+"pl": ""
+},
+{
+"r": 1353,
+"k": "N:Mittwoch",
+"r0": 1348,
+"n": 16,
+"w": "der Mittwoch",
+"pl": "Mittwoche",
+"gen": "m"
+},
+{
+"r": 1354,
+"k": "W:möglicherweise",
+"r0": 1349,
+"n": 16,
+"w": "möglicherweise",
+"pl": ""
+},
+{
+"r": 1355,
+"k": "N:Zentrum",
+"r0": 1350,
+"n": 11,
+"w": "das Zentrum",
+"pl": "Zentren",
+"gen": "n"
+},
+{
+"r": 1356,
+"k": "N:Öffentlichkeit",
+"r0": 1351,
+"n": 15,
+"w": "die Öffentlichkeit",
+"pl": "Öffentlichkeiten",
+"gen": "f"
+},
+{
+"r": 1357,
+"k": "W:lauten",
+"r0": 1352,
+"n": 27,
+"w": "lauten",
+"pl": ""
+},
+{
+"r": 1358,
+"k": "W:aufstellen",
+"r0": 1353,
+"n": 11,
+"w": "aufstellen",
+"pl": ""
+},
+{
+"r": 1359,
+"k": "N:Ring",
+"r0": 1354,
+"n": 29,
+"w": "der Ring",
+"pl": "Ringe",
+"gen": "m"
+},
+{
+"r": 1360,
+"k": "N:Wein",
+"r0": 1355,
+"n": 110,
+"w": "der Wein",
+"pl": "Weine",
+"gen": "m"
+},
+{
+"r": 1361,
+"k": "N:Ball",
+"r0": 1356,
+"n": 38,
+"w": "der Ball",
+"pl": "Bälle",
+"gen": "m"
+},
+{
+"r": 1362,
+"k": "N:Schrift",
+"r0": 1357,
+"n": 9,
+"w": "die Schrift",
+"pl": "Schriften",
+"gen": "f"
+},
+{
+"r": 1363,
+"k": "W:weisen",
+"r0": 1358,
+"n": 7,
+"w": "weisen",
+"pl": ""
+},
+{
+"r": 1364,
+"k": "N:Abgeordneter",
+"r0": 1359,
+"n": 6,
+"w": "der Abgeordneter",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1365,
+"k": "N:Blatt",
+"r0": 1360,
+"n": 40,
+"w": "das Blatt",
+"pl": "Blätter",
+"gen": "n"
+},
+{
+"r": 1366,
+"k": "W:vermeiden",
+"r0": 1361,
+"n": 21,
+"w": "vermeiden",
+"pl": ""
+},
+{
+"r": 1367,
+"k": "W:herzlich",
+"r0": 1362,
+"n": 18,
+"w": "herzlich",
+"pl": ""
+},
+{
+"r": 1368,
+"k": "W:bemerken",
+"r0": 1363,
+"n": 86,
+"w": "bemerken",
+"pl": ""
+},
+{
+"r": 1369,
+"k": "W:eingehen",
+"r0": 1364,
+"n": 19,
+"w": "eingehen",
+"pl": ""
+},
+{
+"r": 1370,
+"k": "W:verstecken",
+"r0": 1365,
+"n": 99,
+"w": "verstecken",
+"pl": ""
+},
+{
+"r": 1371,
+"k": "W:rennen",
+"r0": 1366,
+"n": 68,
+"w": "rennen",
+"pl": ""
+},
+{
+"r": 1372,
+"k": "W:greifen",
+"r0": 1367,
+"n": 7,
+"w": "greifen",
+"pl": ""
+},
+{
+"r": 1373,
+"k": "W:davor",
+"r0": 1368,
+"n": 27,
+"w": "davor",
+"pl": ""
+},
+{
+"r": 1374,
+"k": "W:extra",
+"r0": 1369,
+"n": 3,
+"w": "extra",
+"pl": ""
+},
+{
+"r": 1375,
+"k": "N:Gesundheit",
+"r0": 1370,
+"n": 102,
+"w": "die Gesundheit",
+"pl": "",
+"gen": "f"
+},
+{
+"r": 1376,
+"k": "N:Mama",
+"r0": 1371,
+"n": 60,
+"w": "die Mama",
+"pl": "Mamas",
+"gen": "f"
+},
+{
+"r": 1377,
+"k": "N:Not",
+"r0": 1372,
+"n": 12,
+"w": "die Not",
+"pl": "Nöte",
+"gen": "f"
+},
+{
+"r": 1378,
+"k": "N:Produktion",
+"r0": 1373,
+"n": 5,
+"w": "die Produktion",
+"pl": "Produktionen",
+"gen": "f"
+},
+{
+"r": 1379,
+"k": "W:selbstverständlich",
+"r0": 1374,
+"n": 17,
+"w": "selbstverständlich",
+"pl": ""
+},
+{
+"r": 1380,
+"k": "N:Sendung",
+"r0": 1375,
+"n": 3,
+"w": "die Sendung",
+"pl": "Sendungen",
+"gen": "f"
+},
+{
+"r": 1381,
+"k": "W:sicherlich",
+"r0": 1376,
+"n": 19,
+"w": "sicherlich",
+"pl": ""
+},
+{
+"r": 1382,
+"k": "N:Verlust",
+"r0": 1378,
+"n": 13,
+"w": "der Verlust",
+"pl": "Verluste",
+"gen": "m"
+},
+{
+"r": 1383,
+"k": "N:Alternative",
+"r0": 1379,
+"n": 8,
+"w": "die Alternative",
+"pl": "Alternativen",
+"gen": "f"
+},
+{
+"r": 1384,
+"k": "N:Wunder",
+"r0": 1380,
+"n": 30,
+"w": "das Wunder",
+"pl": "Wunder",
+"gen": "n"
+},
+{
+"r": 1385,
+"k": "N:Bühne",
+"r0": 1381,
+"n": 14,
+"w": "die Bühne",
+"pl": "Bühnen",
+"gen": "f"
+},
+{
+"r": 1386,
+"k": "W:aufpassen",
+"r0": 1382,
+"n": 38,
+"w": "aufpassen",
+"pl": ""
+},
+{
+"r": 1387,
+"k": "N:Pflicht",
+"r0": 1383,
+"n": 44,
+"w": "die Pflicht",
+"pl": "Pflichten",
+"gen": "f"
+},
+{
+"r": 1388,
+"k": "W:wehtun",
+"r0": 1384,
+"n": 78,
+"w": "wehtun",
+"pl": ""
+},
+{
+"r": 1389,
+"k": "W:unmöglich",
+"r0": 1385,
+"n": 69,
+"w": "unmöglich",
+"pl": ""
+},
+{
+"r": 1390,
+"k": "W:derjenige",
+"r0": 1386,
+"n": 37,
+"w": "derjenige",
+"pl": ""
+},
+{
+"r": 1391,
+"k": "N:Mord",
+"r0": 1387,
+"n": 20,
+"w": "der Mord",
+"pl": "Morde",
+"gen": "m"
+},
+{
+"r": 1392,
+"k": "W:abends",
+"r0": 1388,
+"n": 31,
+"w": "abends",
+"pl": ""
+},
+{
+"r": 1393,
+"k": "W:schwach",
+"r0": 1389,
+"n": 24,
+"w": "schwach",
+"pl": ""
+},
+{
+"r": 1394,
+"k": "W:verursachen",
+"r0": 1390,
+"n": 59,
+"w": "verursachen",
+"pl": ""
+},
+{
+"r": 1395,
+"k": "W:lohnen",
+"r0": 1391,
+"n": 28,
+"w": "lohnen",
+"pl": ""
+},
+{
+"r": 1396,
+"k": "W:vergleichen",
+"r0": 1392,
+"n": 31,
+"w": "vergleichen",
+"pl": ""
+},
+{
+"r": 1397,
+"k": "N:Spitze",
+"r0": 1393,
+"n": 13,
+"w": "die Spitze",
+"pl": "Spitzen",
+"gen": "f"
+},
+{
+"r": 1398,
+"k": "W:scharf",
+"r0": 1394,
+"n": 25,
+"w": "scharf",
+"pl": ""
+},
+{
+"r": 1399,
+"k": "W:vertrauen",
+"r0": 1395,
+"n": 65,
+"w": "vertrauen",
+"pl": ""
+},
+{
+"r": 1400,
+"k": "W:kochen",
+"r0": 1396,
+"n": 138,
+"w": "kochen",
+"pl": ""
+},
+{
+"r": 1401,
+"k": "N:Pflanze",
+"r0": 1397,
+"n": 53,
+"w": "die Pflanze",
+"pl": "Pflanzen",
+"gen": "f"
+},
+{
+"r": 1402,
+"k": "N:Voraussetzung",
+"r0": 1398,
+"n": 6,
+"w": "die Voraussetzung",
+"pl": "Voraussetzungen",
+"gen": "f"
+},
+{
+"r": 1403,
+"k": "W:wunderschön",
+"r0": 1399,
+"n": 38,
+"w": "wunderschön",
+"pl": ""
+},
+{
+"r": 1404,
+"k": "W:türkisch",
+"r0": 1400,
+"n": 7,
+"w": "türkisch",
+"pl": ""
+},
+{
+"r": 1405,
+"k": "W:akzeptieren",
+"r0": 1401,
+"n": 37,
+"w": "akzeptieren",
+"pl": ""
+},
+{
+"r": 1406,
+"k": "N:Küche",
+"r0": 1402,
+"n": 88,
+"w": "die Küche",
+"pl": "Küchen",
+"gen": "f"
+},
+{
+"r": 1407,
+"k": "W:seitdem",
+"r0": 1403,
+"n": 23,
+"w": "seitdem",
+"pl": ""
+},
+{
+"r": 1408,
+"k": "W:einführen",
+"r0": 1404,
+"n": 8,
+"w": "einführen",
+"pl": ""
+},
+{
+"r": 1409,
+"k": "W:wiederholen",
+"r0": 1405,
+"n": 42,
+"w": "wiederholen",
+"pl": ""
+},
+{
+"r": 1410,
+"k": "N:Fernsehen",
+"r0": 1406,
+"n": 80,
+"w": "das Fernsehen",
+"pl": "",
+"gen": "n"
+},
+{
+"r": 1411,
+"k": "W:studieren",
+"r0": 1407,
+"n": 196,
+"w": "studieren",
+"pl": ""
+},
+{
+"r": 1412,
+"k": "W:abhängen",
+"r0": 1408,
+"n": 32,
+"w": "abhängen",
+"pl": ""
+},
+{
+"r": 1413,
+"k": "N:Nase",
+"r0": 1409,
+"n": 55,
+"w": "die Nase",
+"pl": "Nasen",
+"gen": "f"
+},
+{
+"r": 1414,
+"k": "W:berühmt",
+"r0": 1410,
+"n": 145,
+"w": "berühmt",
+"pl": ""
+},
+{
+"r": 1415,
+"k": "W:männlich",
+"r0": 1411,
+"n": 13,
+"w": "männlich",
+"pl": ""
+},
+{
+"r": 1416,
+"k": "N:Nutzen",
+"r0": 1412,
+"n": 14,
+"w": "der Nutzen",
+"pl": "Nutzen",
+"gen": "m"
+},
+{
+"r": 1417,
+"k": "W:ordentlich",
+"r0": 1413,
+"n": 9,
+"w": "ordentlich",
+"pl": ""
+},
+{
+"r": 1418,
+"k": "N:Restaurant",
+"r0": 1414,
+"n": 77,
+"w": "das Restaurant",
+"pl": "Restaurants",
+"gen": "n"
+},
+{
+"r": 1419,
+"k": "N:Kauf",
+"r0": 1415,
+"n": 21,
+"w": "der Kauf",
+"pl": "Käufe",
+"gen": "m"
+},
+{
+"r": 1420,
+"k": "N:Schweizer",
+"r0": 1416,
+"n": 6,
+"w": "der Schweizer",
+"pl": "Schweizer",
+"gen": "m"
+},
+{
+"r": 1421,
+"k": "W:absehen",
+"r0": 1417,
+"n": 9,
+"w": "absehen",
+"pl": ""
+},
+{
+"r": 1422,
+"k": "N:Zweifel",
+"r0": 1418,
+"n": 65,
+"w": "der Zweifel",
+"pl": "Zweifel",
+"gen": "m"
+},
+{
+"r": 1423,
+"k": "N:Tasche",
+"r0": 1419,
+"n": 118,
+"w": "die Tasche",
+"pl": "Taschen",
+"gen": "f"
+},
+{
+"r": 1424,
+"k": "N:Einstellung",
+"r0": 1420,
+"n": 5,
+"w": "die Einstellung",
+"pl": "Einstellungen",
+"gen": "f"
+},
+{
+"r": 1425,
+"k": "W:gelangen",
+"r0": 1421,
+"n": 14,
+"w": "gelangen",
+"pl": ""
+},
+{
+"r": 1426,
+"k": "N:Fleisch",
+"r0": 1422,
+"n": 108,
+"w": "das Fleisch",
+"pl": "",
+"gen": "n"
+},
+{
+"r": 1427,
+"k": "W:gesetzlich",
+"r0": 1423,
+"n": 4,
+"w": "gesetzlich",
+"pl": ""
+},
+{
+"r": 1428,
+"k": "W:eindeutig",
+"r0": 1424,
+"n": 9,
+"w": "eindeutig",
+"pl": ""
+},
+{
+"r": 1429,
+"k": "N:Stoff",
+"r0": 1425,
+"n": 11,
+"w": "der Stoff",
+"pl": "Stoffe",
+"gen": "m"
+},
+{
+"r": 1430,
+"k": "W:spüren",
+"r0": 1426,
+"n": 32,
+"w": "spüren",
+"pl": ""
+},
+{
+"r": 1431,
+"k": "W:warnen",
+"r0": 1427,
+"n": 28,
+"w": "warnen",
+"pl": ""
+},
+{
+"r": 1432,
+"k": "N:Radio",
+"r0": 1428,
+"n": 82,
+"w": "das Radio",
+"pl": "Radios",
+"gen": "n"
+},
+{
+"r": 1433,
+"k": "W:mitten",
+"r0": 1429,
+"n": 38,
+"w": "mitten",
+"pl": ""
+},
+{
+"r": 1434,
+"k": "N:Vogel",
+"r0": 1430,
+"n": 146,
+"w": "der Vogel",
+"pl": "Vögel",
+"gen": "m"
+},
+{
+"r": 1435,
+"k": "N:Abteilung",
+"r0": 1431,
+"n": 5,
+"w": "die Abteilung",
+"pl": "Abteilungen",
+"gen": "f"
+},
+{
+"r": 1436,
+"k": "N:Gang",
+"r0": 1432,
+"n": 12,
+"w": "der Gang",
+"pl": "Gänge",
+"gen": "m"
+},
+{
+"r": 1437,
+"k": "W:automatisch",
+"r0": 1433,
+"n": 6,
+"w": "automatisch",
+"pl": ""
+},
+{
+"r": 1438,
+"k": "N:Original",
+"r0": 1434,
+"n": 8,
+"w": "das Original",
+"pl": "Originale",
+"gen": "n"
+},
+{
+"r": 1439,
+"k": "W:recht",
+"r0": 1435,
+"n": 30,
+"w": "recht",
+"pl": ""
+},
+{
+"r": 1440,
+"k": "W:hübsch",
+"r0": 1436,
+"n": 116,
+"w": "hübsch",
+"pl": ""
+},
+{
+"r": 1441,
+"k": "W:versprechen",
+"r0": 1437,
+"n": 105,
+"w": "versprechen",
+"pl": ""
+},
+{
+"r": 1442,
+"k": "W:italienisch",
+"r0": 1438,
+"n": 29,
+"w": "italienisch",
+"pl": ""
+},
+{
+"r": 1443,
+"k": "W:vorgehen",
+"r0": 1439,
+"n": 14,
+"w": "vorgehen",
+"pl": ""
+},
+{
+"r": 1444,
+"k": "W:schneiden",
+"r0": 1440,
+"n": 51,
+"w": "schneiden",
+"pl": ""
+},
+{
+"r": 1445,
+"k": "N:Wettbewerb",
+"r0": 1441,
+"n": 16,
+"w": "der Wettbewerb",
+"pl": "Wettbewerbe",
+"gen": "m"
+},
+{
+"r": 1446,
+"k": "N:Verkauf",
+"r0": 1442,
+"n": 12,
+"w": "der Verkauf",
+"pl": "Verkäufe",
+"gen": "m"
+},
+{
+"r": 1447,
+"k": "W:innen",
+"r0": 1443,
+"n": 9,
+"w": "innen",
+"pl": ""
+},
+{
+"r": 1448,
+"k": "N:Alkohol",
+"r0": 1444,
+"n": 35,
+"w": "der Alkohol",
+"pl": "Alkohole",
+"gen": "m"
+},
+{
+"r": 1449,
+"k": "N:Donnerstag",
+"r0": 1445,
+"n": 14,
+"w": "der Donnerstag",
+"pl": "Donnerstage",
+"gen": "m"
+},
+{
+"r": 1450,
+"k": "N:Norden",
+"r0": 1446,
+"n": 19,
+"w": "der Norden",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1451,
+"k": "W:abnehmen",
+"r0": 1447,
+"n": 62,
+"w": "abnehmen",
+"pl": ""
+},
+{
+"r": 1452,
+"k": "N:Fähigkeit",
+"r0": 1448,
+"n": 36,
+"w": "die Fähigkeit",
+"pl": "Fähigkeiten",
+"gen": "f"
+},
+{
+"r": 1453,
+"k": "W:heftig",
+"r0": 1449,
+"n": 24,
+"w": "heftig",
+"pl": ""
+},
+{
+"r": 1454,
+"k": "N:Nation",
+"r0": 1450,
+"n": 14,
+"w": "die Nation",
+"pl": "Nationen",
+"gen": "f"
+},
+{
+"r": 1455,
+"k": "W:ansprechen",
+"r0": 1451,
+"n": 21,
+"w": "ansprechen",
+"pl": ""
+},
+{
+"r": 1456,
+"k": "N:Ernst",
+"r0": 1452,
+"n": 10,
+"w": "der Ernst",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1457,
+"k": "W:katholisch",
+"r0": 1453,
+"n": 3,
+"w": "katholisch",
+"pl": ""
+},
+{
+"r": 1458,
+"k": "W:übertragen",
+"r0": 1454,
+"n": 7,
+"w": "übertragen",
+"pl": ""
+},
+{
+"r": 1459,
+"k": "W:woher",
+"r0": 1455,
+"n": 53,
+"w": "woher",
+"pl": ""
+},
+{
+"r": 1460,
+"k": "W:äußern",
+"r0": 1455.99,
+"n": 9,
+"w": "äußern",
+"pl": ""
+},
+{
+"r": 1461,
+"k": "W:entlang",
+"r0": 1456,
+"n": 12,
+"w": "entlang",
+"pl": ""
+},
+{
+"r": 1462,
+"k": "N:Gegend",
+"r0": 1457,
+"n": 15,
+"w": "die Gegend",
+"pl": "Gegenden",
+"gen": "f"
+},
+{
+"r": 1463,
+"k": "N:Holz",
+"r0": 1458,
+"n": 46,
+"w": "das Holz",
+"pl": "Hölzer",
+"gen": "n"
+},
+{
+"r": 1464,
+"k": "N:Länge",
+"r0": 1459,
+"n": 3,
+"w": "die Länge",
+"pl": "Längen",
+"gen": "f"
+},
+{
+"r": 1465,
+"k": "W:meistens",
+"r0": 1460,
+"n": 15,
+"w": "meistens",
+"pl": ""
+},
+{
+"r": 1466,
+"k": "W:runter",
+"r0": 1461,
+"n": 6,
+"w": "runter",
+"pl": ""
+},
+{
+"r": 1467,
+"k": "W:sodass",
+"r0": 1462,
+"n": 6,
+"w": "sodass",
+"pl": ""
+},
+{
+"r": 1468,
+"k": "N:Stil",
+"r0": 1463,
+"n": 8,
+"w": "der Stil",
+"pl": "Stile",
+"gen": "m"
+},
+{
+"r": 1469,
+"k": "N:Stimmung",
+"r0": 1464,
+"n": 18,
+"w": "die Stimmung",
+"pl": "Stimmungen",
+"gen": "f"
+},
+{
+"r": 1470,
+"k": "N:Täter",
+"r0": 1465,
+"n": 7,
+"w": "der Täter",
+"pl": "Täter",
+"gen": "m"
+},
+{
+"r": 1471,
+"k": "N:Aufmerksamkeit",
+"r0": 1466,
+"n": 33,
+"w": "die Aufmerksamkeit",
+"pl": "Aufmerksamkeiten",
+"gen": "f"
+},
+{
+"r": 1472,
+"k": "N:Dienstag",
+"r0": 1467,
+"n": 27,
+"w": "der Dienstag",
+"pl": "Dienstage",
+"gen": "m"
+},
+{
+"r": 1473,
+"k": "N:Anwalt",
+"r0": 1468,
+"n": 79,
+"w": "der Anwalt",
+"pl": "Anwälte",
+"gen": "m"
+},
+{
+"r": 1474,
+"k": "W:betonen",
+"r0": 1469,
+"n": 8,
+"w": "betonen",
+"pl": ""
+},
+{
+"r": 1475,
+"k": "W:dringend",
+"r0": 1470,
+"n": 21,
+"w": "dringend",
+"pl": ""
+},
+{
+"r": 1476,
+"k": "N:Regen",
+"r0": 1471,
+"n": 117,
+"w": "der Regen",
+"pl": "Regen",
+"gen": "m"
+},
+{
+"r": 1477,
+"k": "W:verurteilen",
+"r0": 1472,
+"n": 24,
+"w": "verurteilen",
+"pl": ""
+},
+{
+"r": 1478,
+"k": "N:Streit",
+"r0": 1473,
+"n": 14,
+"w": "der Streit",
+"pl": "Streite",
+"gen": "m"
+},
+{
+"r": 1479,
+"k": "W:erledigen",
+"r0": 1474,
+"n": 43,
+"w": "erledigen",
+"pl": ""
+},
+{
+"r": 1480,
+"k": "W:aussprechen",
+"r0": 1475,
+"n": 31,
+"w": "aussprechen",
+"pl": ""
+},
+{
+"r": 1481,
+"k": "N:Flugzeug",
+"r0": 1476,
+"n": 109,
+"w": "das Flugzeug",
+"pl": "Flugzeuge",
+"gen": "n"
+},
+{
+"r": 1482,
+"k": "W:sinken",
+"r0": 1477,
+"n": 23,
+"w": "sinken",
+"pl": ""
+},
+{
+"r": 1483,
+"k": "W:passend",
+"r0": 1478,
+"n": 6,
+"w": "passend",
+"pl": ""
+},
+{
+"r": 1484,
+"k": "N:Dach",
+"r0": 1479,
+"n": 56,
+"w": "das Dach",
+"pl": "Dächer",
+"gen": "n"
+},
+{
+"r": 1485,
+"k": "W:kaputt",
+"r0": 1480,
+"n": 50,
+"w": "kaputt",
+"pl": ""
+},
+{
+"r": 1486,
+"k": "N:Umwelt",
+"r0": 1481,
+"n": 6,
+"w": "die Umwelt",
+"pl": "Umwelten",
+"gen": "f"
+},
+{
+"r": 1487,
+"k": "N:Weihnachten",
+"r0": 1482,
+"n": 58,
+"w": "das Weihnachten",
+"pl": "Weihnachten",
+"gen": "n"
+},
+{
+"r": 1488,
+"k": "W:bedürfen",
+"r0": 1484,
+"n": 12,
+"w": "bedürfen",
+"pl": ""
+},
+{
+"r": 1489,
+"k": "N:Eigenschaft",
+"r0": 1485,
+"n": 7,
+"w": "die Eigenschaft",
+"pl": "Eigenschaften",
+"gen": "f"
+},
+{
+"r": 1490,
+"k": "W:sauber",
+"r0": 1486,
+"n": 60,
+"w": "sauber",
+"pl": ""
+},
+{
+"r": 1491,
+"k": "W:kontrollieren",
+"r0": 1487,
+"n": 14,
+"w": "kontrollieren",
+"pl": ""
+},
+{
+"r": 1492,
+"k": "N:Fakt",
+"r0": 1488,
+"n": 14,
+"w": "der Fakt",
+"pl": "Fakten",
+"gen": "m"
+},
+{
+"r": 1493,
+"k": "N:Sitz",
+"r0": 1489,
+"n": 8,
+"w": "der Sitz",
+"pl": "Sitze",
+"gen": "m"
+},
+{
+"r": 1494,
+"k": "N:Gewissen",
+"r0": 1490,
+"n": 22,
+"w": "das Gewissen",
+"pl": "Gewissen",
+"gen": "n"
+},
+{
+"r": 1495,
+"k": "W:irgendein",
+"r0": 1491,
+"n": 45,
+"w": "irgendein",
+"pl": ""
+},
+{
+"r": 1496,
+"k": "W:einrichten",
+"r0": 1492,
+"n": 7,
+"w": "einrichten",
+"pl": ""
+},
+{
+"r": 1497,
+"k": "N:Einwohner",
+"r0": 1493,
+"n": 13,
+"w": "der Einwohner",
+"pl": "Einwohner",
+"gen": "m"
+},
+{
+"r": 1498,
+"k": "N:Hose",
+"r0": 1494,
+"n": 42,
+"w": "die Hose",
+"pl": "Hosen",
+"gen": "f"
+},
+{
+"r": 1499,
+"k": "W:tätig",
+"r0": 1495,
+"n": 3,
+"w": "tätig",
+"pl": ""
+},
+{
+"r": 1500,
+"k": "W:fassen",
+"r0": 1496,
+"n": 27,
+"w": "fassen",
+"pl": ""
+},
+{
+"r": 1501,
+"k": "N:Übersetzung",
+"r0": 1497,
+"n": 52,
+"w": "die Übersetzung",
+"pl": "Übersetzungen",
+"gen": "f"
+},
+{
+"r": 1502,
+"k": "W:wissenschaftlich",
+"r0": 1498,
+"n": 11,
+"w": "wissenschaftlich",
+"pl": ""
+},
+{
+"r": 1503,
+"k": "N:Realität",
+"r0": 1500,
+"n": 20,
+"w": "die Realität",
+"pl": "Realitäten",
+"gen": "f"
+},
+{
+"r": 1504,
+"k": "N:Antrag",
+"r0": 1501,
+"n": 3,
+"w": "der Antrag",
+"pl": "Anträge",
+"gen": "m"
+},
+{
+"r": 1505,
+"k": "N:Respekt",
+"r0": 1502,
+"n": 14,
+"w": "der Respekt",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1506,
+"k": "N:Abstand",
+"r0": 1503,
+"n": 21,
+"w": "der Abstand",
+"pl": "Abstände",
+"gen": "m"
+},
+{
+"r": 1507,
+"k": "W:angeblich",
+"r0": 1504,
+"n": 6,
+"w": "angeblich",
+"pl": ""
+},
+{
+"r": 1508,
+"k": "N:Parlament",
+"r0": 1505,
+"n": 5,
+"w": "das Parlament",
+"pl": "Parlamente",
+"gen": "n"
+},
+{
+"r": 1509,
+"k": "W:zwölf",
+"r0": 1506,
+"n": 35,
+"w": "zwölf",
+"pl": ""
+},
+{
+"r": 1510,
+"k": "N:Held",
+"r0": 1507,
+"n": 26,
+"w": "der Held",
+"pl": "Helden",
+"gen": "m"
+},
+{
+"r": 1511,
+"k": "W:jüdisch",
+"r0": 1508,
+"n": 8,
+"w": "jüdisch",
+"pl": ""
+},
+{
+"r": 1512,
+"k": "W:komplex",
+"r0": 1509,
+"n": 15,
+"w": "komplex",
+"pl": ""
+},
+{
+"r": 1513,
+"k": "W:erzeugen",
+"r0": 1510,
+"n": 7,
+"w": "erzeugen",
+"pl": ""
+},
+{
+"r": 1514,
+"k": "N:Objekt",
+"r0": 1511,
+"n": 7,
+"w": "das Objekt",
+"pl": "Objekte",
+"gen": "n"
+},
+{
+"r": 1515,
+"k": "N:Debatte",
+"r0": 1512,
+"n": 4,
+"w": "die Debatte",
+"pl": "Debatten",
+"gen": "f"
+},
+{
+"r": 1516,
+"k": "W:ernsthaft",
+"r0": 1513,
+"n": 16,
+"w": "ernsthaft",
+"pl": ""
+},
+{
+"r": 1517,
+"k": "W:verpflichten",
+"r0": 1515,
+"n": 5,
+"w": "verpflichten",
+"pl": ""
+},
+{
+"r": 1518,
+"k": "W:organisieren",
+"r0": 1516,
+"n": 7,
+"w": "organisieren",
+"pl": ""
+},
+{
+"r": 1519,
+"k": "W:billig",
+"r0": 1517,
+"n": 41,
+"w": "billig",
+"pl": ""
+},
+{
+"r": 1520,
+"k": "N:Boot",
+"r0": 1518,
+"n": 40,
+"w": "das Boot",
+"pl": "Boote",
+"gen": "n"
+},
+{
+"r": 1521,
+"k": "W:chinesisch",
+"r0": 1519,
+"n": 60,
+"w": "chinesisch",
+"pl": ""
+},
+{
+"r": 1522,
+"k": "N:Droge",
+"r0": 1520,
+"n": 19,
+"w": "die Droge",
+"pl": "Drogen",
+"gen": "f"
+},
+{
+"r": 1523,
+"k": "N:Truppe",
+"r0": 1521,
+"n": 5,
+"w": "die Truppe",
+"pl": "Truppen",
+"gen": "f"
+},
+{
+"r": 1524,
+"k": "N:Element",
+"r0": 1522,
+"n": 9,
+"w": "das Element",
+"pl": "Elemente",
+"gen": "n"
+},
+{
+"r": 1525,
+"k": "W:bedeutend",
+"r0": 1523,
+"n": 11,
+"w": "bedeutend",
+"pl": ""
+},
+{
+"r": 1526,
+"k": "W:entfernen",
+"r0": 1524,
+"n": 20,
+"w": "entfernen",
+"pl": ""
+},
+{
+"r": 1527,
+"k": "W:aufgehen",
+"r0": 1525,
+"n": 30,
+"w": "aufgehen",
+"pl": ""
+},
+{
+"r": 1528,
+"k": "W:umbringen",
+"r0": 1526,
+"n": 93,
+"w": "umbringen",
+"pl": ""
+},
+{
+"r": 1529,
+"k": "W:streichen",
+"r0": 1527,
+"n": 63,
+"w": "streichen",
+"pl": ""
+},
+{
+"r": 1530,
+"k": "N:Unterricht",
+"r0": 1528,
+"n": 61,
+"w": "der Unterricht",
+"pl": "Unterrichte",
+"gen": "m"
+},
+{
+"r": 1531,
+"k": "N:Argument",
+"r0": 1529,
+"n": 19,
+"w": "das Argument",
+"pl": "Argumente",
+"gen": "n"
+},
+{
+"r": 1532,
+"k": "W:überprüfen",
+"r0": 1530,
+"n": 13,
+"w": "überprüfen",
+"pl": ""
+},
+{
+"r": 1533,
+"k": "N:Behörde",
+"r0": 1532,
+"n": 7,
+"w": "die Behörde",
+"pl": "Behörden",
+"gen": "f"
+},
+{
+"r": 1534,
+"k": "W:hierbei",
+"r0": 1533,
+"n": 5,
+"w": "hierbei",
+"pl": ""
+},
+{
+"r": 1535,
+"k": "N:Publikum",
+"r0": 1534,
+"n": 23,
+"w": "das Publikum",
+"pl": "Publika",
+"gen": "n"
+},
+{
+"r": 1536,
+"k": "N:Sammlung",
+"r0": 1535,
+"n": 9,
+"w": "die Sammlung",
+"pl": "Sammlungen",
+"gen": "f"
+},
+{
+"r": 1537,
+"k": "N:Zeitschrift",
+"r0": 1536,
+"n": 51,
+"w": "die Zeitschrift",
+"pl": "Zeitschriften",
+"gen": "f"
+},
+{
+"r": 1538,
+"k": "N:Handlung",
+"r0": 1537,
+"n": 12,
+"w": "die Handlung",
+"pl": "Handlungen",
+"gen": "f"
+},
+{
+"r": 1539,
+"k": "N:Service",
+"r0": 1538,
+"n": 3,
+"w": "der Service",
+"pl": "Services",
+"gen": "m"
+},
+{
+"r": 1540,
+"k": "W:weshalb",
+"r0": 1539,
+"n": 13,
+"w": "weshalb",
+"pl": ""
+},
+{
+"r": 1541,
+"k": "N:Verhandlung",
+"r0": 1541,
+"n": 6,
+"w": "die Verhandlung",
+"pl": "Verhandlungen",
+"gen": "f"
+},
+{
+"r": 1542,
+"k": "N:Amerikaner",
+"r0": 1542,
+"n": 50,
+"w": "der Amerikaner",
+"pl": "Amerikaner",
+"gen": "m"
+},
+{
+"r": 1543,
+"k": "W:auszeichnen",
+"r0": 1543,
+"n": 6,
+"w": "auszeichnen",
+"pl": ""
+},
+{
+"r": 1544,
+"k": "W:angenehm",
+"r0": 1544,
+"n": 37,
+"w": "angenehm",
+"pl": ""
+},
+{
+"r": 1545,
+"k": "N:Forum",
+"r0": 1545,
+"n": 4,
+"w": "das Forum",
+"pl": "Foren",
+"gen": "n"
+},
+{
+"r": 1546,
+"k": "W:momentan",
+"r0": 1546,
+"n": 29,
+"w": "momentan",
+"pl": ""
+},
+{
+"r": 1547,
+"k": "W:verstärken",
+"r0": 1547,
+"n": 5,
+"w": "verstärken",
+"pl": ""
+},
+{
+"r": 1548,
+"k": "N:Flug",
+"r0": 1548,
+"n": 25,
+"w": "der Flug",
+"pl": "Flüge",
+"gen": "m"
+},
+{
+"r": 1549,
+"k": "W:kennenlernen",
+"r0": 1549,
+"n": 80,
+"w": "kennenlernen",
+"pl": ""
+},
+{
+"r": 1550,
+"k": "N:Flasche",
+"r0": 1550,
+"n": 86,
+"w": "die Flasche",
+"pl": "Flaschen",
+"gen": "f"
+},
+{
+"r": 1551,
+"k": "N:Mark",
+"r0": 1552,
+"n": 4,
+"w": "die Mark",
+"pl": "Mark",
+"gen": "f"
+},
+{
+"r": 1552,
+"k": "N:Dokument",
+"r0": 1553,
+"n": 23,
+"w": "das Dokument",
+"pl": "Dokumente",
+"gen": "n"
+},
+{
+"r": 1553,
+"k": "N:Widerstand",
+"r0": 1554,
+"n": 4,
+"w": "der Widerstand",
+"pl": "Widerstände",
+"gen": "m"
+},
+{
+"r": 1554,
+"k": "N:Hof",
+"r0": 1555,
+"n": 6,
+"w": "der Hof",
+"pl": "Höfe",
+"gen": "m"
+},
+{
+"r": 1555,
+"k": "W:doppelt",
+"r0": 1556,
+"n": 24,
+"w": "doppelt",
+"pl": ""
+},
+{
+"r": 1556,
+"k": "N:Beschreibung",
+"r0": 1557,
+"n": 8,
+"w": "die Beschreibung",
+"pl": "Beschreibungen",
+"gen": "f"
+},
+{
+"r": 1557,
+"k": "W:daneben",
+"r0": 1558,
+"n": 3,
+"w": "daneben",
+"pl": ""
+},
+{
+"r": 1558,
+"k": "W:desto",
+"r0": 1559,
+"n": 60,
+"w": "desto",
+"pl": ""
+},
+{
+"r": 1559,
+"k": "N:Republik",
+"r0": 1560,
+"n": 13,
+"w": "die Republik",
+"pl": "Republiken",
+"gen": "f"
+},
+{
+"r": 1560,
+"k": "N:Termin",
+"r0": 1561,
+"n": 23,
+"w": "der Termin",
+"pl": "Termine",
+"gen": "m"
+},
+{
+"r": 1561,
+"k": "N:Zugang",
+"r0": 1562,
+"n": 11,
+"w": "der Zugang",
+"pl": "Zugänge",
+"gen": "m"
+},
+{
+"r": 1562,
+"k": "W:zweimal",
+"r0": 1563,
+"n": 60,
+"w": "zweimal",
+"pl": ""
+},
+{
+"r": 1563,
+"k": "W:zeichnen",
+"r0": 1564,
+"n": 23,
+"w": "zeichnen",
+"pl": ""
+},
+{
+"r": 1564,
+"k": "W:herrschen",
+"r0": 1565,
+"n": 31,
+"w": "herrschen",
+"pl": ""
+},
+{
+"r": 1565,
+"k": "N:Minister",
+"r0": 1566,
+"n": 12,
+"w": "der Minister",
+"pl": "Minister",
+"gen": "m"
+},
+{
+"r": 1566,
+"k": "W:beliebt",
+"r0": 1567,
+"n": 35,
+"w": "beliebt",
+"pl": ""
+},
+{
+"r": 1567,
+"k": "N:Kandidat",
+"r0": 1568,
+"n": 19,
+"w": "der Kandidat",
+"pl": "Kandidaten",
+"gen": "m"
+},
+{
+"r": 1568,
+"k": "W:eins",
+"r0": 1569,
+"n": 24,
+"w": "eins",
+"pl": ""
+},
+{
+"r": 1569,
+"k": "W:sichtbar",
+"r0": 1570,
+"n": 12,
+"w": "sichtbar",
+"pl": ""
+},
+{
+"r": 1570,
+"k": "W:weinen",
+"r0": 1571,
+"n": 153,
+"w": "weinen",
+"pl": ""
+},
+{
+"r": 1571,
+"k": "N:Vorbereitung",
+"r0": 1572,
+"n": 4,
+"w": "die Vorbereitung",
+"pl": "Vorbereitungen",
+"gen": "f"
+},
+{
+"r": 1572,
+"k": "W:fremd",
+"r0": 1573,
+"n": 31,
+"w": "fremd",
+"pl": ""
+},
+{
+"r": 1573,
+"k": "W:hell",
+"r0": 1574,
+"n": 22,
+"w": "hell",
+"pl": ""
+},
+{
+"r": 1574,
+"k": "N:Konflikt",
+"r0": 1575,
+"n": 11,
+"w": "der Konflikt",
+"pl": "Konflikte",
+"gen": "m"
+},
+{
+"r": 1575,
+"k": "N:Faktor",
+"r0": 1576,
+"n": 5,
+"w": "der Faktor",
+"pl": "Faktoren",
+"gen": "m"
+},
+{
+"r": 1576,
+"k": "N:Wähler",
+"r0": 1577,
+"n": 6,
+"w": "der Wähler",
+"pl": "Wähler",
+"gen": "m"
+},
+{
+"r": 1577,
+"k": "W:pflegen",
+"r0": 1578,
+"n": 18,
+"w": "pflegen",
+"pl": ""
+},
+{
+"r": 1578,
+"k": "N:Eis",
+"r0": 1579,
+"n": 60,
+"w": "das Eis",
+"pl": "",
+"gen": "n"
+},
+{
+"r": 1579,
+"k": "N:Gegenteil",
+"r0": 1580,
+"n": 15,
+"w": "das Gegenteil",
+"pl": "Gegenteile",
+"gen": "n"
+},
+{
+"r": 1580,
+"k": "W:namens",
+"r0": 1581,
+"n": 21,
+"w": "namens",
+"pl": ""
+},
+{
+"r": 1581,
+"k": "N:Mauer",
+"r0": 1582,
+"n": 33,
+"w": "die Mauer",
+"pl": "Mauern",
+"gen": "f"
+},
+{
+"r": 1582,
+"k": "N:Christ",
+"r0": 1584,
+"n": 13,
+"w": "der Christ",
+"pl": "Christen",
+"gen": "m"
+},
+{
+"r": 1583,
+"k": "N:Anlass",
+"r0": 1585,
+"n": 6,
+"w": "der Anlass",
+"pl": "Anlässe",
+"gen": "m"
+},
+{
+"r": 1584,
+"k": "W:konzentrieren",
+"r0": 1586,
+"n": 25,
+"w": "konzentrieren",
+"pl": ""
+},
+{
+"r": 1585,
+"k": "N:Krise",
+"r0": 1587,
+"n": 16,
+"w": "die Krise",
+"pl": "Krisen",
+"gen": "f"
+},
+{
+"r": 1586,
+"k": "N:Gewicht",
+"r0": 1588,
+"n": 23,
+"w": "das Gewicht",
+"pl": "Gewichte",
+"gen": "n"
+},
+{
+"r": 1587,
+"k": "W:vergeben",
+"r0": 1589,
+"n": 24,
+"w": "vergeben",
+"pl": ""
+},
+{
+"r": 1588,
+"k": "W:golden",
+"r0": 1590,
+"n": 11,
+"w": "golden",
+"pl": ""
+},
+{
+"r": 1589,
+"k": "W:verlaufen",
+"r0": 1592,
+"n": 34,
+"w": "verlaufen",
+"pl": ""
+},
+{
+"r": 1590,
+"k": "N:Fahrt",
+"r0": 1593,
+"n": 5,
+"w": "die Fahrt",
+"pl": "Fahrten",
+"gen": "f"
+},
+{
+"r": 1591,
+"k": "W:fernsehen",
+"r0": 1594,
+"n": 50,
+"w": "fernsehen",
+"pl": ""
+},
+{
+"r": 1592,
+"k": "N:Schwierigkeit",
+"r0": 1595,
+"n": 70,
+"w": "die Schwierigkeit",
+"pl": "Schwierigkeiten",
+"gen": "f"
+},
+{
+"r": 1593,
+"k": "N:Presse",
+"r0": 1596,
+"n": 5,
+"w": "die Presse",
+"pl": "Pressen",
+"gen": "f"
+},
+{
+"r": 1594,
+"k": "N:Treffen",
+"r0": 1597,
+"n": 30,
+"w": "das Treffen",
+"pl": "Treffen",
+"gen": "n"
+},
+{
+"r": 1595,
+"k": "N:Witz",
+"r0": 1598,
+"n": 88,
+"w": "der Witz",
+"pl": "Witze",
+"gen": "m"
+},
+{
+"r": 1596,
+"k": "W:ausreichend",
+"r0": 1599,
+"n": 9,
+"w": "ausreichend",
+"pl": ""
+},
+{
+"r": 1597,
+"k": "N:Niederlage",
+"r0": 1600,
+"n": 10,
+"w": "die Niederlage",
+"pl": "Niederlagen",
+"gen": "f"
+},
+{
+"r": 1598,
+"k": "W:beeinflussen",
+"r0": 1601,
+"n": 17,
+"w": "beeinflussen",
+"pl": ""
+},
+{
+"r": 1599,
+"k": "W:zunehmend",
+"r0": 1602,
+"n": 4,
+"w": "zunehmend",
+"pl": ""
+},
+{
+"r": 1600,
+"k": "W:aufhalten",
+"r0": 1603,
+"n": 35,
+"w": "aufhalten",
+"pl": ""
+},
+{
+"r": 1601,
+"k": "N:Mangel",
+"r0": 1604,
+"n": 22,
+"w": "der Mangel",
+"pl": "Mängel",
+"gen": "m"
+},
+{
+"r": 1602,
+"k": "W:umfassen",
+"r0": 1605,
+"n": 4,
+"w": "umfassen",
+"pl": ""
+},
+{
+"r": 1603,
+"k": "N:Loch",
+"r0": 1606,
+"n": 36,
+"w": "das Loch",
+"pl": "Löcher",
+"gen": "n"
+},
+{
+"r": 1604,
+"k": "W:endgültig",
+"r0": 1607,
+"n": 12,
+"w": "endgültig",
+"pl": ""
+},
+{
+"r": 1605,
+"k": "N:Islam",
+"r0": 1608,
+"n": 7,
+"w": "der Islam",
+"pl": "Islame",
+"gen": "m"
+},
+{
+"r": 1606,
+"k": "N:Untersuchung",
+"r0": 1609,
+"n": 6,
+"w": "die Untersuchung",
+"pl": "Untersuchungen",
+"gen": "f"
+},
+{
+"r": 1607,
+"k": "W:seltsam",
+"r0": 1611,
+"n": 78,
+"w": "seltsam",
+"pl": ""
+},
+{
+"r": 1608,
+"k": "W:investieren",
+"r0": 1612,
+"n": 7,
+"w": "investieren",
+"pl": ""
+},
+{
+"r": 1609,
+"k": "W:überleben",
+"r0": 1613,
+"n": 41,
+"w": "überleben",
+"pl": ""
+},
+{
+"r": 1610,
+"k": "W:vorhaben",
+"r0": 1614,
+"n": 57,
+"w": "vorhaben",
+"pl": ""
+},
+{
+"r": 1611,
+"k": "N:Formel",
+"r0": 1615,
+"n": 6,
+"w": "die Formel",
+"pl": "Formeln",
+"gen": "f"
+},
+{
+"r": 1612,
+"k": "N:Weltkrieg",
+"r0": 1616,
+"n": 15,
+"w": "der Weltkrieg",
+"pl": "Weltkriege",
+"gen": "m"
+},
+{
+"r": 1613,
+"k": "N:Verletzung",
+"r0": 1617,
+"n": 13,
+"w": "die Verletzung",
+"pl": "Verletzungen",
+"gen": "f"
+},
+{
+"r": 1614,
+"k": "N:Tat",
+"r0": 1618,
+"n": 43,
+"w": "die Tat",
+"pl": "Taten",
+"gen": "f"
+},
+{
+"r": 1615,
+"k": "N:Auswirkung",
+"r0": 1619,
+"n": 13,
+"w": "die Auswirkung",
+"pl": "Auswirkungen",
+"gen": "f"
+},
+{
+"r": 1616,
+"k": "W:mächtig",
+"r0": 1620,
+"n": 12,
+"w": "mächtig",
+"pl": ""
+},
+{
+"r": 1617,
+"k": "N:Anhänger",
+"r0": 1622,
+"n": 7,
+"w": "der Anhänger",
+"pl": "Anhänger",
+"gen": "m"
+},
+{
+"r": 1618,
+"k": "W:jemals",
+"r0": 1623,
+"n": 37,
+"w": "jemals",
+"pl": ""
+},
+{
+"r": 1619,
+"k": "N:Niveau",
+"r0": 1624,
+"n": 8,
+"w": "das Niveau",
+"pl": "Niveaus",
+"gen": "n"
+},
+{
+"r": 1620,
+"k": "N:Philosophie",
+"r0": 1625,
+"n": 13,
+"w": "die Philosophie",
+"pl": "Philosophien",
+"gen": "f"
+},
+{
+"r": 1621,
+"k": "N:Süden",
+"r0": 1626,
+"n": 22,
+"w": "der Süden",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1622,
+"k": "W:verteilen",
+"r0": 1627,
+"n": 7,
+"w": "verteilen",
+"pl": ""
+},
+{
+"r": 1623,
+"k": "W:ausdrücken",
+"r0": 1628,
+"n": 33,
+"w": "ausdrücken",
+"pl": ""
+},
+{
+"r": 1624,
+"k": "W:fördern",
+"r0": 1629,
+"n": 6,
+"w": "fördern",
+"pl": ""
+},
+{
+"r": 1625,
+"k": "N:Hauptstadt",
+"r0": 1631,
+"n": 104,
+"w": "die Hauptstadt",
+"pl": "Hauptstädte",
+"gen": "f"
+},
+{
+"r": 1626,
+"k": "N:Fisch",
+"r0": 1632,
+"n": 152,
+"w": "der Fisch",
+"pl": "Fische",
+"gen": "m"
+},
+{
+"r": 1627,
+"k": "W:verteidigen",
+"r0": 1633,
+"n": 15,
+"w": "verteidigen",
+"pl": ""
+},
+{
+"r": 1628,
+"k": "W:zuständig",
+"r0": 1634,
+"n": 3,
+"w": "zuständig",
+"pl": ""
+},
+{
+"r": 1629,
+"k": "W:zunehmen",
+"r0": 1635,
+"n": 39,
+"w": "zunehmen",
+"pl": ""
+},
+{
+"r": 1630,
+"k": "W:befreien",
+"r0": 1636,
+"n": 10,
+"w": "befreien",
+"pl": ""
+},
+{
+"r": 1631,
+"k": "N:Botschaft",
+"r0": 1637,
+"n": 47,
+"w": "die Botschaft",
+"pl": "Botschaften",
+"gen": "f"
+},
+{
+"r": 1632,
+"k": "N:Prinz",
+"r0": 1638,
+"n": 18,
+"w": "der Prinz",
+"pl": "Prinzen",
+"gen": "m"
+},
+{
+"r": 1633,
+"k": "W:erweitern",
+"r0": 1639,
+"n": 3,
+"w": "erweitern",
+"pl": ""
+},
+{
+"r": 1634,
+"k": "W:gegenseitig",
+"r0": 1640,
+"n": 28,
+"w": "gegenseitig",
+"pl": ""
+},
+{
+"r": 1635,
+"k": "W:trocken",
+"r0": 1641,
+"n": 40,
+"w": "trocken",
+"pl": ""
+},
+{
+"r": 1636,
+"k": "W:fürchten",
+"r0": 1642,
+"n": 82,
+"w": "fürchten",
+"pl": ""
+},
+{
+"r": 1637,
+"k": "W:medizinisch",
+"r0": 1643,
+"n": 9,
+"w": "medizinisch",
+"pl": ""
+},
+{
+"r": 1638,
+"k": "W:tanzen",
+"r0": 1644,
+"n": 96,
+"w": "tanzen",
+"pl": ""
+},
+{
+"r": 1639,
+"k": "W:wem",
+"r0": 1645,
+"n": 73,
+"w": "wem",
+"pl": ""
+},
+{
+"r": 1640,
+"k": "W:streng",
+"r0": 1646,
+"n": 47,
+"w": "streng",
+"pl": ""
+},
+{
+"r": 1641,
+"k": "N:Adresse",
+"r0": 1647,
+"n": 57,
+"w": "die Adresse",
+"pl": "Adressen",
+"gen": "f"
+},
+{
+"r": 1642,
+"k": "N:Fläche",
+"r0": 1648,
+"n": 3,
+"w": "die Fläche",
+"pl": "Flächen",
+"gen": "f"
+},
+{
+"r": 1643,
+"k": "N:Medizin",
+"r0": 1649,
+"n": 40,
+"w": "die Medizin",
+"pl": "Medizinen",
+"gen": "f"
+},
+{
+"r": 1644,
+"k": "N:Mission",
+"r0": 1650,
+"n": 5,
+"w": "die Mission",
+"pl": "Missionen",
+"gen": "f"
+},
+{
+"r": 1645,
+"k": "W:gemäß",
+"r0": 1650.99,
+"n": 3,
+"w": "gemäß",
+"pl": ""
+},
+{
+"r": 1646,
+"k": "N:Nachmittag",
+"r0": 1651,
+"n": 103,
+"w": "der Nachmittag",
+"pl": "Nachmittage",
+"gen": "m"
+},
+{
+"r": 1647,
+"k": "N:Zeug",
+"r0": 1652,
+"n": 11,
+"w": "das Zeug",
+"pl": "Zeuge",
+"gen": "n"
+},
+{
+"r": 1648,
+"k": "N:Personal",
+"r0": 1653,
+"n": 4,
+"w": "das Personal",
+"pl": "",
+"gen": "n"
+},
+{
+"r": 1649,
+"k": "W:still",
+"r0": 1654,
+"n": 28,
+"w": "still",
+"pl": ""
+},
+{
+"r": 1650,
+"k": "W:sperren",
+"r0": 1655,
+"n": 5,
+"w": "sperren",
+"pl": ""
+},
+{
+"r": 1651,
+"k": "N:Strategie",
+"r0": 1656,
+"n": 10,
+"w": "die Strategie",
+"pl": "Strategien",
+"gen": "f"
+},
+{
+"r": 1652,
+"k": "N:Protest",
+"r0": 1657,
+"n": 6,
+"w": "der Protest",
+"pl": "Proteste",
+"gen": "m"
+},
+{
+"r": 1653,
+"k": "W:siegen",
+"r0": 1658,
+"n": 20,
+"w": "siegen",
+"pl": ""
+},
+{
+"r": 1654,
+"k": "N:Song",
+"r0": 1660,
+"n": 3,
+"w": "der Song",
+"pl": "Songs",
+"gen": "m"
+},
+{
+"r": 1655,
+"k": "W:zufällig",
+"r0": 1661,
+"n": 52,
+"w": "zufällig",
+"pl": ""
+},
+{
+"r": 1656,
+"k": "W:mittlerer",
+"r0": 1662,
+"n": 4,
+"w": "mittlerer",
+"pl": ""
+},
+{
+"r": 1657,
+"k": "W:übersetzen",
+"r0": 1663,
+"n": 154,
+"w": "übersetzen",
+"pl": ""
+},
+{
+"r": 1658,
+"k": "W:anhalten",
+"r0": 1664,
+"n": 36,
+"w": "anhalten",
+"pl": ""
+},
+{
+"r": 1659,
+"k": "W:berücksichtigen",
+"r0": 1665,
+"n": 4,
+"w": "berücksichtigen",
+"pl": ""
+},
+{
+"r": 1660,
+"k": "W:mitbringen",
+"r0": 1666,
+"n": 53,
+"w": "mitbringen",
+"pl": ""
+},
+{
+"r": 1661,
+"k": "W:unterhalten",
+"r0": 1667,
+"n": 42,
+"w": "unterhalten",
+"pl": ""
+},
+{
+"r": 1662,
+"k": "N:Geschmack",
+"r0": 1668,
+"n": 17,
+"w": "der Geschmack",
+"pl": "Geschmäcke",
+"gen": "m"
+},
+{
+"r": 1663,
+"k": "N:Keller",
+"r0": 1670,
+"n": 20,
+"w": "der Keller",
+"pl": "Keller",
+"gen": "m"
+},
+{
+"r": 1664,
+"k": "N:Blume",
+"r0": 1671,
+"n": 204,
+"w": "die Blume",
+"pl": "Blumen",
+"gen": "f"
+},
+{
+"r": 1665,
+"k": "W:herausfinden",
+"r0": 1672,
+"n": 39,
+"w": "herausfinden",
+"pl": ""
+},
+{
+"r": 1666,
+"k": "N:Pass",
+"r0": 1673,
+"n": 51,
+"w": "der Pass",
+"pl": "Pässe",
+"gen": "m"
+},
+{
+"r": 1667,
+"k": "W:anscheinend",
+"r0": 1674,
+"n": 23,
+"w": "anscheinend",
+"pl": ""
+},
+{
+"r": 1668,
+"k": "W:begrüßen",
+"r0": 1674.99,
+"n": 21,
+"w": "begrüßen",
+"pl": ""
+},
+{
+"r": 1669,
+"k": "N:Kommunikation",
+"r0": 1675,
+"n": 13,
+"w": "die Kommunikation",
+"pl": "Kommunikationen",
+"gen": "f"
+},
+{
+"r": 1670,
+"k": "N:Leser",
+"r0": 1676,
+"n": 9,
+"w": "der Leser",
+"pl": "Leser",
+"gen": "m"
+},
+{
+"r": 1671,
+"k": "N:Manager",
+"r0": 1677,
+"n": 7,
+"w": "der Manager",
+"pl": "Manager",
+"gen": "m"
+},
+{
+"r": 1672,
+"k": "N:Mühe",
+"r0": 1678,
+"n": 43,
+"w": "die Mühe",
+"pl": "Mühen",
+"gen": "f"
+},
+{
+"r": 1673,
+"k": "N:Revolution",
+"r0": 1679,
+"n": 12,
+"w": "die Revolution",
+"pl": "Revolutionen",
+"gen": "f"
+},
+{
+"r": 1674,
+"k": "W:spätestens",
+"r0": 1680,
+"n": 3,
+"w": "spätestens",
+"pl": ""
+},
+{
+"r": 1675,
+"k": "N:Uni",
+"r0": 1681,
+"n": 7,
+"w": "die Uni",
+"pl": "Unis",
+"gen": "f"
+},
+{
+"r": 1676,
+"k": "N:Aspekt",
+"r0": 1682,
+"n": 6,
+"w": "der Aspekt",
+"pl": "Aspekte",
+"gen": "m"
+},
+{
+"r": 1677,
+"k": "N:Leid",
+"r0": 1683,
+"n": 71,
+"w": "das Leid",
+"pl": "",
+"gen": "n"
+},
+{
+"r": 1678,
+"k": "N:Schauspieler",
+"r0": 1684,
+"n": 29,
+"w": "der Schauspieler",
+"pl": "Schauspieler",
+"gen": "m"
+},
+{
+"r": 1679,
+"k": "W:lokal",
+"r0": 1685,
+"n": 6,
+"w": "lokal",
+"pl": ""
+},
+{
+"r": 1680,
+"k": "W:bedienen",
+"r0": 1686,
+"n": 13,
+"w": "bedienen",
+"pl": ""
+},
+{
+"r": 1681,
+"k": "W:zuhören",
+"r0": 1687,
+"n": 74,
+"w": "zuhören",
+"pl": ""
+},
+{
+"r": 1682,
+"k": "N:Rad",
+"r0": 1690,
+"n": 25,
+"w": "das Rad",
+"pl": "Räder",
+"gen": "n"
+},
+{
+"r": 1683,
+"k": "W:westlich",
+"r0": 1691,
+"n": 4,
+"w": "westlich",
+"pl": ""
+},
+{
+"r": 1684,
+"k": "N:Erkenntnis",
+"r0": 1692,
+"n": 4,
+"w": "die Erkenntnis",
+"pl": "Erkenntnisse",
+"gen": "f"
+},
+{
+"r": 1685,
+"k": "W:grau",
+"r0": 1693,
+"n": 29,
+"w": "grau",
+"pl": ""
+},
+{
+"r": 1686,
+"k": "W:springen",
+"r0": 1694,
+"n": 41,
+"w": "springen",
+"pl": ""
+},
+{
+"r": 1687,
+"k": "W:äußerst",
+"r0": 1694.99,
+"n": 19,
+"w": "äußerst",
+"pl": ""
+},
+{
+"r": 1688,
+"k": "N:Absicht",
+"r0": 1695,
+"n": 93,
+"w": "die Absicht",
+"pl": "Absichten",
+"gen": "f"
+},
+{
+"r": 1689,
+"k": "W:heiraten",
+"r0": 1696,
+"n": 234,
+"w": "heiraten",
+"pl": ""
+},
+{
+"r": 1690,
+"k": "N:Note",
+"r0": 1697,
+"n": 20,
+"w": "die Note",
+"pl": "Noten",
+"gen": "f"
+},
+{
+"r": 1691,
+"k": "N:Gas",
+"r0": 1699,
+"n": 14,
+"w": "das Gas",
+"pl": "Gase",
+"gen": "n"
+},
+{
+"r": 1692,
+"k": "W:spenden",
+"r0": 1700,
+"n": 8,
+"w": "spenden",
+"pl": ""
+},
+{
+"r": 1693,
+"k": "N:Ausdruck",
+"r0": 1701,
+"n": 12,
+"w": "der Ausdruck",
+"pl": "Ausdrücke",
+"gen": "m"
+},
+{
+"r": 1694,
+"k": "N:Aussehen",
+"r0": 1702,
+"n": 16,
+"w": "das Aussehen",
+"pl": "",
+"gen": "n"
+},
+{
+"r": 1695,
+"k": "N:Verbrechen",
+"r0": 1703,
+"n": 40,
+"w": "das Verbrechen",
+"pl": "Verbrechen",
+"gen": "n"
+},
+{
+"r": 1696,
+"k": "N:Besitz",
+"r0": 1704,
+"n": 8,
+"w": "der Besitz",
+"pl": "Besitze",
+"gen": "m"
+},
+{
+"r": 1697,
+"k": "W:dasselbe",
+"r0": 1705,
+"n": 30,
+"w": "dasselbe",
+"pl": ""
+},
+{
+"r": 1698,
+"k": "W:einst",
+"r0": 1706,
+"n": 25,
+"w": "einst",
+"pl": ""
+},
+{
+"r": 1699,
+"k": "N:Mut",
+"r0": 1707,
+"n": 42,
+"w": "der Mut",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1700,
+"k": "W:womit",
+"r0": 1708,
+"n": 18,
+"w": "womit",
+"pl": ""
+},
+{
+"r": 1701,
+"k": "W:individuell",
+"r0": 1709,
+"n": 3,
+"w": "individuell",
+"pl": ""
+},
+{
+"r": 1702,
+"k": "N:Überraschung",
+"r0": 1710,
+"n": 24,
+"w": "die Überraschung",
+"pl": "Überraschungen",
+"gen": "f"
+},
+{
+"r": 1703,
+"k": "W:morgens",
+"r0": 1711,
+"n": 52,
+"w": "morgens",
+"pl": ""
+},
+{
+"r": 1704,
+"k": "N:Hochzeit",
+"r0": 1712,
+"n": 27,
+"w": "die Hochzeit",
+"pl": "Hochzeiten",
+"gen": "f"
+},
+{
+"r": 1705,
+"k": "N:Rock",
+"r0": 1713,
+"n": 30,
+"w": "der Rock",
+"pl": "Röcke",
+"gen": "m"
+},
+{
+"r": 1706,
+"k": "N:Herausforderung",
+"r0": 1714,
+"n": 11,
+"w": "die Herausforderung",
+"pl": "Herausforderungen",
+"gen": "f"
+},
+{
+"r": 1707,
+"k": "W:aufbauen",
+"r0": 1715,
+"n": 4,
+"w": "aufbauen",
+"pl": ""
+},
+{
+"r": 1708,
+"k": "W:messen",
+"r0": 1716,
+"n": 16,
+"w": "messen",
+"pl": ""
+},
+{
+"r": 1709,
+"k": "N:Option",
+"r0": 1717,
+"n": 6,
+"w": "die Option",
+"pl": "Optionen",
+"gen": "f"
+},
+{
+"r": 1710,
+"k": "N:Arbeiter",
+"r0": 1718,
+"n": 38,
+"w": "der Arbeiter",
+"pl": "Arbeiter",
+"gen": "m"
+},
+{
+"r": 1711,
+"k": "W:umgehen",
+"r0": 1719,
+"n": 18,
+"w": "umgehen",
+"pl": ""
+},
+{
+"r": 1712,
+"k": "W:schwerfallen",
+"r0": 1720,
+"n": 19,
+"w": "schwerfallen",
+"pl": ""
+},
+{
+"r": 1713,
+"k": "N:Wissen",
+"r0": 1722,
+"n": 32,
+"w": "das Wissen",
+"pl": "",
+"gen": "n"
+},
+{
+"r": 1714,
+"k": "W:bemühen",
+"r0": 1723,
+"n": 24,
+"w": "bemühen",
+"pl": ""
+},
+{
+"r": 1715,
+"k": "W:durchschnittlich",
+"r0": 1724,
+"n": 9,
+"w": "durchschnittlich",
+"pl": ""
+},
+{
+"r": 1716,
+"k": "N:Vorwurf",
+"r0": 1725,
+"n": 4,
+"w": "der Vorwurf",
+"pl": "Vorwürfe",
+"gen": "m"
+},
+{
+"r": 1717,
+"k": "W:lebend",
+"r0": 1726,
+"n": 19,
+"w": "lebend",
+"pl": ""
+},
+{
+"r": 1718,
+"k": "N:Musiker",
+"r0": 1727,
+"n": 23,
+"w": "der Musiker",
+"pl": "Musiker",
+"gen": "m"
+},
+{
+"r": 1719,
+"k": "W:aufmerksam",
+"r0": 1728,
+"n": 29,
+"w": "aufmerksam",
+"pl": ""
+},
+{
+"r": 1720,
+"k": "W:illegal",
+"r0": 1730,
+"n": 12,
+"w": "illegal",
+"pl": ""
+},
+{
+"r": 1721,
+"k": "W:schaden",
+"r0": 1731,
+"n": 22,
+"w": "schaden",
+"pl": ""
+},
+{
+"r": 1722,
+"k": "W:beitragen",
+"r0": 1732,
+"n": 14,
+"w": "beitragen",
+"pl": ""
+},
+{
+"r": 1723,
+"k": "N:Schicksal",
+"r0": 1733,
+"n": 43,
+"w": "das Schicksal",
+"pl": "Schicksale",
+"gen": "n"
+},
+{
+"r": 1724,
+"k": "N:Brust",
+"r0": 1734,
+"n": 24,
+"w": "die Brust",
+"pl": "Brüste",
+"gen": "f"
+},
+{
+"r": 1725,
+"k": "N:Kern",
+"r0": 1735,
+"n": 8,
+"w": "der Kern",
+"pl": "Kerne",
+"gen": "m"
+},
+{
+"r": 1726,
+"k": "N:Erwachsene",
+"r0": 1736,
+"n": 15,
+"w": "die Erwachsene",
+"pl": "",
+"gen": "f"
+},
+{
+"r": 1727,
+"k": "W:garantieren",
+"r0": 1737,
+"n": 9,
+"w": "garantieren",
+"pl": ""
+},
+{
+"r": 1728,
+"k": "W:auffallen",
+"r0": 1738,
+"n": 17,
+"w": "auffallen",
+"pl": ""
+},
+{
+"r": 1729,
+"k": "N:Bewohner",
+"r0": 1740,
+"n": 7,
+"w": "der Bewohner",
+"pl": "Bewohner",
+"gen": "m"
+},
+{
+"r": 1730,
+"k": "N:Code",
+"r0": 1741,
+"n": 6,
+"w": "der Code",
+"pl": "Codes",
+"gen": "m"
+},
+{
+"r": 1731,
+"k": "W:definitiv",
+"r0": 1742,
+"n": 4,
+"w": "definitiv",
+"pl": ""
+},
+{
+"r": 1732,
+"k": "W:gratis",
+"r0": 1743,
+"n": 5,
+"w": "gratis",
+"pl": ""
+},
+{
+"r": 1733,
+"k": "W:hundert",
+"r0": 1744,
+"n": 59,
+"w": "hundert",
+"pl": ""
+},
+{
+"r": 1734,
+"k": "W:letztlich",
+"r0": 1745,
+"n": 8,
+"w": "letztlich",
+"pl": ""
+},
+{
+"r": 1735,
+"k": "N:Schwanz",
+"r0": 1746,
+"n": 18,
+"w": "der Schwanz",
+"pl": "Schwänze",
+"gen": "m"
+},
+{
+"r": 1736,
+"k": "W:witzig",
+"r0": 1747,
+"n": 6,
+"w": "witzig",
+"pl": ""
+},
+{
+"r": 1737,
+"k": "W:worauf",
+"r0": 1748,
+"n": 8,
+"w": "worauf",
+"pl": ""
+},
+{
+"r": 1738,
+"k": "W:erheblich",
+"r0": 1749,
+"n": 4,
+"w": "erheblich",
+"pl": ""
+},
+{
+"r": 1739,
+"k": "W:null",
+"r0": 1750,
+"n": 19,
+"w": "null",
+"pl": ""
+},
+{
+"r": 1740,
+"k": "N:Sturm",
+"r0": 1751,
+"n": 39,
+"w": "der Sturm",
+"pl": "Stürme",
+"gen": "m"
+},
+{
+"r": 1741,
+"k": "W:erwerben",
+"r0": 1752,
+"n": 14,
+"w": "erwerben",
+"pl": ""
+},
+{
+"r": 1742,
+"k": "W:parallel",
+"r0": 1753,
+"n": 4,
+"w": "parallel",
+"pl": ""
+},
+{
+"r": 1743,
+"k": "W:einnehmen",
+"r0": 1754,
+"n": 21,
+"w": "einnehmen",
+"pl": ""
+},
+{
+"r": 1744,
+"k": "W:langweilig",
+"r0": 1755,
+"n": 55,
+"w": "langweilig",
+"pl": ""
+},
+{
+"r": 1745,
+"k": "N:Augenblick",
+"r0": 1756,
+"n": 50,
+"w": "der Augenblick",
+"pl": "Augenblicke",
+"gen": "m"
+},
+{
+"r": 1746,
+"k": "W:empfinden",
+"r0": 1757,
+"n": 25,
+"w": "empfinden",
+"pl": ""
+},
+{
+"r": 1747,
+"k": "N:Kleid",
+"r0": 1758,
+"n": 103,
+"w": "das Kleid",
+"pl": "Kleider",
+"gen": "n"
+},
+{
+"r": 1748,
+"k": "W:spanisch",
+"r0": 1759,
+"n": 54,
+"w": "spanisch",
+"pl": ""
+},
+{
+"r": 1749,
+"k": "W:begegnen",
+"r0": 1760,
+"n": 25,
+"w": "begegnen",
+"pl": ""
+},
+{
+"r": 1750,
+"k": "N:Rose",
+"r0": 1762,
+"n": 53,
+"w": "die Rose",
+"pl": "Rosen",
+"gen": "f"
+},
+{
+"r": 1751,
+"k": "N:Wolf",
+"r0": 1763,
+"n": 23,
+"w": "der Wolf",
+"pl": "Wölfe",
+"gen": "m"
+},
+{
+"r": 1752,
+"k": "W:wertvoll",
+"r0": 1764,
+"n": 30,
+"w": "wertvoll",
+"pl": ""
+},
+{
+"r": 1753,
+"k": "W:sexuell",
+"r0": 1765,
+"n": 5,
+"w": "sexuell",
+"pl": ""
+},
+{
+"r": 1754,
+"k": "W:dicht",
+"r0": 1766,
+"n": 13,
+"w": "dicht",
+"pl": ""
+},
+{
+"r": 1755,
+"k": "N:Posten",
+"r0": 1767,
+"n": 7,
+"w": "der Posten",
+"pl": "Posten",
+"gen": "m"
+},
+{
+"r": 1756,
+"k": "W:künftig",
+"r0": 1768,
+"n": 8,
+"w": "künftig",
+"pl": ""
+},
+{
+"r": 1757,
+"k": "N:Gegenstand",
+"r0": 1769,
+"n": 18,
+"w": "der Gegenstand",
+"pl": "Gegenstände",
+"gen": "m"
+},
+{
+"r": 1758,
+"k": "N:Sitzung",
+"r0": 1770,
+"n": 25,
+"w": "die Sitzung",
+"pl": "Sitzungen",
+"gen": "f"
+},
+{
+"r": 1759,
+"k": "W:gesellschaftlich",
+"r0": 1771,
+"n": 9,
+"w": "gesellschaftlich",
+"pl": ""
+},
+{
+"r": 1760,
+"k": "W:verheiraten",
+"r0": 1772,
+"n": 123,
+"w": "verheiraten",
+"pl": ""
+},
+{
+"r": 1761,
+"k": "N:Brot",
+"r0": 1773,
+"n": 153,
+"w": "das Brot",
+"pl": "Brote",
+"gen": "n"
+},
+{
+"r": 1762,
+"k": "W:rollen",
+"r0": 1774,
+"n": 3,
+"w": "rollen",
+"pl": ""
+},
+{
+"r": 1763,
+"k": "W:üben",
+"r0": 1775,
+"n": 20,
+"w": "üben",
+"pl": ""
+},
+{
+"r": 1764,
+"k": "W:vorschlagen",
+"r0": 1776,
+"n": 35,
+"w": "vorschlagen",
+"pl": ""
+},
+{
+"r": 1765,
+"k": "N:Achtung",
+"r0": 1777,
+"n": 5,
+"w": "die Achtung",
+"pl": "",
+"gen": "f"
+},
+{
+"r": 1766,
+"k": "W:anstatt",
+"r0": 1778,
+"n": 19,
+"w": "anstatt",
+"pl": ""
+},
+{
+"r": 1767,
+"k": "W:ausschließen",
+"r0": 1779,
+"n": 8,
+"w": "ausschließen",
+"pl": ""
+},
+{
+"r": 1768,
+"k": "W:erforderlich",
+"r0": 1780,
+"n": 8,
+"w": "erforderlich",
+"pl": ""
+},
+{
+"r": 1769,
+"k": "N:Gemeinschaft",
+"r0": 1781,
+"n": 6,
+"w": "die Gemeinschaft",
+"pl": "Gemeinschaften",
+"gen": "f"
+},
+{
+"r": 1770,
+"k": "N:Marke",
+"r0": 1782,
+"n": 5,
+"w": "die Marke",
+"pl": "Marken",
+"gen": "f"
+},
+{
+"r": 1771,
+"k": "W:hervorragend",
+"r0": 1783,
+"n": 16,
+"w": "hervorragend",
+"pl": ""
+},
+{
+"r": 1772,
+"k": "N:Zahn",
+"r0": 1784,
+"n": 86,
+"w": "der Zahn",
+"pl": "Zähne",
+"gen": "m"
+},
+{
+"r": 1773,
+"k": "N:Kerl",
+"r0": 1785,
+"n": 20,
+"w": "der Kerl",
+"pl": "Kerle",
+"gen": "m"
+},
+{
+"r": 1774,
+"k": "N:Wohl",
+"r0": 1786,
+"n": 4,
+"w": "das Wohl",
+"pl": "",
+"gen": "n"
+},
+{
+"r": 1775,
+"k": "N:Brand",
+"r0": 1787,
+"n": 22,
+"w": "der Brand",
+"pl": "Brände",
+"gen": "m"
+},
+{
+"r": 1776,
+"k": "W:aufmachen",
+"r0": 1788,
+"n": 22,
+"w": "aufmachen",
+"pl": ""
+},
+{
+"r": 1777,
+"k": "W:hinzufügen",
+"r0": 1789,
+"n": 24,
+"w": "hinzufügen",
+"pl": ""
+},
+{
+"r": 1778,
+"k": "W:griechisch",
+"r0": 1790,
+"n": 16,
+"w": "griechisch",
+"pl": ""
+},
+{
+"r": 1779,
+"k": "N:Pfarrer",
+"r0": 1791,
+"n": 6,
+"w": "der Pfarrer",
+"pl": "Pfarrer",
+"gen": "m"
+},
+{
+"r": 1780,
+"k": "W:beachten",
+"r0": 1792,
+"n": 15,
+"w": "beachten",
+"pl": ""
+},
+{
+"r": 1781,
+"k": "N:Schloss",
+"r0": 1793,
+"n": 32,
+"w": "das Schloss",
+"pl": "Schlösser",
+"gen": "n"
+},
+{
+"r": 1782,
+"k": "W:zulassen",
+"r0": 1794,
+"n": 17,
+"w": "zulassen",
+"pl": ""
+},
+{
+"r": 1783,
+"k": "W:weh",
+"r0": 1795,
+"n": 30,
+"w": "weh",
+"pl": ""
+},
+{
+"r": 1784,
+"k": "W:lehren",
+"r0": 1796,
+"n": 47,
+"w": "lehren",
+"pl": ""
+},
+{
+"r": 1785,
+"k": "N:Paket",
+"r0": 1798,
+"n": 14,
+"w": "das Paket",
+"pl": "Pakete",
+"gen": "n"
+},
+{
+"r": 1786,
+"k": "N:Freundschaft",
+"r0": 1799,
+"n": 33,
+"w": "die Freundschaft",
+"pl": "Freundschaften",
+"gen": "f"
+},
+{
+"r": 1787,
+"k": "N:Bischof",
+"r0": 1800,
+"n": 3,
+"w": "der Bischof",
+"pl": "Bischöfe",
+"gen": "m"
+},
+{
+"r": 1788,
+"k": "N:Instrument",
+"r0": 1801,
+"n": 11,
+"w": "das Instrument",
+"pl": "Instrumente",
+"gen": "n"
+},
+{
+"r": 1789,
+"k": "W:besetzen",
+"r0": 1802,
+"n": 20,
+"w": "besetzen",
+"pl": ""
+},
+{
+"r": 1790,
+"k": "W:trainieren",
+"r0": 1804,
+"n": 10,
+"w": "trainieren",
+"pl": ""
+},
+{
+"r": 1791,
+"k": "N:Magazin",
+"r0": 1805,
+"n": 3,
+"w": "das Magazin",
+"pl": "Magazine",
+"gen": "n"
+},
+{
+"r": 1792,
+"k": "N:Geschlecht",
+"r0": 1806,
+"n": 6,
+"w": "das Geschlecht",
+"pl": "Geschlechter",
+"gen": "n"
+},
+{
+"r": 1793,
+"k": "N:Besitzer",
+"r0": 1807,
+"n": 14,
+"w": "der Besitzer",
+"pl": "Besitzer",
+"gen": "m"
+},
+{
+"r": 1794,
+"k": "N:Frühstück",
+"r0": 1808,
+"n": 79,
+"w": "das Frühstück",
+"pl": "Frühstücke",
+"gen": "n"
+},
+{
+"r": 1795,
+"k": "N:Gedicht",
+"r0": 1809,
+"n": 58,
+"w": "das Gedicht",
+"pl": "Gedichte",
+"gen": "n"
+},
+{
+"r": 1796,
+"k": "W:abhängig",
+"r0": 1810,
+"n": 19,
+"w": "abhängig",
+"pl": ""
+},
+{
+"r": 1797,
+"k": "N:Engel",
+"r0": 1811,
+"n": 27,
+"w": "der Engel",
+"pl": "Engel",
+"gen": "m"
+},
+{
+"r": 1798,
+"k": "N:Haltung",
+"r0": 1812,
+"n": 4,
+"w": "die Haltung",
+"pl": "Haltungen",
+"gen": "f"
+},
+{
+"r": 1799,
+"k": "W:normalerweise",
+"r0": 1813,
+"n": 58,
+"w": "normalerweise",
+"pl": ""
+},
+{
+"r": 1800,
+"k": "N:Strafe",
+"r0": 1814,
+"n": 8,
+"w": "die Strafe",
+"pl": "Strafen",
+"gen": "f"
+},
+{
+"r": 1801,
+"k": "N:Tipp",
+"r0": 1815,
+"n": 5,
+"w": "der Tipp",
+"pl": "Tipps",
+"gen": "m"
+},
+{
+"r": 1802,
+"k": "N:Webseite",
+"r0": 1816,
+"n": 6,
+"w": "die Webseite",
+"pl": "Webseiten",
+"gen": "f"
+},
+{
+"r": 1803,
+"k": "N:Zustimmung",
+"r0": 1817,
+"n": 4,
+"w": "die Zustimmung",
+"pl": "Zustimmungen",
+"gen": "f"
+},
+{
+"r": 1804,
+"k": "W:einfallen",
+"r0": 1818,
+"n": 18,
+"w": "einfallen",
+"pl": ""
+},
+{
+"r": 1805,
+"k": "W:braun",
+"r0": 1820,
+"n": 31,
+"w": "braun",
+"pl": ""
+},
+{
+"r": 1806,
+"k": "N:Milch",
+"r0": 1821,
+"n": 175,
+"w": "die Milch",
+"pl": "Milche",
+"gen": "f"
+},
+{
+"r": 1807,
+"k": "W:weiblich",
+"r0": 1822,
+"n": 9,
+"w": "weiblich",
+"pl": ""
+},
+{
+"r": 1808,
+"k": "W:vertreiben",
+"r0": 1823,
+"n": 6,
+"w": "vertreiben",
+"pl": ""
+},
+{
+"r": 1809,
+"k": "W:leid",
+"r0": 1824,
+"n": 63,
+"w": "leid",
+"pl": ""
+},
+{
+"r": 1810,
+"k": "N:Planet",
+"r0": 1825,
+"n": 50,
+"w": "der Planet",
+"pl": "Planeten",
+"gen": "m"
+},
+{
+"r": 1811,
+"k": "N:Wissenschaftler",
+"r0": 1826,
+"n": 31,
+"w": "der Wissenschaftler",
+"pl": "Wissenschaftler",
+"gen": "m"
+},
+{
+"r": 1812,
+"k": "N:Bibliothek",
+"r0": 1827,
+"n": 81,
+"w": "die Bibliothek",
+"pl": "Bibliotheken",
+"gen": "f"
+},
+{
+"r": 1813,
+"k": "W:begehen",
+"r0": 1828,
+"n": 43,
+"w": "begehen",
+"pl": ""
+},
+{
+"r": 1814,
+"k": "W:enttäuschen",
+"r0": 1829,
+"n": 53,
+"w": "enttäuschen",
+"pl": ""
+},
+{
+"r": 1815,
+"k": "W:verraten",
+"r0": 1830,
+"n": 27,
+"w": "verraten",
+"pl": ""
+},
+{
+"r": 1816,
+"k": "N:Messer",
+"r0": 1831,
+"n": 73,
+"w": "das Messer",
+"pl": "Messer",
+"gen": "n"
+},
+{
+"r": 1817,
+"k": "W:untergehen",
+"r0": 1832,
+"n": 21,
+"w": "untergehen",
+"pl": ""
+},
+{
+"r": 1818,
+"k": "N:Geheimnis",
+"r0": 1833,
+"n": 90,
+"w": "das Geheimnis",
+"pl": "Geheimnisse",
+"gen": "n"
+},
+{
+"r": 1819,
+"k": "W:auslösen",
+"r0": 1834,
+"n": 12,
+"w": "auslösen",
+"pl": ""
+},
+{
+"r": 1820,
+"k": "N:Schlaf",
+"r0": 1835,
+"n": 53,
+"w": "der Schlaf",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1821,
+"k": "W:beitreten",
+"r0": 1836,
+"n": 13,
+"w": "beitreten",
+"pl": ""
+},
+{
+"r": 1822,
+"k": "W:anlegen",
+"r0": 1837,
+"n": 7,
+"w": "anlegen",
+"pl": ""
+},
+{
+"r": 1823,
+"k": "N:Alltag",
+"r0": 1838,
+"n": 3,
+"w": "der Alltag",
+"pl": "Alltage",
+"gen": "m"
+},
+{
+"r": 1824,
+"k": "W:anfangs",
+"r0": 1839,
+"n": 13,
+"w": "anfangs",
+"pl": ""
+},
+{
+"r": 1825,
+"k": "W:gespannt",
+"r0": 1840,
+"n": 3,
+"w": "gespannt",
+"pl": ""
+},
+{
+"r": 1826,
+"k": "N:Schatten",
+"r0": 1841,
+"n": 33,
+"w": "der Schatten",
+"pl": "Schatten",
+"gen": "m"
+},
+{
+"r": 1827,
+"k": "W:wohin",
+"r0": 1842,
+"n": 109,
+"w": "wohin",
+"pl": ""
+},
+{
+"r": 1828,
+"k": "W:berühren",
+"r0": 1843,
+"n": 37,
+"w": "berühren",
+"pl": ""
+},
+{
+"r": 1829,
+"k": "W:definieren",
+"r0": 1844,
+"n": 7,
+"w": "definieren",
+"pl": ""
+},
+{
+"r": 1830,
+"k": "W:fünfter",
+"r0": 1845,
+"n": 16,
+"w": "fünfter",
+"pl": ""
+},
+{
+"r": 1831,
+"k": "W:müde",
+"r0": 1846,
+"n": 206,
+"w": "müde",
+"pl": ""
+},
+{
+"r": 1832,
+"k": "W:begeistert",
+"r0": 1847,
+"n": 14,
+"w": "begeistert",
+"pl": ""
+},
+{
+"r": 1833,
+"k": "W:auswählen",
+"r0": 1848,
+"n": 15,
+"w": "auswählen",
+"pl": ""
+},
+{
+"r": 1834,
+"k": "W:leise",
+"r0": 1849,
+"n": 33,
+"w": "leise",
+"pl": ""
+},
+{
+"r": 1835,
+"k": "W:fair",
+"r0": 1850,
+"n": 7,
+"w": "fair",
+"pl": ""
+},
+{
+"r": 1836,
+"k": "W:geistig",
+"r0": 1851,
+"n": 8,
+"w": "geistig",
+"pl": ""
+},
+{
+"r": 1837,
+"k": "N:Spannung",
+"r0": 1852,
+"n": 9,
+"w": "die Spannung",
+"pl": "Spannungen",
+"gen": "f"
+},
+{
+"r": 1838,
+"k": "W:ignorieren",
+"r0": 1854,
+"n": 37,
+"w": "ignorieren",
+"pl": ""
+},
+{
+"r": 1839,
+"k": "N:Fahrrad",
+"r0": 1855,
+"n": 144,
+"w": "das Fahrrad",
+"pl": "Fahrräder",
+"gen": "n"
+},
+{
+"r": 1840,
+"k": "W:senden",
+"r0": 1856,
+"n": 13,
+"w": "senden",
+"pl": ""
+},
+{
+"r": 1841,
+"k": "N:Bestimmung",
+"r0": 1857,
+"n": 5,
+"w": "die Bestimmung",
+"pl": "Bestimmungen",
+"gen": "f"
+},
+{
+"r": 1842,
+"k": "W:anwenden",
+"r0": 1858,
+"n": 7,
+"w": "anwenden",
+"pl": ""
+},
+{
+"r": 1843,
+"k": "N:Rezept",
+"r0": 1859,
+"n": 6,
+"w": "das Rezept",
+"pl": "Rezepte",
+"gen": "n"
+},
+{
+"r": 1844,
+"k": "N:Ware",
+"r0": 1861,
+"n": 11,
+"w": "die Ware",
+"pl": "Waren",
+"gen": "f"
+},
+{
+"r": 1845,
+"k": "W:füllen",
+"r0": 1862,
+"n": 34,
+"w": "füllen",
+"pl": ""
+},
+{
+"r": 1846,
+"k": "N:Zufall",
+"r0": 1863,
+"n": 42,
+"w": "der Zufall",
+"pl": "Zufälle",
+"gen": "m"
+},
+{
+"r": 1847,
+"k": "N:Feuerwehr",
+"r0": 1865,
+"n": 5,
+"w": "die Feuerwehr",
+"pl": "Feuerwehren",
+"gen": "f"
+},
+{
+"r": 1848,
+"k": "N:Operation",
+"r0": 1866,
+"n": 12,
+"w": "die Operation",
+"pl": "Operationen",
+"gen": "f"
+},
+{
+"r": 1849,
+"k": "N:Profil",
+"r0": 1867,
+"n": 3,
+"w": "das Profil",
+"pl": "Profile",
+"gen": "n"
+},
+{
+"r": 1850,
+"k": "N:Sieger",
+"r0": 1868,
+"n": 6,
+"w": "der Sieger",
+"pl": "Sieger",
+"gen": "m"
+},
+{
+"r": 1851,
+"k": "W:sinnvoll",
+"r0": 1869,
+"n": 4,
+"w": "sinnvoll",
+"pl": ""
+},
+{
+"r": 1852,
+"k": "W:soviel",
+"r0": 1870,
+"n": 8,
+"w": "soviel",
+"pl": ""
+},
+{
+"r": 1853,
+"k": "N:Statistik",
+"r0": 1871,
+"n": 7,
+"w": "die Statistik",
+"pl": "Statistiken",
+"gen": "f"
+},
+{
+"r": 1854,
+"k": "N:Stress",
+"r0": 1872,
+"n": 9,
+"w": "der Stress",
+"pl": "Stresse",
+"gen": "m"
+},
+{
+"r": 1855,
+"k": "W:tausend",
+"r0": 1873,
+"n": 65,
+"w": "tausend",
+"pl": ""
+},
+{
+"r": 1856,
+"k": "N:Erkrankung",
+"r0": 1874,
+"n": 7,
+"w": "die Erkrankung",
+"pl": "Erkrankungen",
+"gen": "f"
+},
+{
+"r": 1857,
+"k": "W:brennen",
+"r0": 1875,
+"n": 28,
+"w": "brennen",
+"pl": ""
+},
+{
+"r": 1858,
+"k": "N:Ruf",
+"r0": 1876,
+"n": 60,
+"w": "der Ruf",
+"pl": "Rufe",
+"gen": "m"
+},
+{
+"r": 1859,
+"k": "W:eintreten",
+"r0": 1877,
+"n": 16,
+"w": "eintreten",
+"pl": ""
+},
+{
+"r": 1860,
+"k": "W:erwischen",
+"r0": 1878,
+"n": 24,
+"w": "erwischen",
+"pl": ""
+},
+{
+"r": 1861,
+"k": "W:verrückt",
+"r0": 1879,
+"n": 110,
+"w": "verrückt",
+"pl": ""
+},
+{
+"r": 1862,
+"k": "W:erwachsen",
+"r0": 1880,
+"n": 20,
+"w": "erwachsen",
+"pl": ""
+},
+{
+"r": 1863,
+"k": "W:ausführlich",
+"r0": 1881,
+"n": 6,
+"w": "ausführlich",
+"pl": ""
+},
+{
+"r": 1864,
+"k": "N:Zitat",
+"r0": 1882,
+"n": 7,
+"w": "das Zitat",
+"pl": "Zitate",
+"gen": "n"
+},
+{
+"r": 1865,
+"k": "N:Führer",
+"r0": 1883,
+"n": 9,
+"w": "der Führer",
+"pl": "Führer",
+"gen": "m"
+},
+{
+"r": 1866,
+"k": "W:verlieben",
+"r0": 1884,
+"n": 120,
+"w": "verlieben",
+"pl": ""
+},
+{
+"r": 1867,
+"k": "W:elektrisch",
+"r0": 1885,
+"n": 17,
+"w": "elektrisch",
+"pl": ""
+},
+{
+"r": 1868,
+"k": "W:probieren",
+"r0": 1886,
+"n": 24,
+"w": "probieren",
+"pl": ""
+},
+{
+"r": 1869,
+"k": "N:Schulter",
+"r0": 1887,
+"n": 40,
+"w": "die Schulter",
+"pl": "Schultern",
+"gen": "f"
+},
+{
+"r": 1870,
+"k": "N:Suche",
+"r0": 1888,
+"n": 28,
+"w": "die Suche",
+"pl": "Suchen",
+"gen": "f"
+},
+{
+"r": 1871,
+"k": "W:verlängern",
+"r0": 1889,
+"n": 8,
+"w": "verlängern",
+"pl": ""
+},
+{
+"r": 1872,
+"k": "W:elf",
+"r0": 1890,
+"n": 29,
+"w": "elf",
+"pl": ""
+},
+{
+"r": 1873,
+"k": "N:Welle",
+"r0": 1891,
+"n": 10,
+"w": "die Welle",
+"pl": "Wellen",
+"gen": "f"
+},
+{
+"r": 1874,
+"k": "W:anmelden",
+"r0": 1892,
+"n": 4,
+"w": "anmelden",
+"pl": ""
+},
+{
+"r": 1875,
+"k": "N:Gehirn",
+"r0": 1893,
+"n": 21,
+"w": "das Gehirn",
+"pl": "Gehirne",
+"gen": "n"
+},
+{
+"r": 1876,
+"k": "W:unterschreiben",
+"r0": 1894,
+"n": 32,
+"w": "unterschreiben",
+"pl": ""
+},
+{
+"r": 1877,
+"k": "N:Direktor",
+"r0": 1895,
+"n": 9,
+"w": "der Direktor",
+"pl": "Direktoren",
+"gen": "m"
+},
+{
+"r": 1878,
+"k": "W:klappen",
+"r0": 1896,
+"n": 4,
+"w": "klappen",
+"pl": ""
+},
+{
+"r": 1879,
+"k": "W:mitteilen",
+"r0": 1897,
+"n": 18,
+"w": "mitteilen",
+"pl": ""
+},
+{
+"r": 1880,
+"k": "W:wach",
+"r0": 1898,
+"n": 33,
+"w": "wach",
+"pl": ""
+},
+{
+"r": 1881,
+"k": "W:enorm",
+"r0": 1899,
+"n": 6,
+"w": "enorm",
+"pl": ""
+},
+{
+"r": 1882,
+"k": "N:Gehalt",
+"r0": 1900,
+"n": 14,
+"w": "das Gehalt",
+"pl": "Gehälter",
+"gen": "n"
+},
+{
+"r": 1883,
+"k": "W:anhand",
+"r0": 1901,
+"n": 3,
+"w": "anhand",
+"pl": ""
+},
+{
+"r": 1884,
+"k": "N:Geschwindigkeit",
+"r0": 1902,
+"n": 7,
+"w": "die Geschwindigkeit",
+"pl": "Geschwindigkeiten",
+"gen": "f"
+},
+{
+"r": 1885,
+"k": "N:Humor",
+"r0": 1903,
+"n": 19,
+"w": "der Humor",
+"pl": "Humore",
+"gen": "m"
+},
+{
+"r": 1886,
+"k": "N:Kanal",
+"r0": 1904,
+"n": 7,
+"w": "der Kanal",
+"pl": "Kanäle",
+"gen": "m"
+},
+{
+"r": 1887,
+"k": "W:scheinbar",
+"r0": 1905,
+"n": 4,
+"w": "scheinbar",
+"pl": ""
+},
+{
+"r": 1888,
+"k": "W:beschließen",
+"r0": 1906,
+"n": 29,
+"w": "beschließen",
+"pl": ""
+},
+{
+"r": 1889,
+"k": "N:Herkunft",
+"r0": 1907,
+"n": 6,
+"w": "die Herkunft",
+"pl": "Herkünfte",
+"gen": "f"
+},
+{
+"r": 1890,
+"k": "W:aussetzen",
+"r0": 1908,
+"n": 13,
+"w": "aussetzen",
+"pl": ""
+},
+{
+"r": 1891,
+"k": "N:Schreiben",
+"r0": 1909,
+"n": 32,
+"w": "das Schreiben",
+"pl": "Schreiben",
+"gen": "n"
+},
+{
+"r": 1892,
+"k": "W:kräftig",
+"r0": 1911,
+"n": 12,
+"w": "kräftig",
+"pl": ""
+},
+{
+"r": 1893,
+"k": "N:Arbeitsplatz",
+"r0": 1912,
+"n": 15,
+"w": "der Arbeitsplatz",
+"pl": "Arbeitsplätze",
+"gen": "m"
+},
+{
+"r": 1894,
+"k": "W:malen",
+"r0": 1913,
+"n": 32,
+"w": "malen",
+"pl": ""
+},
+{
+"r": 1895,
+"k": "W:vermuten",
+"r0": 1914,
+"n": 9,
+"w": "vermuten",
+"pl": ""
+},
+{
+"r": 1896,
+"k": "W:attraktiv",
+"r0": 1915,
+"n": 20,
+"w": "attraktiv",
+"pl": ""
+},
+{
+"r": 1897,
+"k": "W:ausnutzen",
+"r0": 1916,
+"n": 9,
+"w": "ausnutzen",
+"pl": ""
+},
+{
+"r": 1898,
+"k": "N:Flucht",
+"r0": 1917,
+"n": 7,
+"w": "die Flucht",
+"pl": "Fluchten",
+"gen": "f"
+},
+{
+"r": 1899,
+"k": "W:lächerlich",
+"r0": 1918,
+"n": 24,
+"w": "lächerlich",
+"pl": ""
+},
+{
+"r": 1900,
+"k": "N:Strand",
+"r0": 1919,
+"n": 89,
+"w": "der Strand",
+"pl": "Strände",
+"gen": "m"
+},
+{
+"r": 1901,
+"k": "W:schrecklich",
+"r0": 1920,
+"n": 66,
+"w": "schrecklich",
+"pl": ""
+},
+{
+"r": 1902,
+"k": "N:Lebensmittel",
+"r0": 1921,
+"n": 12,
+"w": "das Lebensmittel",
+"pl": "Lebensmittel",
+"gen": "n"
+},
+{
+"r": 1903,
+"k": "N:Messe",
+"r0": 1922,
+"n": 7,
+"w": "die Messe",
+"pl": "Messen",
+"gen": "f"
+},
+{
+"r": 1904,
+"k": "W:herrlich",
+"r0": 1923,
+"n": 12,
+"w": "herrlich",
+"pl": ""
+},
+{
+"r": 1905,
+"k": "N:Zelle",
+"r0": 1924,
+"n": 10,
+"w": "die Zelle",
+"pl": "Zellen",
+"gen": "f"
+},
+{
+"r": 1906,
+"k": "W:verwandeln",
+"r0": 1925,
+"n": 22,
+"w": "verwandeln",
+"pl": ""
+},
+{
+"r": 1907,
+"k": "N:Versehen",
+"r0": 1926,
+"n": 21,
+"w": "das Versehen",
+"pl": "Versehen",
+"gen": "n"
+},
+{
+"r": 1908,
+"k": "N:Aussicht",
+"r0": 1927,
+"n": 13,
+"w": "die Aussicht",
+"pl": "Aussichten",
+"gen": "f"
+},
+{
+"r": 1909,
+"k": "W:demokratisch",
+"r0": 1928,
+"n": 6,
+"w": "demokratisch",
+"pl": ""
+},
+{
+"r": 1910,
+"k": "W:hinein",
+"r0": 1929,
+"n": 5,
+"w": "hinein",
+"pl": ""
+},
+{
+"r": 1911,
+"k": "N:Stadion",
+"r0": 1930,
+"n": 5,
+"w": "das Stadion",
+"pl": "Stadien",
+"gen": "n"
+},
+{
+"r": 1912,
+"k": "N:Vortrag",
+"r0": 1931,
+"n": 6,
+"w": "der Vortrag",
+"pl": "Vorträge",
+"gen": "m"
+},
+{
+"r": 1913,
+"k": "N:Bord",
+"r0": 1932,
+"n": 18,
+"w": "das Bord",
+"pl": "Borde",
+"gen": "n"
+},
+{
+"r": 1914,
+"k": "N:Frühjahr",
+"r0": 1933,
+"n": 4,
+"w": "das Frühjahr",
+"pl": "Frühjahre",
+"gen": "n"
+},
+{
+"r": 1915,
+"k": "W:genügend",
+"r0": 1934,
+"n": 13,
+"w": "genügend",
+"pl": ""
+},
+{
+"r": 1916,
+"k": "N:Papst",
+"r0": 1935,
+"n": 14,
+"w": "der Papst",
+"pl": "Päpste",
+"gen": "m"
+},
+{
+"r": 1917,
+"k": "N:Station",
+"r0": 1936,
+"n": 10,
+"w": "die Station",
+"pl": "Stationen",
+"gen": "f"
+},
+{
+"r": 1918,
+"k": "N:Motor",
+"r0": 1937,
+"n": 29,
+"w": "der Motor",
+"pl": "Motoren",
+"gen": "m"
+},
+{
+"r": 1919,
+"k": "W:achten",
+"r0": 1939,
+"n": 15,
+"w": "achten",
+"pl": ""
+},
+{
+"r": 1920,
+"k": "W:übergeben",
+"r0": 1940,
+"n": 11,
+"w": "übergeben",
+"pl": ""
+},
+{
+"r": 1921,
+"k": "N:Hass",
+"r0": 1941,
+"n": 15,
+"w": "der Hass",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1922,
+"k": "W:japanisch",
+"r0": 1942,
+"n": 95,
+"w": "japanisch",
+"pl": ""
+},
+{
+"r": 1923,
+"k": "W:versorgen",
+"r0": 1943,
+"n": 11,
+"w": "versorgen",
+"pl": ""
+},
+{
+"r": 1924,
+"k": "W:verdammt",
+"r0": 1944,
+"n": 11,
+"w": "verdammt",
+"pl": ""
+},
+{
+"r": 1925,
+"k": "W:binden",
+"r0": 1945,
+"n": 8,
+"w": "binden",
+"pl": ""
+},
+{
+"r": 1926,
+"k": "N:Medikament",
+"r0": 1946,
+"n": 58,
+"w": "das Medikament",
+"pl": "Medikamente",
+"gen": "n"
+},
+{
+"r": 1927,
+"k": "N:Fach",
+"r0": 1947,
+"n": 7,
+"w": "das Fach",
+"pl": "Fächer",
+"gen": "n"
+},
+{
+"r": 1928,
+"k": "W:freiwillig",
+"r0": 1948,
+"n": 7,
+"w": "freiwillig",
+"pl": ""
+},
+{
+"r": 1929,
+"k": "W:herausfordern",
+"r0": 1949,
+"n": 8,
+"w": "herausfordern",
+"pl": ""
+},
+{
+"r": 1930,
+"k": "N:Hals",
+"r0": 1950,
+"n": 13,
+"w": "der Hals",
+"pl": "Hälse",
+"gen": "m"
+},
+{
+"r": 1931,
+"k": "W:abholen",
+"r0": 1951,
+"n": 21,
+"w": "abholen",
+"pl": ""
+},
+{
+"r": 1932,
+"k": "N:Reform",
+"r0": 1952,
+"n": 7,
+"w": "die Reform",
+"pl": "Reformen",
+"gen": "f"
+},
+{
+"r": 1933,
+"k": "N:Bedürfnis",
+"r0": 1953,
+"n": 6,
+"w": "das Bedürfnis",
+"pl": "Bedürfnisse",
+"gen": "n"
+},
+{
+"r": 1934,
+"k": "N:Technologie",
+"r0": 1954,
+"n": 9,
+"w": "die Technologie",
+"pl": "Technologien",
+"gen": "f"
+},
+{
+"r": 1935,
+"k": "W:ausländisch",
+"r0": 1955,
+"n": 21,
+"w": "ausländisch",
+"pl": ""
+},
+{
+"r": 1936,
+"k": "W:versetzen",
+"r0": 1956,
+"n": 10,
+"w": "versetzen",
+"pl": ""
+},
+{
+"r": 1937,
+"k": "W:auftauchen",
+"r0": 1957,
+"n": 21,
+"w": "auftauchen",
+"pl": ""
+},
+{
+"r": 1938,
+"k": "N:Klima",
+"r0": 1958,
+"n": 28,
+"w": "das Klima",
+"pl": "Klimas",
+"gen": "n"
+},
+{
+"r": 1939,
+"k": "N:Idiot",
+"r0": 1959,
+"n": 30,
+"w": "der Idiot",
+"pl": "Idioten",
+"gen": "m"
+},
+{
+"r": 1940,
+"k": "N:Störung",
+"r0": 1960,
+"n": 6,
+"w": "die Störung",
+"pl": "Störungen",
+"gen": "f"
+},
+{
+"r": 1941,
+"k": "W:keinerlei",
+"r0": 1962,
+"n": 20,
+"w": "keinerlei",
+"pl": ""
+},
+{
+"r": 1942,
+"k": "N:Landschaft",
+"r0": 1963,
+"n": 13,
+"w": "die Landschaft",
+"pl": "Landschaften",
+"gen": "f"
+},
+{
+"r": 1943,
+"k": "N:Menschheit",
+"r0": 1964,
+"n": 26,
+"w": "die Menschheit",
+"pl": "",
+"gen": "f"
+},
+{
+"r": 1944,
+"k": "N:Fortschritt",
+"r0": 1965,
+"n": 27,
+"w": "der Fortschritt",
+"pl": "Fortschritte",
+"gen": "m"
+},
+{
+"r": 1945,
+"k": "N:Gefängnis",
+"r0": 1966,
+"n": 52,
+"w": "das Gefängnis",
+"pl": "Gefängnisse",
+"gen": "n"
+},
+{
+"r": 1946,
+"k": "N:Kleidung",
+"r0": 1967,
+"n": 50,
+"w": "die Kleidung",
+"pl": "Kleidungen",
+"gen": "f"
+},
+{
+"r": 1947,
+"k": "N:Königin",
+"r0": 1968,
+"n": 20,
+"w": "die Königin",
+"pl": "Königinnen",
+"gen": "f"
+},
+{
+"r": 1948,
+"k": "N:Papa",
+"r0": 1969,
+"n": 58,
+"w": "der Papa",
+"pl": "Papas",
+"gen": "m"
+},
+{
+"r": 1949,
+"k": "N:Verfassung",
+"r0": 1970,
+"n": 9,
+"w": "die Verfassung",
+"pl": "Verfassungen",
+"gen": "f"
+},
+{
+"r": 1950,
+"k": "N:Viertel",
+"r0": 1971,
+"n": 34,
+"w": "das Viertel",
+"pl": "Viertel",
+"gen": "n"
+},
+{
+"r": 1951,
+"k": "N:Befehl",
+"r0": 1972,
+"n": 26,
+"w": "der Befehl",
+"pl": "Befehle",
+"gen": "m"
+},
+{
+"r": 1952,
+"k": "W:ankündigen",
+"r0": 1973,
+"n": 4,
+"w": "ankündigen",
+"pl": ""
+},
+{
+"r": 1953,
+"k": "W:konservativ",
+"r0": 1974,
+"n": 7,
+"w": "konservativ",
+"pl": ""
+},
+{
+"r": 1954,
+"k": "N:Übung",
+"r0": 1975,
+"n": 20,
+"w": "die Übung",
+"pl": "Übungen",
+"gen": "f"
+},
+{
+"r": 1955,
+"k": "N:Angelegenheit",
+"r0": 1976,
+"n": 43,
+"w": "die Angelegenheit",
+"pl": "Angelegenheiten",
+"gen": "f"
+},
+{
+"r": 1956,
+"k": "W:vereinigt",
+"r0": 1977,
+"n": 74,
+"w": "vereinigt",
+"pl": ""
+},
+{
+"r": 1957,
+"k": "N:Pilot",
+"r0": 1979,
+"n": 13,
+"w": "der Pilot",
+"pl": "Piloten",
+"gen": "m"
+},
+{
+"r": 1958,
+"k": "W:trauen",
+"r0": 1980,
+"n": 29,
+"w": "trauen",
+"pl": ""
+},
+{
+"r": 1959,
+"k": "N:Kapitel",
+"r0": 1981,
+"n": 7,
+"w": "das Kapitel",
+"pl": "Kapitel",
+"gen": "n"
+},
+{
+"r": 1960,
+"k": "W:vereinen",
+"r0": 1982,
+"n": 3,
+"w": "vereinen",
+"pl": ""
+},
+{
+"r": 1961,
+"k": "N:Symbol",
+"r0": 1983,
+"n": 18,
+"w": "das Symbol",
+"pl": "Symbole",
+"gen": "n"
+},
+{
+"r": 1962,
+"k": "N:Hunger",
+"r0": 1984,
+"n": 87,
+"w": "der Hunger",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1963,
+"k": "N:Franzose",
+"r0": 1985,
+"n": 18,
+"w": "der Franzose",
+"pl": "Franzosen",
+"gen": "m"
+},
+{
+"r": 1964,
+"k": "W:angesichts",
+"r0": 1987,
+"n": 8,
+"w": "angesichts",
+"pl": ""
+},
+{
+"r": 1965,
+"k": "W:nördlich",
+"r0": 1988,
+"n": 12,
+"w": "nördlich",
+"pl": ""
+},
+{
+"r": 1966,
+"k": "W:bedrohen",
+"r0": 1989,
+"n": 11,
+"w": "bedrohen",
+"pl": ""
+},
+{
+"r": 1967,
+"k": "N:Hölle",
+"r0": 1990,
+"n": 29,
+"w": "die Hölle",
+"pl": "Höllen",
+"gen": "f"
+},
+{
+"r": 1968,
+"k": "N:Schnee",
+"r0": 1991,
+"n": 101,
+"w": "der Schnee",
+"pl": "",
+"gen": "m"
+},
+{
+"r": 1969,
+"k": "N:Tee",
+"r0": 1992,
+"n": 162,
+"w": "der Tee",
+"pl": "Tees",
+"gen": "m"
+},
+{
+"r": 1970,
+"k": "N:Bescheid",
+"r0": 1993,
+"n": 39,
+"w": "der Bescheid",
+"pl": "Bescheide",
+"gen": "m"
+},
+{
+"r": 1971,
+"k": "N:Last",
+"r0": 1994,
+"n": 9,
+"w": "die Last",
+"pl": "Lasten",
+"gen": "f"
+},
+{
+"r": 1972,
+"k": "W:locker",
+"r0": 1995,
+"n": 8,
+"w": "locker",
+"pl": ""
+},
+{
+"r": 1973,
+"k": "N:Summe",
+"r0": 1996,
+"n": 12,
+"w": "die Summe",
+"pl": "Summen",
+"gen": "f"
+},
+{
+"r": 1974,
+"k": "W:umso",
+"r0": 1997,
+"n": 13,
+"w": "umso",
+"pl": ""
+},
+{
+"r": 1975,
+"k": "N:Öl",
+"r0": 1998,
+"n": 26,
+"w": "das Öl",
+"pl": "Öle",
+"gen": "n"
+},
+{
+"r": 1976,
+"k": "W:dahinter",
+"r0": 1999,
+"n": 3,
+"w": "dahinter",
+"pl": ""
+},
+{
+"r": 1977,
+"k": "W:drüber",
+"r0": 2000,
+"n": 3,
+"w": "drüber",
+"pl": ""
+},
+{
+"r": 1978,
+"k": "N:Landwirtschaft",
+"r0": 2001,
+"n": 3,
+"w": "die Landwirtschaft",
+"pl": "Landwirtschaften",
+"gen": "f"
+},
+{
+"r": 1979,
+"k": "W:religiös",
+"r0": 2002,
+"n": 10,
+"w": "religiös",
+"pl": ""
+},
+{
+"r": 1980,
+"k": "W:träumen",
+"r0": 2003,
+"n": 65,
+"w": "träumen",
+"pl": ""
+},
+{
+"r": 1981,
+"k": "W:theoretisch",
+"r0": 2004,
+"n": 4,
+"w": "theoretisch",
+"pl": ""
+},
+{
+"r": 1982,
+"k": "N:Vertrauen",
+"r0": 2005,
+"n": 33,
+"w": "das Vertrauen",
+"pl": "",
+"gen": "n"
+},
+{
+"r": 1983,
+"k": "N:Stuhl",
+"r0": 2006,
+"n": 83,
+"w": "der Stuhl",
+"pl": "Stühle",
+"gen": "m"
+},
+{
+"r": 1984,
+"k": "N:Kreuz",
+"r0": 2007,
+"n": 9,
+"w": "das Kreuz",
+"pl": "Kreuze",
+"gen": "n"
+},
+{
+"r": 1985,
+"k": "W:schreien",
+"r0": 2008,
+"n": 41,
+"w": "schreien",
+"pl": ""
+},
+{
+"r": 1986,
+"k": "W:dauerhaft",
+"r0": 2009,
+"n": 5,
+"w": "dauerhaft",
+"pl": ""
+},
+{
+"r": 1987,
+"k": "N:Abenteuer",
+"r0": 2010,
+"n": 28,
+"w": "das Abenteuer",
+"pl": "Abenteuer",
+"gen": "n"
+},
+{
+"r": 1988,
+"k": "N:Provinz",
+"r0": 2011,
+"n": 4,
+"w": "die Provinz",
+"pl": "Provinzen",
+"gen": "f"
+},
+{
+"r": 1989,
+"k": "N:Decke",
+"r0": 2012,
+"n": 23,
+"w": "die Decke",
+"pl": "Decken",
+"gen": "f"
+},
+{
+"r": 1990,
+"k": "W:nackt",
+"r0": 2013,
+"n": 43,
+"w": "nackt",
+"pl": ""
+},
+{
+"r": 1991,
+"k": "W:weitergehen",
+"r0": 2014,
+"n": 13,
+"w": "weitergehen",
+"pl": ""
+},
+{
+"r": 1992,
+"k": "W:vorsichtig",
+"r0": 2015,
+"n": 46,
+"w": "vorsichtig",
+"pl": ""
+},
+{
+"r": 1993,
+"k": "N:Wesen",
+"r0": 2017,
+"n": 20,
+"w": "das Wesen",
+"pl": "Wesen",
+"gen": "n"
+},
+{
+"r": 1994,
+"k": "W:erstaunlich",
+"r0": 2018,
+"n": 10,
+"w": "erstaunlich",
+"pl": ""
+},
+{
+"r": 1995,
+"k": "N:Schicht",
+"r0": 2019,
+"n": 4,
+"w": "die Schicht",
+"pl": "Schichten",
+"gen": "f"
+},
+{
+"r": 1996,
+"k": "W:nachts",
+"r0": 2020,
+"n": 43,
+"w": "nachts",
+"pl": ""
+},
+{
+"r": 1997,
+"k": "W:dankbar",
+"r0": 2021,
+"n": 16,
+"w": "dankbar",
+"pl": ""
+},
+{
+"r": 1998,
+"k": "N:Drittel",
+"r0": 2022,
+"n": 9,
+"w": "das Drittel",
+"pl": "Drittel",
+"gen": "n"
+},
+{
+"r": 1999,
+"k": "N:Konto",
+"r0": 2023,
+"n": 6,
+"w": "das Konto",
+"pl": "Konten",
+"gen": "n"
+},
+{
+"r": 2000,
+"k": "N:Nachfrage",
+"r0": 2024,
+"n": 9,
+"w": "die Nachfrage",
+"pl": "Nachfragen",
+"gen": "f"
+}
+]

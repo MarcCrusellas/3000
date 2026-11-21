@@ -21,7 +21,7 @@ function renderStats() {
   const inProg = DATA.words.filter(w => SEL.has(w.k) && !S.known[w.k]).length;
   const wk = lastDays(7).reduce((s, d) => s + (learnedOn[d] || 0), 0);
   $('#sKnown').innerHTML = K + '<small>sé</small>';
-  $('#sDelta').innerHTML = '<b>+' + wk + '</b> esta semana · <b>' + inProg + '</b> en curso · <b>' + (K / 10).toFixed(1).replace('.', ',') + '%</b> de las 1.000';
+  $('#sDelta').innerHTML = '<b>+' + wk + '</b> esta semana · <b>' + inProg + '</b> en curso · <b>' + (K / DATA.words.length * 100).toFixed(1).replace('.', ',') + '%</b> de las ' + DATA.words.length.toLocaleString('es-ES');
   const first = [...Object.keys(L), ...knownDates, t].sort()[0];
   const all = daysBetween(first, t); let acc = 0;
   const cum = all.map(d => (acc += learnedOn[d] || 0));
@@ -49,7 +49,7 @@ function renderStats() {
   const t7 = lastDays(7).reduce((a, d) => [a[0] + (lg(d).t || 0), a[1] + (lg(d).ok || 0)], [0, 0]);
   const xs = Object.values(S.extra), xk = xs.filter(x => x.s === 'known').length;
   $('#bagStats').innerHTML = '<dt>Para hoy</dt><dd>' + todayDue().length + '</dd><dt>Aciertos 7 días</dt><dd>' + (t7[0] ? Math.round(t7[1] / t7[0] * 100) + '% de ' + t7[0] : '–') + '</dd>'
-    + '<dt>Fuera de las 1.000</dt><dd>' + (xs.length ? xk + ' sé · ' + (xs.length - xk) + ' por aprender' : '–') + '</dd>';
+    + '<dt>Fuera de las ' + DATA.words.length.toLocaleString('es-ES') + '</dt><dd>' + (xs.length ? xk + ' sé · ' + (xs.length - xk) + ' por aprender' : '–') + '</dd>';
   if (!window.Chart) return;
   Chart.defaults.font.family = '"IBM Plex Sans", system-ui, sans-serif'; Chart.defaults.color = cssv('--muted');
   const grid = cssv('--grid'), ink = cssv('--ink'), accC = cssv('--acc');
@@ -75,7 +75,8 @@ function renderStats() {
   charts.cum = new Chart($('#cumChart'), {type: 'line', data: {labels: all.map(dlabel), datasets: [{data: cum, borderColor: accC, backgroundColor: cssv('--acc-soft'), fill: true, tension: .25, pointRadius: 0, borderWidth: 2.5, stepped: false}]},
     options: {...base, plugins: {...base.plugins, tooltip: {displayColors: false, callbacks: {label: c => c.parsed.y + ' palabras'}}}}});
   let h = '';
-  for (let b = 0; b < 10; b++) {
+  const nb = Math.ceil(Math.max(...DATA.words.map(w => w.r)) / 100);
+  for (let b = 0; b < nb; b++) {
     const ws = DATA.words.filter(w => Math.floor((w.r - 1) / 100) === b), n = ws.length;
     const kn = ws.filter(w => S.known[w.k]).length, ip = ws.filter(w => SEL.has(w.k) && !S.known[w.k]).length;
     h += '<div class="band"><span class="lb">' + (b * 100 + 1) + '–' + (b + 1) * 100 + '</span><span class="tr"><i style="width:' + kn / n * 100 + '%;background:var(--good)"></i><i style="width:' + ip / n * 100 + '%;background:var(--acc)"></i></span><span class="ct">' + kn + '/' + n + '</span></div>';
