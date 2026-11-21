@@ -42,3 +42,4 @@ python3 tests/e2e.py [chrome_path] [shots_dir]  # virtual passkey test: sign-in,
 | `.github/workflows/` | `deploy.yml`, `reset-passkeys.yml` |
 | `scripts/worker-url.sh` | finds the Worker's workers.dev URL |
 | `tests/e2e.py` | Playwright test with Chrome's virtual authenticator |
+| `pipeline/` | scripts and inputs that build `site/data/` and `site/audio/`; `pipeline/ADD_WORDS.md` explains how to add words 1001 to 3000 |
