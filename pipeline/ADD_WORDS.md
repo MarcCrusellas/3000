@@ -119,6 +119,7 @@ python3 -I extend/merge.py build $G/parsed.pkl $N $G/wikt.jsonl $G/newwords.json
 EDGE_TTS_CA=... python3 edge_render.py $G/plan.json $G/render_words.json $G/native $G/clips
 python3 -I extend/pack_ext.py $G/plan.json $G/render.json $G/clips site
 EDGE_TTS_CA=... python3 extend/words_ext.py site $G/wcache
+python3 -I extend/word_types.py $KAIKKI site      # word type (t) for the Palabras filter, list words and extras
 ```
 
 What changed on the way:

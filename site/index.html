@@ -352,7 +352,8 @@
 
   <section class="view" id="v-words">
     <div class="srch"><input class="search" id="q" type="search" placeholder="Buscar" autocomplete="off" autocapitalize="off" spellcheck="false"><button class="btn primary" id="next10" aria-label="Añadir 10 palabras"><svg class="i"><use href="#i-plus"/></svg>10</button></div>
-    <div class="seg fill" id="fSeg"><button data-f="all">Todas</button><button data-f="sel">Aprendiendo <b id="cSel">0</b></button><button data-f="known">Sé <b id="cKnown">0</b></button><button data-f="x">Otras <b id="cX">0</b></button></div>
+    <div class="seg fill scr" id="fSeg"><button data-f="all">Todas <b id="cAll">0</b></button><button data-f="sel">Aprendiendo <b id="cSel">0</b></button><button data-f="known">Sé <b id="cKnown">0</b></button><button data-f="todo" id="fTodo">Sin empezar <b id="cTodo">0</b></button><button data-f="x">Otras <b id="cX">0</b></button></div>
+    <div class="seg chips" id="tSeg"></div>
     <div class="list" id="list"></div>
   </section>
 
@@ -417,7 +418,13 @@
   </div>
   <div class="sg" data-sec="words" hidden>
     <div class="srow"><span>Nuevas al día</span><div class="seg" id="dailySeg"><button data-n="0">0</button><button data-n="5">5</button><button data-n="10">10</button><button data-n="20">20</button></div></div>
-    <div class="srow" style="border:0"><span>Marcar palabras nuevas</span><button class="toggle" id="markTog" aria-label="Marcar palabras nuevas"></button></div>
+    <div class="srow"><span>Marcar palabras nuevas</span><button class="toggle" id="markTog" aria-label="Marcar palabras nuevas"></button></div>
+    <div class="srow"><span>Filtrar por tipo</span><button class="toggle" id="wtTog" aria-label="Filtrar por tipo"></button></div>
+    <div class="srow" id="waRow"><span>+10 añade del tipo elegido</span><button class="toggle" id="waTog" aria-label="+10 añade del tipo elegido"></button></div>
+    <div class="srow"><span>Bloques de 100</span><button class="toggle" id="wbTog" aria-label="Bloques de 100"></button></div>
+    <div class="srow"><span>Número de cada palabra</span><button class="toggle" id="wnTog" aria-label="Número de cada palabra"></button></div>
+    <div class="srow"><span>Pestaña Sin empezar</span><button class="toggle" id="wpTog" aria-label="Pestaña Sin empezar"></button></div>
+    <div class="srow" style="border:0"><span>Ver todas las de Otras</span><button class="toggle" id="wxTog" aria-label="Ver todas las de Otras"></button></div>
   </div>
   <div class="sg" data-sec="stats" hidden>
     <div class="srow"><span>Tema</span><div class="seg" id="themeSeg"><button data-t="dark" aria-label="Oscuro"><svg class="i"><use href="#i-moon"/></svg></button><button data-t="light" aria-label="Claro"><svg class="i"><use href="#i-sun"/></svg></button></div></div>
@@ -446,6 +453,7 @@
   <div id="lkMore"></div>
 </div>
 <div class="menu" id="menu" hidden></div>
+<div class="menu bjump" id="bjump" hidden></div>
 
 <div id="edLayer"></div>
 <div class="e-ind" id="edInd"></div>
