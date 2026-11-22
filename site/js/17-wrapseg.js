@@ -6,7 +6,7 @@
    follows the chips on both sides and pinches in where two lines meet.
    Ajustes (Datos) > "Opciones largas": Envolver (this, default) or Deslizar (one line that scrolls sideways). */
 (function () {
-  const SKIP = '.scr, .chips';
+  const SKIP = '.scr, .chips, .lens-copy';
   const NS = 'http://www.w3.org/2000/svg', M = 12;   // the track can spill M px past the rows (blur needs room)
   let busy = false, uid = 0;
   const scrollMode = () => typeof S !== 'undefined' && S.set && S.set.segw === 1;
@@ -53,7 +53,7 @@
     for (const e of es) { const w = Math.round(e.contentRect.width); if (w && e.target._ww !== w) { e.target._ww = w; wrapOne(e.target); } }
   }) : null;
   function watch(sg) {
-    if (sg.matches(SKIP)) return;
+    if (sg.matches(SKIP) || sg.closest('.seg-thumb')) return;
     if (!sg._wr) { sg._wr = 1; if (ro) ro.observe(sg); }
     wrapOne(sg);
   }
@@ -64,7 +64,7 @@
     const todo = new Set();
     const thumbOnly = m => [...m.addedNodes, ...m.removedNodes].every(n => n.nodeType === 1 && n.classList.contains('seg-thumb'));
     for (const m of ms) {
-      if (thumbOnly(m)) continue;
+      if (thumbOnly(m) || (m.target.closest && m.target.closest('.seg-thumb'))) continue;
       const own = m.target.closest && m.target.closest('.seg');
       if (own) todo.add(own);
       for (const n of m.addedNodes) if (n.nodeType === 1) { if (n.matches('.seg')) todo.add(n); n.querySelectorAll && n.querySelectorAll('.seg').forEach(x => todo.add(x)); }
