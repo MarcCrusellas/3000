@@ -3,7 +3,8 @@
    Same feel as the tab bar (15-tabdrop.js), in every single-choice .seg:
    - tap another option: the selected pill (a separate "thumb") springs there, stretching in the direction of
      travel, also from one line to another when the row wraps (17-wrapseg.js);
-   - press the row: the pill lifts out as a drop that magnifies what's under it; drag and it follows the finger,
+   - press the row: the pill lifts out as a drop of liquid glass (the same WebGL glass as the tab bar,
+     16-lens.mjs) that refracts the options under it; drag and it follows the finger,
      then drops into the nearest option on release. Starting on the selected option it moves freely in every
      direction; starting on another one, a vertical move scrolls the page as usual.
    Multi-choice rows (.multi) and the Palabras type chips keep their plain look. Sheets that rebuild their HTML
@@ -15,6 +16,45 @@
   const live = new Set();         // rows with a moving thumb
   const Z = () => ({x: 0, y: 0, w: 0, h: 0});
   let raf = 0, last = 0, drag = null, swallow = 0;
+
+  /* real glass while lifted: one LiquidGlass instance per row, made on the first press and dropped a few seconds
+     after the drop settles (each one holds a WebGL context). Until it's ready, or without WebGL, the drop shows
+     a plain magnifier instead (lensOf). */
+  const GLASS = {refraction: .6, chromAberration: .04, fresnel: .3, edgeHighlight: .05, specular: .08, blurAmount: 0,
+    zRadius: 24, bevelMode: 0, shadowOpacity: .2, shadowSpread: 8, shadowOffsetY: 2, tintStrength: 0, saturation: .1, brightness: 0};
+  function glassFor(sg) {
+    clearTimeout(sg._lgIdle);
+    if (!window.LiquidGlass || sg._lg || sg._lgP || sg._lgFail) return;
+    const t = thumbOf(sg), h = (sg._sl ? sg._sl.t.h : t.offsetHeight) * 1.32;
+    t.dataset.config = JSON.stringify(Object.assign({cornerRadius: Math.round(h / 2)}, GLASS));
+    sg._lgP = window.LiquidGlass.init({root: sg, glassElements: [t], sceneFill: sceneFill(sg)}).then(inst => {
+      sg._lgP = null;
+      if (!sg.isConnected || !t.isConnected) { inst.destroy(); return; }
+      sg._lg = inst; t.classList.add('lg'); resort(inst);
+      const l = t.querySelector(':scope > .lens'); if (l) l.remove();
+      inst.markChanged(t); inst.markChanged();
+      if (!drag || drag.sg !== sg) idle(sg);
+    }).catch(e => { sg._lgP = null; sg._lgFail = 1; console.warn('row glass unavailable', e); });
+  }
+  // what the glass sees behind the options: the sheet's colour, plus the grey track when the row draws it as its
+  // own background (a wrapped row's track is an SVG child, which the glass captures by itself)
+  function rgba(str) { const m = (str || '').match(/rgba?\(([^)]+)\)/); if (m) { const p = m[1].split(',').map(x => parseFloat(x)); return [p[0], p[1], p[2], p[3] === undefined ? 1 : p[3]]; }
+    const h = (str || '').trim().match(/^#([0-9a-f]{6})$/i); return h ? [0, 2, 4].map(i => parseInt(h[1].slice(i, i + 2), 16)).concat(1) : null; }
+  function sceneFill(sg) {
+    const cs = getComputedStyle(sg), base = rgba(cs.getPropertyValue('--g-solid')) || [128, 128, 128, 1];
+    const tr = sg.classList.contains('wrapped') ? null : rgba(cs.backgroundColor);
+    const c = tr && tr[3] > 0 ? base.slice(0, 3).map((v, i) => Math.round(v * (1 - tr[3]) + tr[i] * tr[3])) : base.slice(0, 3);
+    return 'rgb(' + c.join(',') + ')';
+  }
+  function resort(inst) { try { inst._sortedChildren = inst._getSortedChildren(); inst._globalDirty = true; } catch (e) {} }
+  function idle(sg) {
+    clearTimeout(sg._lgIdle);
+    sg._lgIdle = setTimeout(() => {
+      if (!sg._lg || (drag && drag.sg === sg) || live.has(sg)) return;
+      sg._lg.destroy(); sg._lg = null;
+      const t = sg.querySelector(':scope > .seg-thumb'); if (t) t.classList.remove('lg');
+    }, 4000);
+  }
 
   const inThumb = n => n && n.closest && n.closest('.seg-thumb');
   const keyOf = sg => sg.id || (sg.querySelector('button[data-tk]') || {dataset: {}}).dataset.tk || null;
@@ -58,7 +98,14 @@
     t.style.width = w + 'px'; t.style.height = h + 'px';
     t.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0)';
     t.style.setProperty('--lift', L.toFixed(3));
+    const was = t.classList.contains('up');
     t.classList.toggle('up', L > .02);
+    if (sg._lg) {
+      // lifted, the drop sits above the options (z-index): the glass only refracts what's under it in its own
+      // paint order, so let it sort the children again whenever that flips
+      if (was !== t.classList.contains('up')) resort(sg._lg);
+      sg._lg.markChanged(t); return;
+    }
     if (L > .02) {
       const c = lensOf(sg, t).firstChild, cx = x + w / 2, cy = y + h / 2;
       c.style.transform = 'translate(' + -x + 'px,' + -y + 'px) translate(' + cx + 'px,' + cy + 'px) scale(1.14) translate(' + -cx + 'px,' + -cy + 'px)';
@@ -76,7 +123,7 @@
       }
       S.lift += (S.liftT - S.lift) * Math.min(1, dt * (S.liftT > S.lift ? 18 : 9));
       if (Math.abs(S.lift - S.liftT) > .004) moving = true; else S.lift = S.liftT;
-      if (!sg.isConnected || (!moving && !held)) { S.p = {...S.t}; S.v = Z(); live.delete(sg); }
+      if (!sg.isConnected || (!moving && !held)) { S.p = {...S.t}; S.v = Z(); live.delete(sg); if (sg._lg) idle(sg); }
       if (sg.isConnected) { draw(sg); const key = keyOf(sg); if (key) mem.set(key, {...S.p}); }
     }
     raf = live.size ? requestAnimationFrame(step) : 0;
@@ -109,8 +156,9 @@
     if (e.button !== 0 || reduce) return;
     const b = e.target.closest && e.target.closest('.seg.slid button'); if (!b || b.disabled) return;
     const sg = b.closest('.seg'); if (!sg.classList.contains('slid') || !sg._sl || inThumb(sg)) return;
-    drag = {sg, sx: e.clientX, sy: e.clientY, moved: false, id: e.pointerId};
-    sg._sl.liftT = 1; kick(sg);
+    swallow = 0;
+    drag = {sg, sx: e.clientX, sy: e.clientY, lx: e.clientX, ly: e.clientY, moved: false, id: e.pointerId};
+    sg._sl.liftT = 1; kick(sg); glassFor(sg);
     addEventListener('pointermove', onMove, {passive: false});
     addEventListener('pointerup', onUp); addEventListener('pointercancel', onUp);
   }, true);
@@ -127,7 +175,8 @@
     if (!drag || e.pointerId !== drag.id) return;
     const sg = drag.sg, S = sg._sl;
     if (!sg.isConnected || !S) return end();
-    if (!drag.moved && Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) > 8) drag.moved = true;
+    drag.lx = e.clientX; drag.ly = e.clientY;
+    if (!drag.moved && Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) > 10) drag.moved = true;
     if (!drag.moved) return;
     e.preventDefault();
     const r = sg.getBoundingClientRect();
@@ -146,7 +195,9 @@
     S.liftT = 0;
     if (d.moved) {
       swallow = performance.now();                 // the click that follows this release isn't a tap
-      const n = nearest(sg, S.p.x + S.p.w / 2, S.p.y + S.p.h / 2);
+      // land where the finger is, not where the (still catching up) drop is
+      const r = sg.getBoundingClientRect();
+      const n = nearest(sg, d.lx - r.left - sg.clientLeft + sg.scrollLeft, d.ly - r.top - sg.clientTop + sg.scrollTop);
       if (n && !n.b.classList.contains('on')) { S.t = n.box; kick(sg); n.b.click(); return; }
     }
     place(sg, true); kick(sg);

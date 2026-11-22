@@ -1,4 +1,4 @@
-/*! LiquidGlass 1.0.3 by ybouane (MIT) https://github.com/ybouane/liquidglass, bundled dist/index.js, includes html-to-image (MIT) */
+/*! LiquidGlass 1.0.3 by ybouane (MIT) [patched for 3000: optional sceneFill in init options] https://github.com/ybouane/liquidglass, bundled dist/index.js, includes html-to-image (MIT) */
 // src/defaults.ts
 var DEFAULTS = {
   blurAmount: 0,
@@ -1769,7 +1769,9 @@ var LiquidGlass = class _LiquidGlass {
   // ────────────────────────────────────────────
   // Constructor (prefer LiquidGlass.init)
   // ────────────────────────────────────────────
-  constructor({ root, glassElements, defaults = {} }) {
+  constructor({ root, glassElements, defaults = {}, sceneFill }) {
+    /** [3000 patch] colour behind the captured children (upstream always white) */
+    this.sceneFill = sceneFill || "#ffffff";
     /** Current frames-per-second (updated every frame). */
     this.fps = 0;
     this._running = false;
@@ -2597,7 +2599,7 @@ var LiquidGlass = class _LiquidGlass {
     } else {
       this._sceneCtx.clearRect(0, 0, width, height);
     }
-    this._sceneCtx.fillStyle = "#ffffff";
+    this._sceneCtx.fillStyle = this.sceneFill;
     this._sceneCtx.fillRect(0, 0, width, height);
   }
   _glassHasDynamicContributors(currentGlass, sampleRect, rootRect, dpr) {

@@ -4,6 +4,7 @@
    the library just redraws the glass wherever the drop is each frame.
    If WebGL isn't available, the drop keeps its plain look. */
 import { LiquidGlass } from '../vendor/liquidglass.js';
+window.LiquidGlass = LiquidGlass;   // the option rows' drop (18-segslide.js) uses it too
 
 const bar = document.querySelector('nav.tabs .in');
 const drop = bar && bar.querySelector('.tab-drop');
