@@ -535,3 +535,12 @@ html.locked #gate { display: flex; }
 .xall{display:block;width:100%;padding:12px 0;border:0;border-bottom:1px solid var(--line);background:none;color:var(--acc);font:500 14px var(--body);text-align:left;cursor:pointer}
 .xi.none{border:1.5px solid var(--line)}
 .srow.dim{opacity:.45}
+/* segmented controls that wrap onto several lines (js/17-wrapseg.js): one row per line, the track drawn behind
+   them as a shrink-wrapped shape; or, with "Opciones largas: Deslizar", one line that scrolls */
+.seg.wrapped{position:relative;display:flex;flex-direction:column;align-items:flex-start;width:100%;gap:0;padding:0;background:none;box-shadow:none;border-radius:0}
+.seg.wrapped > .srw{position:relative;display:flex;gap:2px;padding:5px 6px}
+.seg.wrapped > svg.wtrack{position:absolute;left:-12px;top:-12px;overflow:visible;pointer-events:none}
+.seg.segscroll{flex-wrap:nowrap;overflow-x:auto;max-width:100%;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.seg.segscroll::-webkit-scrollbar{display:none}
+.seg.segscroll button{flex:none;white-space:nowrap}
+.srow > .seg.segscroll{min-width:0}

@@ -143,6 +143,7 @@ $('#gpick').onchange = e => { S.listen = e.target.value; changed(); };
 $('#shiftBtn').onclick = () => { S.shift = (S.shift || 0) + 1; changed(); renderNow(true); toast('Frases nuevas ✓'); };
 $('#markTog').onclick = () => { S.set.mark = !S.set.mark; save(); renderAll(); if ($('#lk').classList.contains('on')) renderLookup(); };
 $('#histTog').onclick = () => { S.set.hist = S.set.hist === false; save(); renderPlayer(); };
+$('#segwSeg').onclick = e => { const b = e.target.closest('button'); if (!b) return; S.set.segw = +b.dataset.w; save(); applyTheme(); };
 $('#themeSeg').onclick = e => { const b = e.target.closest('button'); if (!b) return; S.set.theme = b.dataset.t; save(); applyTheme(); renderStats(); };
 $('#metricSeg').onclick = e => { const b = e.target.closest('button'); if (!b) return; metric = b.dataset.x; renderStats(); };
 $('#credBtn').onclick = () => { const c = $('#credits'), open = c.hidden; c.hidden = !open; $('#credBtn').setAttribute('aria-expanded', String(open)); };

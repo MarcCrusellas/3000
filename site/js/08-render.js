@@ -9,6 +9,8 @@ function applyTheme() {
   const t = S.set.theme || (window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
   document.documentElement.dataset.theme = t;
   document.querySelectorAll('#themeSeg button').forEach(b => b.classList.toggle('on', b.dataset.t === t));
+  document.querySelectorAll('#segwSeg button').forEach(b => b.classList.toggle('on', +b.dataset.w === (S.set.segw === 1 ? 1 : 0)));
+  if (window.wrapSegs) wrapSegs();   // the track colour follows the theme
 }
 function renderPlayer() {
   applyTheme();
