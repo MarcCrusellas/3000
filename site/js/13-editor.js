@@ -76,7 +76,7 @@ function edRender() {
   $('#edBody').innerHTML = '<div class="e-gh"><label class="e-gsel"><select id="edSel" data-name="g:' + g.id + '" aria-label="Grupo">' + S.groups.map(x => '<option value="' + x.id + '"' + (x.id === g.id ? ' selected' : '') + '>' + esc(x.name) + '</option>').join('') + '</select>' + ico('chev') + '</label>'
     + '<button class="e-ic" data-egm="' + g.id + '" aria-label="Opciones del grupo">' + ico('more') + '</button>'
     + '<button class="e-play" id="edPlay" data-ea="play" aria-label="Escuchar el grupo">' + ico(playing ? 'pause' : 'play') + '</button></div>'
-    + '<div class="seg sm">' + WT.map(k => '<button class="' + (g.w[k] ? 'on' : '') + '" data-gw="' + k + '">' + WLB[k] + '</button>').join('') + '<button class="' + (g.x ? 'on' : '') + '" data-gx="1">Rondas extra</button></div>'
+    + '<div class="seg sm multi">' + WT.map(k => '<button class="' + (g.w[k] ? 'on' : '') + '" data-gw="' + k + '">' + WLB[k] + '</button>').join('') + '<button class="' + (g.x ? 'on' : '') + '" data-gx="1">Rondas extra</button></div>'
     + (miss.length ? '<div class="e-warn">Sin pista: ' + miss.join(', ') + '. Esas palabras no sonarán.</div>' : '')
     + '<div class="e-tracks">' + g.tracks.map(t => eTrackHtml(g, t)).join('') + '</div>'
     + '<button class="e-addt" data-addt="1">' + ico('plus') + ' Pista</button>'

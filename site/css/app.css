@@ -544,3 +544,8 @@ html.locked #gate { display: flex; }
 .seg.segscroll::-webkit-scrollbar{display:none}
 .seg.segscroll button{flex:none;white-space:nowrap}
 .srow > .seg.segscroll{min-width:0}
+/* sliding selection (js/18-segslide.js): the selected option's pill is a separate thumb that springs between options */
+.seg.slid{position:relative}
+.seg.slid button{position:relative;z-index:1}
+.seg.slid button.on{background:transparent!important;box-shadow:none!important;border-color:transparent!important}
+.seg-thumb{position:absolute;left:0;top:0;z-index:0;border-radius:999px;background:var(--g-thumb,var(--ink));box-shadow:0 2px 8px rgba(0,0,0,.12),inset 0 1px 0 var(--g-top,transparent);pointer-events:none;will-change:transform}

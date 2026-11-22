@@ -46,6 +46,7 @@
         + '</g>';
       sg.prepend(svg);
     } finally { busy = false; if (mo) mo.takeRecords(); }   // our own changes aren't news
+    sg.dispatchEvent(new Event('g3000:segwrap', {bubbles: true}));   // the sliding thumb (18-segslide.js) follows
   }
   let mo = null;
   const ro = 'ResizeObserver' in window ? new ResizeObserver(es => {
@@ -61,7 +62,9 @@
   mo = new MutationObserver(ms => {
     if (busy) return;
     const todo = new Set();
+    const thumbOnly = m => [...m.addedNodes, ...m.removedNodes].every(n => n.nodeType === 1 && n.classList.contains('seg-thumb'));
     for (const m of ms) {
+      if (thumbOnly(m)) continue;
       const own = m.target.closest && m.target.closest('.seg');
       if (own) todo.add(own);
       for (const n of m.addedNodes) if (n.nodeType === 1) { if (n.matches('.seg')) todo.add(n); n.querySelectorAll && n.querySelectorAll('.seg').forEach(x => todo.add(x)); }
