@@ -3,7 +3,7 @@
    Same feel as the tab bar (15-tabdrop.js), in every single-choice .seg:
    - tap another option: the selected pill (a separate "thumb") springs there, stretching in the direction of
      travel, also from one line to another when the row wraps (17-wrapseg.js);
-   - press the row: the pill lifts out as a drop of liquid glass (the same WebGL glass as the tab bar,
+   - hold or drag on the row: the pill lifts out as a drop of liquid glass (the same WebGL glass as the tab bar,
      16-lens.mjs) that refracts the options under it; drag and it follows the finger,
      then drops into the nearest option on release. Starting on the selected option it moves freely in every
      direction; starting on another one, a vertical move scrolls the page as usual.
@@ -157,11 +157,18 @@
     const b = e.target.closest && e.target.closest('.seg.slid button'); if (!b || b.disabled) return;
     const sg = b.closest('.seg'); if (!sg.classList.contains('slid') || !sg._sl || inThumb(sg)) return;
     swallow = 0;
-    drag = {sg, sx: e.clientX, sy: e.clientY, lx: e.clientX, ly: e.clientY, moved: false, id: e.pointerId};
-    sg._sl.liftT = 1; kick(sg); glassFor(sg);
+    drag = {sg, sx: e.clientX, sy: e.clientY, lx: e.clientX, ly: e.clientY, moved: false, id: e.pointerId, up: false};
+    // nothing changes on the page during a quick tap: iOS drops the click of a tap when the page changes under the
+    // finger (it takes it as a hover), which is how the first tap on another option got lost. The drop lifts only
+    // when the finger stays down a moment or starts to drag.
+    drag.hold = setTimeout(() => lift(drag), 200);
     addEventListener('pointermove', onMove, {passive: false});
     addEventListener('pointerup', onUp); addEventListener('pointercancel', onUp);
   }, true);
+  function lift(d) {
+    if (!d || d !== drag || d.up || !d.sg._sl) return;
+    d.up = true; d.sg._sl.liftT = 1; kick(d.sg); glassFor(d.sg);
+  }
   function nearest(sg, px, py) {
     let best = null;
     for (const b of optBtns(sg)) {
@@ -176,7 +183,7 @@
     const sg = drag.sg, S = sg._sl;
     if (!sg.isConnected || !S) return end();
     drag.lx = e.clientX; drag.ly = e.clientY;
-    if (!drag.moved && Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) > 10) drag.moved = true;
+    if (!drag.moved && Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) > 10) { drag.moved = true; lift(drag); }
     if (!drag.moved) return;
     e.preventDefault();
     const r = sg.getBoundingClientRect();
@@ -190,7 +197,8 @@
   function end() {
     removeEventListener('pointermove', onMove); removeEventListener('pointerup', onUp); removeEventListener('pointercancel', onUp);
     const d = drag; drag = null;
-    if (!d || !d.sg._sl) return;
+    if (d) clearTimeout(d.hold);
+    if (!d || !d.sg._sl || !d.up) return;          // a quick tap: the button's own click does the rest
     const sg = d.sg, S = sg._sl;
     S.liftT = 0;
     if (d.moved) {

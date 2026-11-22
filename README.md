@@ -28,6 +28,9 @@ Personal language-learning site: the German 3000 app (listening loop, Repasar, w
 cd worker && npm ci && npm run dev            # API on :8787 (RP ID localhost)
 cd site && python3 -m http.server 8788        # site on :8788
 python3 tests/e2e.py [chrome_path] [shots_dir]  # virtual passkey test: sign-in, sync between two devices, reset
+python3 tests/palabras.py [chrome_path]          # Palabras: type chips, Sin empezar, blocks, ranks, extras, switches
+python3 tests/segments.py [chrome_path]          # option rows: sliding pill, glass drop, drag, wrapped/scrolling rows, touch
+PLAYWRIGHT_BROWSERS_PATH=... python3 tests/touch.py  # iPhone-like WebKit: first taps select, nothing changes under a tap
 ```
 
 `npm run dev` keeps data in `worker/.wrangler/state`; delete it to start from zero.
@@ -42,4 +45,6 @@ python3 tests/e2e.py [chrome_path] [shots_dir]  # virtual passkey test: sign-in,
 | `.github/workflows/` | `deploy.yml`, `reset-passkeys.yml` |
 | `scripts/worker-url.sh` | finds the Worker's workers.dev URL |
 | `tests/e2e.py` | Playwright test with Chrome's virtual authenticator |
+| `tests/palabras.py`, `tests/segments.py` | Palabras page; option rows (same setup as e2e.py) |
+| `tests/touch.py` | Option rows on WebKit with iPhone emulation (only needs the site server; needs `playwright install webkit`) |
 | `pipeline/` | scripts and inputs that build `site/data/` and `site/audio/`; `pipeline/ADD_WORDS.md` explains how to add words 1001 to 3000 |
